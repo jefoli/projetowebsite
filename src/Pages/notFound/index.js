@@ -1,10 +1,10 @@
 import React from "react";
-import { ErrorContainer } from './styled';
+import { Container } from "../../Styles/GlobalStyle";
 
 export default function NotFound(){
     return(
-            <ErrorContainer>
+            <Container>
                 ERROR 404 - PÁGINA NÃO ENCONTRADA
-            </ ErrorContainer>
+            </ Container>
     );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from './styled'
+import { Container } from '../../Styles/GlobalStyle'
 
 export default function Body(){
     return <Container>

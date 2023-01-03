@@ -1,9 +1,10 @@
 import React from "react";
+import { Container } from "../../Styles/GlobalStyle";
 import { Contact } from './styled'
 
 export default function Contato(){
-    return <Contact>
+    return <Container element={<Contato />}>
             <h1>CONTATO</h1>
-            <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
-        </Contact>
+            <p> A partir guiado para conhecer mais sobre nossos produtos e serviços</p>
+        </Container>
 }

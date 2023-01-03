@@ -6,7 +6,7 @@ import Historia from "../Pages/Historia";
 import Servicos from "../Pages/Servicos";
 import NotFound from "../Pages/notFound";
 import MyRoute from './MyRoutes';
-
+import Sobre from '../Pages/Sobre';
 
 export default function Routes(){
     return(
@@ -15,6 +15,7 @@ export default function Routes(){
             <MyRoute exact path='/contato/' component={Contato} />;
             <MyRoute exact path='/historia/' component={Historia} />;
             <MyRoute exact path='/servicos/' component={Servicos} />;
+            <MyRoute exact path='/sobre/' component={Sobre}/>;
             <MyRoute exact path='*' component={NotFound} />;
         </Switch>
     );

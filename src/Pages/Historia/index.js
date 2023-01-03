@@ -1,9 +1,10 @@
 import React from "react";
+import { Container } from "../../Styles/GlobalStyle";
 import { History } from './styled'
 
 export default function Historia(){
-    return <History>
+    return <Container>
             <h1>HISTÓRIA</h1>
             <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
-        </History>
+        </Container>
 }

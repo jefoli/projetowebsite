@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Containera = styled.section`
     padding: 30px;
     box-sizing:border-box;
     background: #f0f5f5;
