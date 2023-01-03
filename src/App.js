@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css';
 import Nav from './Components/Header';
 import Body from './Pages/Body';
 import Footer from "./Components/Footer";
@@ -7,23 +6,21 @@ import Contato from "./Pages/Contato";
 import Historia from "./Pages/Historia";
 import Servicos from "./Pages/Servicos";
 import Sobre from "./Pages/Sobre";
-import { BrowserRouter } from "react-router-dom";
+import { Router } from "react-router-dom";
+
+import history from "./services/history";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Nav onClick="/"/>
-        <Body onClick="/"/>
-        <Contato onClick="/"/>
-        <Historia onClick="/"/>
-        <Servicos onClick="/"/>
-        <Sobre onClick="/sobre"/>
-        <Footer />
-      </BrowserRouter>
-
-    </div>
-
+        <Router history={history}>
+          <Nav />
+          <Body />
+          <Contato />
+          <Historia />
+          <Servicos />
+          <Sobre />
+          <Footer />
+        </Router>
   );
 }
 

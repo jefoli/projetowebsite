@@ -1,6 +1,6 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Component } from "react-router-dom";
 
 export default function MyRoute(component){
-    return < Route />
+    return < Route component={Component}/>
 }
