@@ -7,7 +7,8 @@ export const Navbar = styled.div`
     padding: 20px;
     background:  #fff;
     text-align: center;
-    border-bottom: 1px solid #000;
+
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 
     a{
         font-size: 20px;

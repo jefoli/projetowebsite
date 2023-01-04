@@ -1,6 +1,5 @@
-import React from "react";
 import { Container } from "../../Styles/GlobalStyle";
-import { Contact } from './styled'
+import './styled';
 
 export default function Contato(){
     return <Container element={<Contato />}>

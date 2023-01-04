@@ -1,7 +1,5 @@
-import React from "react";
-import { Services } from './styled'
-
 import { Container } from "../../Styles/GlobalStyle";
+import './styled';
 
 export default function Servicos(){
     return <Container>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "../../Styles/GlobalStyle";
+import'./styled';
 
 export default function NotFound(){
     return(
