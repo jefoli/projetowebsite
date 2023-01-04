@@ -1,6 +1,7 @@
 import './styled';
 import { Container } from "../../Styles/GlobalStyle";
 import { Services } from '../Servicos/styled';
+import {Button} from '../../Components/Button';
 
 export default function Post(){
     // state: {
@@ -11,7 +12,10 @@ export default function Post(){
         <Container>
             <Services>
                 <h1>Post</h1>
-                <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
+                <Button text="load more posts" 
+                //onClick ={this.loadMorePosts}
+                //disabled={noMorePosts}
+            />
             </Services>
         </Container>
     )
