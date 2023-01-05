@@ -9,9 +9,8 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.section`
-max-width: auto;
-padding: 30px;
-background: #fff;
-text-align: center
-`
-
+  max-width: auto;
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+`;
