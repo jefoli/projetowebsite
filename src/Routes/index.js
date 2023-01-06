@@ -12,7 +12,7 @@ import Post from '../Pages/Posts';
 export default function Routes() {
   return (
     <Switch>
-      <MyRoute exact path="/" component={Body} />;
+      <MyRoute exact path="/home" component={Body} />;
       <MyRoute exact path="/contato/" component={Contato} />;
       <MyRoute exact path="/historia/" component={Historia} />;
       <MyRoute exact path="/servicos/" component={Servicos} />;

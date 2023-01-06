@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Form = styled.form`
   padding: 30px;
   display: grid;
-  background: rgba(9, 173, 146, 0.74);
+  background: rgba(71, 223, 223, 0.863);
   border-radius: 4px;
   font-size: 20px;
   margin-top: 60px;

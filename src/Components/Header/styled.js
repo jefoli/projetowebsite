@@ -19,5 +19,6 @@ export const Navbar = styled.div`
 
   a:hover {
     color: #669999;
+    transition: 150ms ease-in-out;
   }
 `;
