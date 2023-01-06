@@ -1,6 +1,6 @@
 import { Container } from '../../Styles/GlobalStyle';
 import './styled';
-import { Form } from './styled';
+import { Div, Form } from './styled';
 
 export default function Contato() {
   function handleSubmit(e) {
@@ -12,7 +12,8 @@ export default function Contato() {
     <Container>
       <h1>CONTATO</h1>
       <h4> Seu contato é muito importante para aprimorarmos nossos serviços!</h4>
-      <Form>
+
+      <Div>
         <label>
           Nome:
           <input type="text" className="input-name" name="nome" placeholder="digite seu email"></input>
@@ -37,6 +38,21 @@ export default function Contato() {
             Enviar
           </button>
         </label>
+        <h2>ENDEREÇOS</h2>
+      </Div>
+      <Form>
+        <div className="grid-content">
+          <h3>São Paulo</h3>
+          Rua Teste, 000, bairro Teste, CEP 00000-000
+        </div>
+        <div className="grid-content">
+          <h3>Sorocaba</h3>
+          Rua Teste, 000, bairro Teste, CEP 00000-000
+        </div>
+        <div className="grid-content">
+          <h3>Votorantim</h3>
+          Rua Teste, 000, bairro Teste, CEP 00000-000
+        </div>
       </Form>
     </Container>
   );

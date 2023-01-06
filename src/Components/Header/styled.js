@@ -7,7 +7,6 @@ export const Navbar = styled.div`
   padding: 20px;
   background: #fff;
   text-align: center;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   a {
@@ -18,7 +17,7 @@ export const Navbar = styled.div`
   }
 
   a:hover {
-    color: #669999;
+    color: rgb(178, 189, 24);
     transition: 150ms ease-in-out;
   }
 `;

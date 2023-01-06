@@ -13,6 +13,7 @@ export default function Body() {
           height="400"
           alt="./logo.png"
         />{' '}
+        <div className=" flex-container-father flex-div">.</div>
         <div className="flex-text">
           Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
           utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para
