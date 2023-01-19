@@ -7,7 +7,6 @@ export default function Contato() {
     e.preventDefault();
     //console.log(e);
   }
-
   return (
     <Container>
       <h1>CONTATO</h1>
