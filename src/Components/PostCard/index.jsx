@@ -1,4 +1,4 @@
-import React from 'react';
+import P from 'prop-types';
 
 import './styles.css';
 
@@ -12,4 +12,10 @@ export const PostCard = ({ title, cover, body }) => {
       </div>
     </div>
   );
+};
+
+PostCard.propTypes = {
+  title: P.any,
+  cover: P.any,
+  body: P.any,
 };

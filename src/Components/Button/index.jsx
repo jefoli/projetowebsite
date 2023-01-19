@@ -1,14 +1,14 @@
-import './styles.css';
+import * as Styled from './styles.js';
 
 import P from 'prop-types';
 
 export const Button = ({ text, onClick, disabled }) => {
   return (
-    <div className="button-container">
+    <Styled.Container>
       <button onClick={onClick} className="button" disabled={disabled}>
         {text}
       </button>
-    </div>
+    </Styled.Container>
   );
 };
 

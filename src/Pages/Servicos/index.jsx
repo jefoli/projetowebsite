@@ -1,13 +1,15 @@
-import { SectionContainer } from '../../Components/sectionContainer';
+import { SectionContainer } from '../../Components/SectionContainer';
+import { TextGrid } from '../../Components/TextGrid';
 import * as Styled from './styles';
 
 export const Servicos = () => {
   return (
-    <SectionContainer>
-      <Styled.Container>
+    <Styled.Container>
+      <SectionContainer>
         <h1>SERVIÇOS</h1>
         <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
-      </Styled.Container>
-    </SectionContainer>
+        <TextGrid />
+      </SectionContainer>
+    </Styled.Container>
   );
 };

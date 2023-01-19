@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 export const Container = styled.div`
+  text-align: justify;
+  font-size: 30px;
   ${({ theme }) => css`
-    text-align: center;
-    margin: 30px;
+    display: flex;
     font-size: ${theme.fonts.sizes.medium};
-  `}
+  `};
 `;

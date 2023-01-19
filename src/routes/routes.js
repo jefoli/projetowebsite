@@ -16,7 +16,7 @@ export default function RoutesSistem() {
         <Route path="/" element={<Body />} />
         <Route path="contato" element={<Contato />} />
         <Route path="historia" element={<Historia />} />
-        <Route path="home" element={<Servicos />} />
+        <Route path="servicos" element={<Servicos />} />
         <Route path="sobre" element={<Sobre />} />
         <Route path="post" element={<Post />} />
       </Routes>
