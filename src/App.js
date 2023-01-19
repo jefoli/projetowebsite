@@ -1,15 +1,13 @@
 import React from 'react';
-import Header from './Components/Header';
-import { Body } from './Pages/Body';
-import GlobalStyle from './Styles/GlobalStyles';
+import GlobalStyles from './Styles/GlobalStyles';
 import { Footer } from './Components/Footer';
+import RoutesSistem from './routes/routes';
 
 function App() {
   return (
     <>
-      <Header />
-      <Body />
-      <GlobalStyle />
+      <RoutesSistem />
+      <GlobalStyles />
       <Footer />
     </>
   );

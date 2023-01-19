@@ -1,11 +1,13 @@
-import { Container } from '../../Styles/GlobalStyles';
-import './styled';
+import { SectionContainer } from '../../Components/sectionContainer';
+import * as Styled from './styles';
 
-export default function Servicos() {
+export const Servicos = () => {
   return (
-    <Container>
-      <h1>SERVIÇOS</h1>
-      <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
-    </Container>
+    <SectionContainer>
+      <Styled.Container>
+        <h1>SERVIÇOS</h1>
+        <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
+      </Styled.Container>
+    </SectionContainer>
   );
-}
+};

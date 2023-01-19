@@ -1,6 +1,4 @@
-import './styled';
-import { Container } from '../../Styles/GlobalStyles';
-import { Services } from '../Servicos/styled';
+import * as Styled from './styles';
 import { Button } from '../../Components/Button';
 
 export default function Post() {
@@ -9,15 +7,13 @@ export default function Post() {
   // }
 
   return (
-    <Container>
-      <Services>
-        <h1>Post</h1>
-        <Button
-          text="load more posts"
-          //onClick ={this.loadMorePosts}
-          //disabled={noMorePosts}
-        />
-      </Services>
-    </Container>
+    <Styled.Container>
+      <h1>Post</h1>
+      <Button
+        text="load more posts"
+        //onClick ={this.loadMorePosts}
+        //disabled={noMorePosts}
+      />
+    </Styled.Container>
   );
 }
