@@ -17,7 +17,7 @@ export const Container = styled.div`
       margin-bottom: 20px;
       width: 100%;
       border-radius: 4px;
-      border: 1px solid;
+      border: 1px solid green;
       font-size: 15px;
     }
 

@@ -4,8 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: block;
     width: 100%;
-    height: 20px;
-    padding: 30px;
+    padding: 15px;
     background: ${theme.colors.white};
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
