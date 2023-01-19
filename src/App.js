@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from './Components/Header';
-import { Router } from 'react-router-dom';
-import history from './services/history';
-import Routes from './Routes';
-import GlobalStyle from './Styles/GlobalStyle';
+import { Body } from './Pages/Body';
+import GlobalStyle from './Styles/GlobalStyles';
+import { Footer } from './Components/Footer';
 
 function App() {
   return (
-    <Router history={history}>
+    <>
       <Header />
-      <Routes />
+      <Body />
       <GlobalStyle />
-    </Router>
+      <Footer />
+    </>
   );
 }
 

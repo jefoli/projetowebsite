@@ -1,5 +1,5 @@
 import './styled';
-import { Container } from '../../Styles/GlobalStyle';
+import { Container } from '../../Styles/GlobalStyles';
 import { Services } from '../Servicos/styled';
 import { Button } from '../../Components/Button';
 

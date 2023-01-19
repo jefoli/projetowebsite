@@ -1,6 +1,5 @@
-import './styled';
-import { Container } from '../../Styles/GlobalStyle';
+import * as Styled from './styles';
 
-export default function Footer() {
-  return <Container>Desenvolvido por Jeferson de Oliveira</Container>;
-}
+export const Footer = () => {
+  return <Styled.Container>Desenvolvido por Jeferson de Oliveira</Styled.Container>;
+};

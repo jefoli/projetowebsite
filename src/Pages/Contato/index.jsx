@@ -1,4 +1,4 @@
-import { Container } from '../../Styles/GlobalStyle';
+import { Container } from '../../Styles/GlobalStyles';
 import './styled';
 import { Div, Form } from './styled';
 

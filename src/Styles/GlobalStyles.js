@@ -1,12 +1,19 @@
 import styled, { createGlobalStyle } from 'styled-components';
+//import { theme } from './theme';
 
 export default createGlobalStyle`
   * {
+      box-sizing: border-box;
       margin:0;
       padding: 0;
       outline:0;
-      font-family: sans-serif;
   }
+
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
 `;
 
 export const Container = styled.section`
