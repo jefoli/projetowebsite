@@ -5,7 +5,7 @@ import Contato from '../Pages/Contato';
 import Historia from '../Pages/Historia';
 import { Servicos } from '../Pages/Servicos';
 import Sobre from '../Pages/Sobre';
-import Post from '../Pages/Posts';
+import { PostsText } from '../Pages/Posts';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function RoutesSistem() {
@@ -18,7 +18,7 @@ export default function RoutesSistem() {
         <Route path="historia" element={<Historia />} />
         <Route path="servicos" element={<Servicos />} />
         <Route path="sobre" element={<Sobre />} />
-        <Route path="post" element={<Post />} />
+        <Route path="post" element={<PostsText />} />
       </Routes>
     </BrowserRouter>
   );
