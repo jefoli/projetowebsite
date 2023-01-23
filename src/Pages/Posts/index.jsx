@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import './styles.css';
 
-import { Postsone } from '../../Components/Postsone';
+import { Postsone } from '../../Components/PostGrid';
 import { loadPosts } from '../../util/load-posts';
 import { Button } from '../../Components/Button';
 import { TextInput } from '../../Components/textInput';
@@ -11,7 +11,7 @@ export const PostsText = () => {
   const [posts, setPosts] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
   const [page, setPage] = useState(0);
-  const [postsPerPage] = useState(2);
+  const [postsPerPage] = useState(10);
   const [searchValue, setSearchValue] = useState('');
 
   const handleLoadPosts = useCallback(async (page, postsPerPage) => {

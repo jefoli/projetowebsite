@@ -1,11 +1,10 @@
 import P from 'prop-types';
-
-import './styles.css';
+import * as Styled from './styles';
 
 export const Button = ({ text, onClick, disabled = false }) => (
-  <button className="button" onClick={onClick} disabled={disabled}>
+  <Styled.Container onClick={onClick} disabled={disabled}>
     {text}
-  </button>
+  </Styled.Container>
 );
 
 Button.DefaultProps = {
