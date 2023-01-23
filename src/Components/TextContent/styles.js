@@ -18,8 +18,14 @@ const rotate = () => keyframes`
 }
 `;
 
-export const Image = styled.div`
+export const RotateImage = styled.div`
   display: block;
   width: 100%;
-  animation: ${rotate()} 2s ease-out infinite;
+  animation: ${rotate()} 3s ease-out infinite;
+`;
+
+export const GridContent = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-auto-rows: 100px; */
 `;

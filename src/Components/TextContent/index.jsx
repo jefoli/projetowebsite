@@ -10,10 +10,16 @@ export const TextContent = () => {
       <h1>BEM VINDO AO FUTURO</h1>
       <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
       <SectionContainer>
-        <Styled.Image>
+        <Styled.RotateImage>
           <ImageGrid />
-        </Styled.Image>
+        </Styled.RotateImage>
         <TextGrid />
+        <Styled.GridContent>
+          <ImageGrid />
+          <TextGrid />
+          <TextGrid />
+          <ImageGrid />
+        </Styled.GridContent>
       </SectionContainer>
     </Styled.Container>
   );

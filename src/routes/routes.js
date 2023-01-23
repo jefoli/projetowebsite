@@ -1,5 +1,5 @@
 import React from 'react';
-import { Body } from '../Pages/Body';
+import { Home } from '../Pages/Home';
 import Header from '../Components/Header';
 import Contato from '../Pages/Contato';
 import Historia from '../Pages/Historia';
@@ -13,7 +13,7 @@ export default function RoutesSistem() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Body />} />
+        <Route path="/" element={<Home />} />
         <Route path="contato" element={<Contato />} />
         <Route path="historia" element={<Historia />} />
         <Route path="servicos" element={<Servicos />} />

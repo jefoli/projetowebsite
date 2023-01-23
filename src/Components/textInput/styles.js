@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
-
-export const Container = styled.div`
+export const Container = styled.input`
   ${({ theme }) => css`
-    color: #118d93;
-    font-size: 25px;
+    width: 100%;
+    font-size: 30px;
+    padding: 5px 10px;
   `}
 `;

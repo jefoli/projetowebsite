@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import './styles.css';
+import * as Styled from './styles';
 
 import { Postsone } from '../../Components/PostGrid';
 import { loadPosts } from '../../util/load-posts';
@@ -48,20 +48,18 @@ export const PostsText = () => {
     : posts;
 
   return (
-    <section className="container">
-      <div className="search-container">
+    <Styled.Container>
+      <Styled.SearchContainer>
         {!!searchValue && <h1>Search value: {searchValue}</h1>}
-
         <TextInput searchValue={searchValue} handleChange={handleChange} />
-      </div>
+      </Styled.SearchContainer>
 
       {filteredPosts.length > 0 && <Postsone posts={filteredPosts} />}
 
       {filteredPosts.length === 0 && <p>Não existem posts =(</p>}
-
-      <div className="button-container">
+      <Styled.ButtonContainer>
         {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
-      </div>
-    </section>
+      </Styled.ButtonContainer>
+    </Styled.Container>
   );
 };

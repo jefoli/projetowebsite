@@ -1,16 +1,15 @@
-import './styles.css';
-
 import P from 'prop-types';
+import * as Styled from './styles';
 
 export const TextInput = ({ searchValue, handleChange }) => {
   return (
-    <input
+    <Styled.Container
       className="text-input"
       onChange={handleChange}
       value={searchValue}
       type="search"
       placeholder="Type your search"
-    />
+    ></Styled.Container>
   );
 };
 
