@@ -7,5 +7,6 @@ export const Container = styled.section`
     padding: ${theme.spacings.large};
     width: 100%;
     font-size: 15px;
+    background-color: #bddee530;
   `}
 `;

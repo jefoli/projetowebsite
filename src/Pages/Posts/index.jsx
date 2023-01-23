@@ -6,6 +6,7 @@ import { Postsone } from '../../Components/PostGrid';
 import { loadPosts } from '../../util/load-posts';
 import { Button } from '../../Components/Button';
 import { TextInput } from '../../Components/textInput';
+import { SectionContainer } from '../../Components/SectionContainer';
 
 export const PostsText = () => {
   const [posts, setPosts] = useState([]);
@@ -48,18 +49,20 @@ export const PostsText = () => {
     : posts;
 
   return (
-    <Styled.Container>
-      <Styled.SearchContainer>
-        {!!searchValue && <h1>Search value: {searchValue}</h1>}
-        <TextInput searchValue={searchValue} handleChange={handleChange} />
-      </Styled.SearchContainer>
+    <SectionContainer>
+      <Styled.Container>
+        <Styled.SearchContainer>
+          {!!searchValue && <h1>Search value: {searchValue}</h1>}
+          <TextInput searchValue={searchValue} handleChange={handleChange} />
+        </Styled.SearchContainer>
 
-      {filteredPosts.length > 0 && <Postsone posts={filteredPosts} />}
+        {filteredPosts.length > 0 && <Postsone posts={filteredPosts} />}
 
-      {filteredPosts.length === 0 && <p>Não existem posts =(</p>}
-      <Styled.ButtonContainer>
-        {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
-      </Styled.ButtonContainer>
-    </Styled.Container>
+        {filteredPosts.length === 0 && <p>Não existem posts =(</p>}
+        <Styled.ButtonContainer>
+          {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
+        </Styled.ButtonContainer>
+      </Styled.Container>
+    </SectionContainer>
   );
 };

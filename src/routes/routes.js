@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home } from '../Pages/Home';
-import Header from '../Components/Header';
+import NavBar from '../Components/Navbar';
 import Contato from '../Pages/Contato';
 import Historia from '../Pages/Historia';
 import { Servicos } from '../Pages/Servicos';
@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 export default function RoutesSistem() {
   return (
     <BrowserRouter>
-      <Header />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="contato" element={<Contato />} />

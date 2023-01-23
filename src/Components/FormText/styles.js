@@ -17,19 +17,18 @@ export const Container = styled.div`
       margin-bottom: 20px;
       width: 100%;
       border-radius: 4px;
-      border: 1px solid green;
+      border: 1px;
       font-size: 15px;
     }
 
     button {
-      padding: 10px;
-      width: 10%;
-      border-radius: 4px;
-      background-color: ${theme.colors.primaryColor};
+      width: 100%;
+      background: #003c58;
       color: ${theme.colors.white};
       border: none;
+      padding: 15px 30px;
       cursor: pointer;
-      font-size: 15px;
+      border-radius: 4px;
 
       &:focus {
         background: gray;
