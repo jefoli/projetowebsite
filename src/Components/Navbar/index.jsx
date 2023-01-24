@@ -1,6 +1,5 @@
-import * as Styled from './styled';
+import * as Styled from './styles';
 import { Link } from 'react-router-dom';
-import './styled';
 import { LogoComponent } from '../LogoComponent';
 import { MenuIcons } from '../MenuIcons';
 
