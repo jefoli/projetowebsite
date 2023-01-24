@@ -6,9 +6,7 @@ import { MenuIcons } from '../MenuIcons';
 export default function NavBar() {
   return (
     <Styled.Container>
-      <Link to="/">
-        <LogoComponent />
-      </Link>
+      <LogoComponent />
       <Link to="/"></Link>
       <Link to="/">Home</Link>
       <Link to="/sobre">Sobre</Link>

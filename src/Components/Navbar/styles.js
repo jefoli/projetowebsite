@@ -11,7 +11,7 @@ export const Container = styled.div`
     padding: 15px 30px 10px;
 
     a {
-      font-size: 20px;
+      font-size: ${theme.fonts.sizes.medium};
       color: ${theme.colors.primaryColor};
       text-decoration: none;
     }
@@ -19,6 +19,9 @@ export const Container = styled.div`
     a:hover {
       color: ${theme.colors.mediumGray};
       transition: 150ms ease-in-out;
+      background-color: ${theme.colors.primaryColor};
+      padding: 4px;
+      border-radius: 4px;
     }
   `}
 `;

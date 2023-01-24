@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
@@ -12,7 +11,7 @@ export const Container = styled.div`
       transform: scale(1.05);
     }
 
-    .post img {
+    & img {
       max-width: 100%;
     }
   `}
@@ -20,7 +19,7 @@ export const Container = styled.div`
 
 export const PostContainer = styled.div`
   ${({ theme }) => css`
-      padding: 30px;
+      padding: ${theme.fonts.sizes.large};
     }
   `}
 `;

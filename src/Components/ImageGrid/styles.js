@@ -1,8 +1,15 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
+
 export const Container = styled.div`
   ${({ theme }) => css`
-    color: #118d93;
-    text-align: center;
+    color: ${theme.colors.primaryColor};
+
+    &:hover {
+      background-color: ${theme.colors.primaryColor};
+      color: ${theme.colors.mediumGray};
+
+      transition: 600ms ease-in-out;
+    }
   `}
 `;

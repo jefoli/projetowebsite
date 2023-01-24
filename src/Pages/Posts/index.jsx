@@ -58,7 +58,7 @@ export const PostsText = () => {
 
         {filteredPosts.length > 0 && <Postsone posts={filteredPosts} />}
 
-        {filteredPosts.length === 0 && <p>Não existem posts =(</p>}
+        {filteredPosts.length === 0 && <p>Não existem posts com essa descrição.</p>}
         <Styled.ButtonContainer>
           {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
         </Styled.ButtonContainer>
