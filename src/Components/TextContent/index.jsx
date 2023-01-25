@@ -6,10 +6,10 @@ import { TextGrid } from '../TextGrid';
 import * as Styled from './styles';
 export const TextContent = () => {
   return (
-    <Styled.Container>
-      <h1>BEM VINDO AO FUTURO</h1>
-      <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
-      <SectionContainer>
+    <SectionContainer>
+      <Styled.Container>
+        <h1>BEM VINDO AO FUTURO</h1>
+        <p> A partir de agora você será guiado para conhecer mais sobre nossos produtos e serviços</p>
         <RotateImage />
         <TextGrid />
         <Styled.GridContent>
@@ -20,7 +20,7 @@ export const TextContent = () => {
           <ImageGrid />
           <TextGrid />
         </Styled.GridContent>
-      </SectionContainer>
-    </Styled.Container>
+      </Styled.Container>
+    </SectionContainer>
   );
 };

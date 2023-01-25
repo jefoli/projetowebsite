@@ -19,9 +19,14 @@ export const Container = styled.div`
     a:hover {
       color: ${theme.colors.mediumGray};
       transition: 150ms ease-in-out;
-      background-color: ${theme.colors.primaryColor};
-      padding: 4px;
+      /* background-color: ${theme.colors.primaryColor}; */
       border-radius: 4px;
+      transform: scale(1.05);
+    }
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   `}
 `;

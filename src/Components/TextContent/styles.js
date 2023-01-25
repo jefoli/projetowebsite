@@ -10,5 +10,5 @@ export const Container = styled.div`
 
 export const GridContent = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 `;

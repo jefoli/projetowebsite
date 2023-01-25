@@ -9,5 +9,11 @@ export const Container = styled.div`
       transition: 150ms ease-in-out;
       background: none;
     }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   `}
 `;
