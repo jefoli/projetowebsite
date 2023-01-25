@@ -1,6 +1,5 @@
 import { FormText } from '../../Components/FormText';
 import { SectionContainer } from '../../Components/SectionContainer';
-import { TextAdress } from '../../Components/TextAdress';
 import * as Styled from './styles';
 
 export default function Contato() {
@@ -11,7 +10,6 @@ export default function Contato() {
         <h4> Seu contato é muito importante para aprimorarmos nossos serviços!</h4>
         <FormText />
       </Styled.Container>
-      <TextAdress />
     </SectionContainer>
   );
 }

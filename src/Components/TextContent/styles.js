@@ -11,5 +11,4 @@ export const Container = styled.div`
 export const GridContent = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: cen;
 `;

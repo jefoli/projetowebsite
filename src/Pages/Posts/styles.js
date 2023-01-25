@@ -4,6 +4,8 @@ export const Container = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
     padding: 30px;
+    background: #00709b;
+    border-radius: 4px;
   `}
 `;
 
