@@ -1,10 +1,10 @@
 import * as Styled from './styles';
-import { FaReact } from 'react-icons/fa';
+import { FaCloudversify } from 'react-icons/fa';
 
 export const ImageGrid = () => {
   return (
     <Styled.Container>
-      <FaReact size={300} />
+      <FaCloudversify size={300} />
     </Styled.Container>
   );
 };

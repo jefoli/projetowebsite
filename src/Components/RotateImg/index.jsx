@@ -1,10 +1,10 @@
 import * as Styled from './styles';
-import { FaReact } from 'react-icons/fa';
+import { GiEmptyHourglass } from 'react-icons/gi';
 
 export const RotateImage = () => {
   return (
     <Styled.Container>
-      <FaReact size={300} />
+      <GiEmptyHourglass size={300} className="img" />
     </Styled.Container>
   );
 };
