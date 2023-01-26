@@ -19,7 +19,6 @@ export const Container = styled.div`
     a:hover {
       color: ${theme.colors.mediumGray};
       transition: 150ms ease-in-out;
-      /* background-color: ${theme.colors.primaryColor}; */
       border-radius: 4px;
       transform: scale(1.05);
     }

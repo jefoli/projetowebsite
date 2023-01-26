@@ -6,7 +6,7 @@ export const Container = styled.div`
     grid-template-columns: repeat(3, 1fr);
     font-size: ${theme.fonts.sizes.small};
     background: ${theme.colors.primaryColor};
-    padding: 20px;
+    padding: ${theme.spacings.medium};
     text-align: center;
     color: ${theme.colors.white};
   `}

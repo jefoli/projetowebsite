@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
-    padding: 30px;
-    background: #00709b;
-    border-radius: 4px;
+    padding: ${theme.spacings.large};
+    background: ${theme.colors.secundaryColor};
+    border-radius: ${theme.fonts.sizes.xxsmall};
   `}
 `;
 
@@ -19,10 +19,10 @@ export const ButtonContainer = styled.div`
 
 export const SearchContainer = styled.div`
   ${({ theme }) => css`
-    margin-bottom: 30px;
-  `}
+    margin-bottom: ${theme.spacings.large};
 
-  > h1 {
-    margin-bottom: 30px;
-  }
+    > h1 {
+      margin-bottom: ${theme.spacings.large};
+    }
+  `}
 `;

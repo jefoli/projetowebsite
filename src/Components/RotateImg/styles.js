@@ -12,13 +12,15 @@ const rotate = () => keyframes`
 
 export const Container = styled.image`
   ${({ theme }) => css`
-    display: block;
+    display: flex;
     width: 100%;
+    padding: ${theme.spacings.medium};
+    justify-content: center;
 
     > .img {
       animation: ${rotate()} 10s linear infinite;
-      background: none;
       color: ${theme.colors.primaryColor};
+      font-size: 350px;
     }
   `}
 `;

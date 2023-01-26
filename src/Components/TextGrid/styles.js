@@ -1,14 +1,7 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
-export const Container = styled.div`
-  ${({ theme }) => css`
-    text-align: justify;
-    flex-direction: row;
-    font-size: ${theme.fonts.sizes.medium};
-  `};
-`;
 
-export const ContainerFlex = styled.div`
+export const ContainerFlex = styled.p`
   ${({ theme }) => css`
     display: flex;
     text-align: justify;

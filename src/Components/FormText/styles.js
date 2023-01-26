@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
-    border-radius: 4px;
+    border-radius: ${theme.fonts.sizes.xxsmall};
     margin-top: 30px;
 
     label {
@@ -16,19 +16,19 @@ export const Container = styled.div`
       padding: 10px;
       margin-bottom: 20px;
       width: 100%;
-      border-radius: 4px;
-      border: 1px;
+      border: 1px solid;
       font-size: 15px;
+      border-radius: ${theme.fonts.sizes.xxsmall};
     }
 
     button {
-      width: 100%;
+      min-width: 60px;
       background: #003c58;
       color: ${theme.colors.white};
       border: none;
-      padding: 15px 30px;
+      padding: 15px;
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: ${theme.fonts.sizes.xxsmall};
 
       &:focus {
         background: gray;
@@ -39,11 +39,14 @@ export const Container = styled.div`
 `;
 
 export const InputBox = styled.input`
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 200px;
-  font-size: 20px;
-  border-radius: 4px;
-  border: 1px solid;
+  ${({ theme }) => css`
+    padding: 0.625rem;
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    font-size: 20px;
+    border: 1px solid;
+    resize: vertical;
+    border-radius: ${theme.fonts.sizes.xxsmall};
+  `}
 `;

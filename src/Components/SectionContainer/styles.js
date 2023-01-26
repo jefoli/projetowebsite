@@ -8,5 +8,6 @@ export const Container = styled.section`
     width: 100%;
     font-size: 15px;
     background-color: #bddee530;
+    @media ${theme.media.lteMedium};
   `}
 `;
