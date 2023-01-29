@@ -8,6 +8,7 @@ export const Container = styled.div`
     font-size: ${theme.fonts.sizes.medium};
     padding: ${theme.spacings.small};
     width: 100%;
+    padding: 0px 50px;
 
     > a {
       color: ${theme.colors.primaryColor};

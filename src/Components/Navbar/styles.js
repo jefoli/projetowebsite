@@ -14,7 +14,7 @@ export const MenuContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     background: ${theme.colors.white};
-    padding: 0 30px;
+    padding: 15px 50px;
 
     & svg {
       color: ${theme.colors.primaryColor};
