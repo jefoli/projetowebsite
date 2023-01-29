@@ -6,6 +6,6 @@ export const Container = styled.div`
     color: ${theme.colors.white};
     text-align: center;
     font-size: ${theme.fonts.sizes.small};
-    padding: 10px;
+    padding: ${theme.spacings.xsmall};
   `}
 `;

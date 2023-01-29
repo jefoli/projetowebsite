@@ -3,12 +3,12 @@ import styled, { css } from 'styled-components';
 export const Container = styled.button`
   ${({ theme }) => css`
     width: 100%;
-    background: #003c58;
+    background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};
     border: none;
     padding: 15px 30px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: ${theme.spacings.xxsmall};
 
     &:disabled {
       background: ${theme.colors.mediumGray};

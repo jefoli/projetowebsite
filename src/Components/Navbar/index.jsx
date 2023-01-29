@@ -1,31 +1,30 @@
 import * as Styled from './styles';
-import { Link } from 'react-router-dom';
 import { LogoComponent } from '../LogoComponent';
+import { AiOutlineMenuUnfold } from 'react-icons/ai';
+import { AiOutlineMenuFold } from 'react-icons/ai';
+import { useState } from 'react';
+import { SectionContainer } from '../SectionContainer';
+import { MenuLink } from '../../MenuLink';
 import { MenuIcons } from '../MenuIcons';
-import { SearchContainer } from '../../Pages/Posts/styles';
-import P from 'prop-types';
 
-export default function NavBar({ link, newTab = false }) {
-  const target = newTab ? '_blank' : '_self';
+export default function NavBar() {
+  const [visible, setVisible] = useState(false);
+
   return (
-    <SearchContainer>
-      <Styled.Container href={link} target={target}>
-        <LogoComponent />
-        <Link to="/"></Link>
-        <Link to="/">Home</Link>
-        <Link to="/sobre">Sobre</Link>
-        <Link to="/servicos">Serviços</Link>
-        <Link to="/historia">História</Link>
-        <Link to="/contato">Contato</Link>
-        <Link to="/post">Posts</Link>
-        <MenuIcons />
+    <>
+      <Styled.Button visible={visible} onClick={() => setVisible(true)} aria-label="Open/Close menu">
+        {visible ? <AiOutlineMenuFold aria-label="Close menu" /> : <AiOutlineMenuUnfold aria-label="Open menu" />}
+      </Styled.Button>
+
+      <Styled.Container visible={visible} onClick={() => setVisible(false)}>
+        <SectionContainer>
+          <Styled.MenuContainer>
+            <LogoComponent />
+            <MenuLink />
+            <MenuIcons />
+          </Styled.MenuContainer>
+        </SectionContainer>
       </Styled.Container>
-    </SearchContainer>
+    </>
   );
 }
-
-NavBar.propTypes = {
-  //children: P.node.isRequired,
-  link: P.string,
-  newTab: P.bool,
-};

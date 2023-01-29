@@ -4,11 +4,11 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
     border-radius: ${theme.fonts.sizes.xxsmall};
-    margin-top: 30px;
+    margin-top: 50px;
 
     label {
-      font-size: 20px;
-      padding: 10px;
+      font-size: ${theme.fonts.sizes.medium};
+      padding: ${theme.spacings.xsmall};
       text-align: left;
     }
 
@@ -23,7 +23,7 @@ export const Container = styled.div`
 
     button {
       min-width: 60px;
-      background: #003c58;
+      background: ${theme.colors.primaryColor};
       color: ${theme.colors.white};
       border: none;
       padding: 15px;
@@ -43,8 +43,8 @@ export const InputBox = styled.input`
     padding: 0.625rem;
     display: block;
     width: 100%;
-    min-height: 200px;
-    font-size: 20px;
+    min-height: 150px;
+    font-size: ${theme.fonts.sizes.xsmall};
     border: 1px solid;
     resize: vertical;
     border-radius: ${theme.fonts.sizes.xxsmall};

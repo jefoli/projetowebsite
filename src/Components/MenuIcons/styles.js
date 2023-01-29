@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.medium};
-    color: ${theme.colors.primaryColor};
+    display: flex;
 
     a:hover {
       color: ${theme.colors.mediumGray};
@@ -11,8 +11,7 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
-      display: flex;
-      align-items: center;
+      flex-flow: nowrap;
       justify-content: center;
     }
   `}

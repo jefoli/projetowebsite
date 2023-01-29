@@ -24,8 +24,9 @@ export const FormText = () => {
         <Styled.InputBox
           type="text"
           name="box"
+          className="input"
           placeholder="digite sua dúvida, sugestão, reclamação, etc..."
-        ></Styled.InputBox>
+        />
         <button type="submit">Enviar</button>
       </label>
     </Styled.Container>

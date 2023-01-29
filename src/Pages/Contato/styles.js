@@ -11,5 +11,8 @@ export const Container = styled.div`
     height: 900px;
     text-align: center;
     border-radius: ${theme.fonts.sizes.xxsmall};
+    max-width: 120rem;
+    margin: 15px auto;
+    font-size: ${theme.fonts.sizes.small};
   `}
 `;

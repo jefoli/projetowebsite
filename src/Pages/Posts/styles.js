@@ -6,6 +6,8 @@ export const Container = styled.div`
     padding: ${theme.spacings.large};
     background: ${theme.colors.secundaryColor};
     border-radius: ${theme.fonts.sizes.xxsmall};
+    max-width: 120rem;
+    margin: 15px auto;
   `}
 `;
 
