@@ -1,10 +1,12 @@
 import * as Styled from './styles';
-import { FaCloudversify } from 'react-icons/fa';
 
 export const ImageGrid = () => {
   return (
     <Styled.Container>
-      <FaCloudversify size={300} />
+      <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+      <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+      <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+      <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
     </Styled.Container>
   );
 };

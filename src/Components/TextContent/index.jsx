@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { FaCloudversify } from 'react-icons/fa';
 import { ImageGrid } from '../ImageGrid';
 import { RotateImage } from '../RotateImg';
 import { SectionContainer } from '../SectionContainer';
@@ -13,8 +14,8 @@ export const TextContent = () => {
         <RotateImage />
         <TextGrid />
         <Styled.GridContent>
-          <ImageGrid />
-          <ImageGrid />
+          <FaCloudversify size={300} />
+          <FaCloudversify size={300} />
           <TextGrid />
           <TextGrid />
           <ImageGrid />
