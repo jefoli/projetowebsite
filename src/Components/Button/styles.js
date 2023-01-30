@@ -9,6 +9,7 @@ export const Container = styled.button`
     padding: 15px 30px;
     cursor: pointer;
     border-radius: ${theme.spacings.xxsmall};
+    font-size: ${theme.fonts.sizes.small};
 
     &:disabled {
       background: ${theme.colors.mediumGray};

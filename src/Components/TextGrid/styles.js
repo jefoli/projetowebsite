@@ -6,7 +6,7 @@ export const ContainerFlex = styled.p`
     display: flex;
     text-align: justify;
     flex-direction: row;
-    font-size: ${theme.fonts.sizes.medium};
+    font-size: ${theme.fonts.sizes.small};
     margin-top: 30px;
     @media ${theme.media.lteMedium};
   `};
