@@ -1,12 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
-
 import * as Styled from './styles';
-
 import { Postsone } from '../../Components/PostGrid';
 import { loadPosts } from '../../util/load-posts';
 import { Button } from '../../Components/Button';
 import { TextInput } from '../../Components/textInput';
 import { SectionContainer } from '../../Components/SectionContainer';
+import { Loading } from '../Loading';
 
 export const PostsText = () => {
   const [posts, setPosts] = useState([]);
@@ -58,7 +57,7 @@ export const PostsText = () => {
 
         {filteredPosts.length > 0 && <Postsone posts={filteredPosts} />}
 
-        {filteredPosts.length === 0 && <p>Não existem posts com essa descrição.</p>}
+        {filteredPosts.length === 0 && <Loading />}
         <Styled.ButtonContainer>
           {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
         </Styled.ButtonContainer>

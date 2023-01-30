@@ -17,7 +17,7 @@ export const Container = styled.div`
     }
 
     img:hover {
-      transform: translate(0%, 50%) scale(1.5);
+      transform: scale(1.5);
     }
   `}
 `;
