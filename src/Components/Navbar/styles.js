@@ -42,15 +42,16 @@ export const Button = styled.div`
     display: none;
     pointer-events: ${visible ? 'none' : 'all'};
 
+    > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
     @media ${theme.media.lteMedium} {
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    > svg {
-      width: 2.5rem;
-      height: 2.5rem;
+      display: flex;
     }
   `}
 `;
@@ -73,20 +74,18 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
-      height: 100vh;
-
+      height: 160vh;
       visibility: hidden;
       opacity: 0;
-
       ${visible && menuVisible(theme)}
 
       > ${SectionContainer} {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        height: 100vh;
         align-items: center;
         overflow-y: auto;
+        background-color: white;
       }
     }
   `}

@@ -7,5 +7,10 @@ export const Container = styled.div`
     padding: ${theme.spacings.large};
     width: 100%;
     background-color: #bddee530;
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      padding: ${theme.spacings.small};
+    }
   `}
 `;

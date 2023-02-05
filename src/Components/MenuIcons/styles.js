@@ -11,7 +11,7 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
-      flex-flow: nowrap;
+      flex-flow: nowrap column;
       justify-content: center;
     }
   `}

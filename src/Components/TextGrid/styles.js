@@ -6,8 +6,12 @@ export const ContainerFlex = styled.p`
     display: flex;
     text-align: justify;
     flex-direction: row;
-    font-size: ${theme.fonts.sizes.small};
+    font-size: ${theme.fonts.sizes.medium};
     margin-top: 30px;
-    @media ${theme.media.lteMedium};
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      font-size: ${theme.fonts.sizes.small};
+    }
   `};
 `;

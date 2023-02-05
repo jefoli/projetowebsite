@@ -5,6 +5,8 @@ export const Container = styled.div`
       background: ${theme.colors.white};
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: transform 100ms ease-in-out;
+      font-size: ${theme.fonts.sizes.small};
+
     }
 
     &:hover {
@@ -14,6 +16,11 @@ export const Container = styled.div`
     & img {
       max-width: 100%;
     }
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      font-size: ${theme.fonts.sizes.small};
+    }
   `}
 `;
 
@@ -21,5 +28,11 @@ export const PostContainer = styled.div`
   ${({ theme }) => css`
       padding: ${theme.fonts.sizes.large};
     }
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      font-size: ${theme.fonts.sizes.small};
+    }
+
   `}
 `;

@@ -16,11 +16,9 @@ export const Container = styled.div`
     @media {
       .App-logo {
         animation: App-logo-spin 10s linear infinite;
-
       }
       .reverse {
         animation: App-logo-spin-reverse 10s linear infinite;
-
       }
     }
 
@@ -32,7 +30,6 @@ export const Container = styled.div`
       to {
         transform: rotate(360deg);
       }
-
     }
 
     @keyframes App-logo-spin-reverse {
@@ -43,5 +40,9 @@ export const Container = styled.div`
       to {
         transform: rotate(0deg);
       }
+    }
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
   `}
 `;

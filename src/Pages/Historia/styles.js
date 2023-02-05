@@ -8,6 +8,11 @@ export const Container = styled.div`
     margin: 15px auto;
     padding: ${theme.spacings.large};
     width: 100%;
-    font-size: ${theme.fonts.sizes.small};
+    font-size: ${theme.fonts.sizes.medium};
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      font-size: ${theme.fonts.sizes.small};
+    }
   `}
 `;

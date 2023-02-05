@@ -8,6 +8,11 @@ export const Container = styled.div`
     border-radius: ${theme.fonts.sizes.xxsmall};
     max-width: 120rem;
     margin: 15px auto;
+
+    @media ${theme.media.lteMedium} {
+      align-items: center;
+      max-width: 100%;
+    }
   `}
 `;
 

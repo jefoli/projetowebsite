@@ -9,5 +9,12 @@ export const Container = styled.div`
     padding: ${theme.spacings.medium};
     text-align: center;
     color: ${theme.colors.white};
+
+    @media ${theme.media.lteMedium} {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      max-width: 100%;
   `}
 `;

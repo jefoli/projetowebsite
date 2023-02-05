@@ -19,5 +19,25 @@ export const Container = styled.div`
     img:hover {
       transform: scale(1.5);
     }
+
+    @media ${theme.media.lteMedium} {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      max-width: 100%;
+
+      > img {
+        max-width: auto;
+        max-height: auto;
+        transition: all 300ms ease-in-out;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
   `}
 `;
