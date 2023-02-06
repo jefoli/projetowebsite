@@ -11,9 +11,10 @@ export const Container = styled.div`
     > img {
       max-width: auto;
       max-height: auto;
-      transition: all 300ms ease-in-out;
+      transition: all 600ms ease-in-out;
       overflow: hidden;
       width: 100%;
+      border-radius: 4px;
     }
 
     img:hover {

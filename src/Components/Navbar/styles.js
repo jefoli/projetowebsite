@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { Container as SectionContainer } from '../SectionContainer/styles';
 
 const menuVisible = () => css`
+  display: block;
   visibility: visible;
   opacity: 1;
 `;
@@ -24,6 +25,7 @@ export const MenuContainer = styled.div`
       display: block;
       text-align: center;
       padding: ${theme.spacings.xxlarge} 0;
+      font-size: ${theme.fonts.sizes.xsmall};
     }
   `}
 `;
@@ -48,10 +50,21 @@ export const Button = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
-      display: flex;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      width: 3rem;
+      height: 3rem;
+      display: block;
       align-items: center;
       justify-content: center;
       display: flex;
+      border-radius: 10% 10%;
+
+      > svg {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   `}
 `;
@@ -71,6 +84,7 @@ export const Container = styled.div`
     > ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
+      background-color: white;
     }
 
     @media ${theme.media.lteMedium} {
@@ -78,14 +92,11 @@ export const Container = styled.div`
       visibility: hidden;
       opacity: 0;
       ${visible && menuVisible(theme)}
+      display: flex;
 
       > ${SectionContainer} {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         align-items: center;
         overflow-y: auto;
-        background-color: white;
       }
     }
   `}

@@ -7,7 +7,6 @@ export const ContainerFlex = styled.p`
     text-align: justify;
     flex-direction: row;
     font-size: ${theme.fonts.sizes.medium};
-    margin-top: 30px;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

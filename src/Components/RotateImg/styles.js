@@ -3,14 +3,15 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
-    width: 100%;
+    max-width: 100%;
     padding: ${theme.spacings.medium};
-    justify-content: center;
+    justify-content: space-around;
 
-    > .img {
+    .img {
       animation: rotate 10s linear infinite;
       color: ${theme.colors.primaryColor};
-      font-size: 350px;
+      font-size: 300px;
+      text-align: center;
     }
 
     @media {
@@ -44,5 +45,8 @@ export const Container = styled.div`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
+      .img {
+      font-size: 150px;
+    }
   `}
 `;

@@ -10,7 +10,7 @@ export const Container = styled.div`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
-      padding: ${theme.spacings.small};
+      padding: ${theme.spacings.xsmall};
     }
   `}
 `;

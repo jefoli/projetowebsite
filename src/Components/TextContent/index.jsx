@@ -6,6 +6,8 @@ import { RotateImage } from '../RotateImg';
 import { SectionContainer } from '../SectionContainer';
 import { TextGrid } from '../TextGrid';
 import * as Styled from './styles';
+import { SliderData } from '../Carousel/SlidersData';
+
 export const TextContent = () => {
   return (
     <SectionContainer>
@@ -30,7 +32,7 @@ export const TextContent = () => {
           imagens.
         </p>
         <TextGrid />
-        <ComponentCarousel />
+        <ComponentCarousel slides={SliderData} />
         <TextGrid />
         <RotateImage />
         <Styled.GridContent>
