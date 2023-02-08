@@ -1,14 +1,9 @@
 /* eslint-disable no-unused-vars */
-import { FaCloudversify, FaReact } from 'react-icons/fa';
-import { ComponentCarousel } from '../Carousel';
-import { ImageGrid } from '../ImageGrid';
-import { RotateImage } from '../RotateImg';
+import { FaReact } from 'react-icons/fa';
 import { SectionContainer } from '../SectionContainer';
-import { TextGrid } from '../TextGrid';
 import * as Styled from './styles';
-import { SliderData } from '../Carousel/SlidersData';
 
-export const TextContent = () => {
+export const TextInitialHome = () => {
   return (
     <SectionContainer>
       <Styled.Container>
@@ -31,16 +26,6 @@ export const TextContent = () => {
           ferramentas utilizadas no presente website não foram apresentadas durante o curso - exemplo: Carousel de
           imagens.
         </p>
-        <TextGrid />
-        <ComponentCarousel slides={SliderData} />
-        <TextGrid />
-        <RotateImage />
-        <Styled.GridContent>
-          <TextGrid />
-          <TextGrid />
-          <ImageGrid />
-          <TextGrid />
-        </Styled.GridContent>
       </Styled.Container>
     </SectionContainer>
   );
