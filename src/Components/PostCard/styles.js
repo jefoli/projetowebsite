@@ -6,7 +6,8 @@ export const Container = styled.div`
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: transform 100ms ease-in-out;
       font-size: ${theme.fonts.sizes.small};
-
+      color: #000;
+      font-family: 'Rubik', sans-serif;
     }
 
     &:hover {
@@ -21,12 +22,13 @@ export const Container = styled.div`
       max-width: 100%;
       font-size: ${theme.fonts.sizes.small};
     }
-  `}
+  `};
 `;
 
 export const PostContainer = styled.div`
   ${({ theme }) => css`
       padding: ${theme.fonts.sizes.large};
+
     }
 
     @media ${theme.media.lteMedium} {

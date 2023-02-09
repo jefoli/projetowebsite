@@ -12,10 +12,10 @@ export const MenuContainer = styled.div`
   ${({ theme }) => css`
     //para desktop
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: ${theme.colors.white};
-    padding: 15px 50px;
+    padding: 15px 100px;
 
     & svg {
       color: ${theme.colors.primaryColor};
@@ -43,6 +43,7 @@ export const Button = styled.div`
     border: none;
     display: none;
     pointer-events: ${visible ? 'none' : 'all'};
+    justify-text: center;
 
     > svg {
       width: 2.5rem;
@@ -80,6 +81,7 @@ export const Container = styled.div`
     border-bottom: ${theme.colors.mediumGray};
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
+    justify-content: center;
 
     > ${SectionContainer} {
       padding-top: 0;

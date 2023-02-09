@@ -8,18 +8,17 @@ export const Container = styled.div`
     justify-content: space-around;
 
     .img {
-      animation: rotate 10s linear infinite;
-      color: ${theme.colors.primaryColor};
+      animation: rotate 2s linear infinite;
       font-size: 300px;
       text-align: center;
     }
 
     @media {
       .App-logo {
-        animation: App-logo-spin 10s linear infinite;
+        animation: App-logo-spin 4s linear infinite;
       }
       .reverse {
-        animation: App-logo-spin-reverse 10s linear infinite;
+        animation: App-logo-spin-reverse 4s linear infinite;
       }
     }
 

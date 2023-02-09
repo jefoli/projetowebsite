@@ -7,7 +7,7 @@ export const Container = styled.div`
 export const GridContent = styled.div`
   ${({ theme }) => css`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr;
 
     @media ${theme.media.lteMedium} {
       display: grid;

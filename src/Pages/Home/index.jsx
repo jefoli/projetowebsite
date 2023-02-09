@@ -11,14 +11,13 @@ export const Home = () => {
   return (
     <SectionContainer>
       <TextInitialHome />
-      <TextGrid />
       <ComponentCarousel slides={SliderData} />
       <TextGrid />
-      <RotateImage />
+      <ImageGrid />
       <Styled.GridContent>
         <TextGrid />
         <TextGrid />
-        <ImageGrid />
+        <RotateImage />
         <TextGrid />
       </Styled.GridContent>
     </SectionContainer>

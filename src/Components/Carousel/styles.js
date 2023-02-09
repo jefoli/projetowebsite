@@ -3,24 +3,23 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   ${({ theme }) => css`
-    position: relative;
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100%;
 
     .image {
       width: 100%;
       min-height: 350px;
-
-      border-radius: 2px;
+      border-radius: 4px;
       object-fit: cover;
+      box-shadow: 0 1px 5px 0px;
     }
 
     .right-arrow {
       position: absolute;
       top: 50%;
-      right: 32px;
+      right: 100px;
       font-size: 3rem;
       color: #fff;
       z-index: 1;
@@ -31,7 +30,7 @@ export const Container = styled.section`
     .left-arrow {
       position: absolute;
       top: 50%;
-      left: 32px;
+      left: 100px;
       font-size: 3rem;
       color: #fff;
       z-index: 1;

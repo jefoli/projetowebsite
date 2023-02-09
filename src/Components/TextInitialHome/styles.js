@@ -5,6 +5,7 @@ export const Container = styled.div`
     text-align: center;
     margin: ${theme.spacings.medium};
     font-size: ${theme.fonts.sizes.medium};
+    font-family: sans-serif;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

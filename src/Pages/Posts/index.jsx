@@ -3,7 +3,7 @@ import * as Styled from './styles';
 import { Postsone } from '../../Components/PostGrid';
 import { loadPosts } from '../../util/load-posts';
 import { Button } from '../../Components/Button';
-import { TextInput } from '../../Components/textInput';
+import { TextInput } from '../../Components/TextInput';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { Loading } from '../Loading';
 

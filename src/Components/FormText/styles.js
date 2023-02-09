@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: grid;
     border-radius: ${theme.fonts.sizes.xxsmall};
     margin-top: 50px;
+    background: none;
 
     label {
       font-size: ${theme.fonts.sizes.medium};
@@ -16,20 +17,23 @@ export const Container = styled.div`
       padding: 10px;
       margin-bottom: 20px;
       width: 100%;
-      border: 1px solid;
-      font-size: 15px;
       border-radius: ${theme.fonts.sizes.xxsmall};
+      border: 1px solid ${theme.colors.secundaryColor};
     }
 
     button {
       min-width: 60px;
-      background: ${theme.colors.primaryColor};
       color: ${theme.colors.white};
       border: none;
       padding: 15px;
       cursor: pointer;
       border-radius: ${theme.fonts.sizes.xxsmall};
 
+      background: -webkit-linear-gradient(to right, #003c90, #00709b);
+      background: -o-linear-gradient(to right, #003c90, #00709b);
+      background: -moz-linear-gradient(to right, #003c90, #00709b);
+      background: linear-gradient(to right, #003c90, #00709b);
+      color: white;
       &:focus {
         background: gray;
         transition: all 50ms;
@@ -38,15 +42,18 @@ export const Container = styled.div`
   `}
 `;
 
-export const InputBox = styled.input`
+export const InputBox = styled.textarea`
   ${({ theme }) => css`
-    padding: 0.625rem;
-    display: block;
     width: 100%;
-    min-height: 150px;
-    font-size: ${theme.fonts.sizes.xsmall};
-    border: 1px solid;
+    min-height: 200px;
+    padding: 0.625rem;
+    margin-bottom: 0.5rem;
     resize: vertical;
+    border: 1px solid ${theme.colors.secundaryColor};
     border-radius: ${theme.fonts.sizes.xxsmall};
   `}
+
+  >:focus {
+    outline: 0;
+  }
 `;

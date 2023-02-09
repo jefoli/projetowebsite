@@ -6,7 +6,6 @@ export const Container = styled.div`
     box-sizing: border-box;
     padding: ${theme.spacings.large};
     color: ${theme.colors.white};
-    background: ${theme.colors.secundaryColor};
     width: 100%;
     height: 900px;
     text-align: center;
