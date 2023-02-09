@@ -11,7 +11,7 @@ export const Container = styled.div`
     padding: 0px 50px;
 
     > a {
-      color: ${theme.colors.primaryColor};
+      color: #a07918;
       text-decoration: none;
     }
 

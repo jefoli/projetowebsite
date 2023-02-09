@@ -12,10 +12,10 @@ export default createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    background: -webkit-linear-gradient(to bottom, #003c58, #00709b);
-    background: -o-linear-gradient(to bottom, #003c58, #00709b);
-    background: -moz-linear-gradient(to bottom, #003c58, #00709b);
-    background: linear-gradient(to bottom, #003c58, #00709b);
+    background: -webkit-linear-gradient(to bottom, #003c58, #111);
+    background: -o-linear-gradient(to bottom, #003c58, #111);
+    background: -moz-linear-gradient(to bottom, #003c58, #111);
+    background: linear-gradient(to bottom, #003c58, #111);
     color: white;
   }
 

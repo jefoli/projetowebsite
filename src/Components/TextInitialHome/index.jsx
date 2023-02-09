@@ -6,12 +6,12 @@ import * as Styled from './styles';
 export const TextInitialHome = () => {
   return (
     <SectionContainer>
-      <Styled.Container>
+      <Styled.Container className="input">
         <h1>
           <FaReact /> BEM VINDO AO PROJETO REACT <FaReact />
         </h1>
         <br />
-        <p>
+        <div>
           Através de pesquisas realizadas em diversas plataformas de ensino foi possível verificar que 99% possuem
           projetos-modelo prontos que induz o aluno a copiar e colar (copy/write), deixando de levar em conta
           assimilaridade do conteúdo.
@@ -25,7 +25,7 @@ export const TextInitialHome = () => {
           No entanto, vale ressaltar que foram consultados outros websites, modelos e documentações, pois algumas
           ferramentas utilizadas no presente website não foram apresentadas durante o curso - exemplo: Carousel de
           imagens.
-        </p>
+        </div>
       </Styled.Container>
     </SectionContainer>
   );

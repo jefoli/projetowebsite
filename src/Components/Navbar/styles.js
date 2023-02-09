@@ -12,7 +12,7 @@ export const MenuContainer = styled.div`
   ${({ theme }) => css`
     //para desktop
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: ${theme.colors.white};
     padding: 15px 100px;

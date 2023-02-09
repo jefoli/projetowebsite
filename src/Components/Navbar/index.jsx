@@ -1,10 +1,10 @@
 import * as Styled from './styles';
-import { LogoComponent } from '../LogoComponent';
+import { LogoComponent } from '../Logo';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import { useState } from 'react';
 import { MenuLink } from '../../MenuLink';
-import { MenuIcons } from '../MenuIcons';
+import { ButtonLogin } from '../Buttons/ButtonLogin';
 
 export default function NavBar() {
   const [visible, setVisible] = useState(false);
@@ -19,7 +19,7 @@ export default function NavBar() {
         <Styled.MenuContainer>
           <LogoComponent />
           <MenuLink />
-          <MenuIcons />
+          <ButtonLogin />
         </Styled.MenuContainer>
       </Styled.Container>
     </>

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 import * as Styled from './styles';
 import { Postsone } from '../../Components/PostGrid';
 import { loadPosts } from '../../util/load-posts';
-import { Button } from '../../Components/Button';
+import { Button } from '../../Components/Buttons/button-posts';
 import { TextInput } from '../../Components/TextInput';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { Loading } from '../Loading';

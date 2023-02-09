@@ -28,11 +28,10 @@ export const Container = styled.div`
       padding: 15px;
       cursor: pointer;
       border-radius: ${theme.fonts.sizes.xxsmall};
-
-      background: -webkit-linear-gradient(to right, #003c90, #00709b);
-      background: -o-linear-gradient(to right, #003c90, #00709b);
-      background: -moz-linear-gradient(to right, #003c90, #00709b);
-      background: linear-gradient(to right, #003c90, #00709b);
+      background: -webkit-linear-gradient(to right, #003c58, #493b18);
+      background: -o-linear-gradient(to right, #003c58, #493b18);
+      background: -moz-linear-gradient(to right, #003c58, #493b18);
+      background: linear-gradient(to right, #003c58, #493b18);
       color: white;
       &:focus {
         background: gray;
