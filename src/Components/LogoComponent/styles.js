@@ -11,5 +11,9 @@ export const Container = styled.div`
       transition: 150ms ease-in-out;
       background: none;
     }
+
+    .logo {
+      width: 20px;
+    }
   `}
 `;
