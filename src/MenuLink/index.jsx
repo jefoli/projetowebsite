@@ -5,12 +5,24 @@ import { Link } from 'react-router-dom';
 export const MenuLink = () => {
   return (
     <Styled.Container>
-      <Link to="/">Home</Link>
-      <Link to="/sobre">Sobre</Link>
-      <Link to="/servicos">Serviços</Link>
-      <Link to="/historia">História</Link>
-      <Link to="/contato">Contato</Link>
-      <Link to="/post">Posts</Link>
+      <li className="navbar-li">
+        <Link to="/">Home</Link>
+      </li>
+      <li className="navbar-li">
+        <Link to="/sobre">Sobre</Link>
+      </li>
+      <li className="navbar-li">
+        <Link to="/servicos">Serviços</Link>
+      </li>
+      <li className="navbar-li">
+        <Link to="/historia">História</Link>
+      </li>
+      <li className="navbar-li">
+        <Link to="/contato">Contato</Link>
+      </li>
+      <li className="navbar-li">
+        <Link to="/post">Posts</Link>
+      </li>
     </Styled.Container>
   );
 };

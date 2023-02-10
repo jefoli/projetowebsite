@@ -4,7 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     text-align: center;
     margin: ${theme.spacings.medium};
-    font-size: ${theme.fonts.sizes.medium};
+    font-size: ${theme.fonts.sizes.small};
     font-family: sans-serif;
 
     @media ${theme.media.lteMedium} {

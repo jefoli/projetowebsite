@@ -1,18 +1,24 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.li`
   ${({ theme }) => css`
     display: flex;
     justify-content: space-between;
-    position: relative;
     font-size: ${theme.fonts.sizes.medium};
     padding: ${theme.spacings.small};
-    width: 100%;
-    padding: 0px 50px;
+    width: auto;
+    -webkit-box-align: center;
 
-    > a {
-      color: #a07918;
+    .navbar-li {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      padding-left: 30px;
+    }
+
+    .navbar-li a {
       text-decoration: none;
+      color: #a07918;
     }
 
     > :hover {

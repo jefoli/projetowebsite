@@ -16,6 +16,7 @@ export const MenuContainer = styled.div`
     align-items: center;
     background: ${theme.colors.white};
     padding: 15px 100px;
+    height: 50px;
 
     & svg {
       color: ${theme.colors.primaryColor};
