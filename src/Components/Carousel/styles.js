@@ -7,6 +7,7 @@ export const Container = styled.section`
     justify-content: center;
     position: relative;
     width: 100%;
+    padding: 30px;
 
     .image {
       width: 100%;

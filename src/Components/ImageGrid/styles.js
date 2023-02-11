@@ -6,22 +6,25 @@ export const Container = styled.div`
     display: flex;
     position: relative;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     width: 100%;
+    padding: 40px;
+    border-top: 2px solid #a07918;
+    border-radius: 200px 1px;
 
-    > img {
-      max-width: 250px;
+    img {
+      max-width: 200px;
       max-height: auto;
-      transition: all 600ms ease-in-out;
+      transition: all 300ms ease-in-out;
       overflow: hidden;
       width: 100%;
       border-radius: 500px 500px;
-      box-shadow: 0 5px 10px 0px;
+      box-shadow: 0 0px 2px 2px;
     }
 
     img:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
 
     @media ${theme.media.lteMedium} {
