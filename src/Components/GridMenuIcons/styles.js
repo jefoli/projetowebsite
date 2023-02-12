@@ -26,7 +26,10 @@ export const Container = styled.section`
       margin: 0 1rem 1rem 0;
       padding: 0.5rem;
       margin: 0 1rem 1rem 0;
-      background-color: #a07918;
+      background: -webkit-linear-gradient(to top, #003c58, #222);
+      background: -o-linear-gradient(to top, #003c58, #222);
+      background: -moz-linear-gradient(to top, #003c58, #222);
+      background: linear-gradient(to top, #003c58, #222);
       border-radius: 4px;
     }
 
@@ -37,9 +40,29 @@ export const Container = styled.section`
       align-items: flex-start;
     }
 
-    svg {
-      color: white;
-      font-size: 4rem;
+    p {
+    }
+
+    .link-style {
+      display: flex;
+      color: #a07918;
+      padding: 4px;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #adadad;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .style-icons {
+      font-size: 25px;
+      display: flex;
+      color: #adadad;
+      justify-items: center;
+      align-items: flex-end;
+      text-decoration: none;
     }
   `}
 `;
