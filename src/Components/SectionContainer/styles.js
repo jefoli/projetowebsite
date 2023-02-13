@@ -6,6 +6,7 @@ export const Container = styled.div`
     margin: 0 auto;
     padding: ${theme.spacings.large};
     width: 100%;
+    color: white;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

@@ -4,19 +4,19 @@ export const MenuIcons = () => {
   return (
     <Styled.Container>
       <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-        <FaFacebookSquare />
+        <FaFacebookSquare className="menu-icon" />
       </a>
 
       <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer">
-        <FaWhatsappSquare />
+        <FaWhatsappSquare className="menu-icon" />
       </a>
 
       <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-        <FaInstagramSquare />
+        <FaInstagramSquare className="menu-icon" />
       </a>
 
       <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-        <FaLinkedin />
+        <FaLinkedin className="menu-icon" />
       </a>
     </Styled.Container>
   );

@@ -3,6 +3,8 @@ export const Container = styled.div`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.medium};
     display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 30px;
 
     a:hover {
       color: ${theme.colors.mediumGray};
@@ -10,8 +12,15 @@ export const Container = styled.div`
       background: none;
     }
 
+    .menu-icon {
+      display: flex;
+      color: ${theme.colors.white};
+      font-size: 30px;
+      padding-left: 5px;
+    }
+
     @media ${theme.media.lteMedium} {
-      flex-flow: nowrap column;
+      flex-flow: nowrap;
       justify-content: center;
     }
   `}

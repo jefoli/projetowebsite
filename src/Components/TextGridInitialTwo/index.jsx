@@ -1,8 +1,8 @@
 import * as Styled from './styles';
-export const ContainerTextGrid2 = () => {
+export const TextGridInitialTwo = () => {
   return (
     <Styled.Container>
-      <div className="container text-p">
+      <div className="container">
         <p className="text-p2">
           Em sentido oposto, o presente projeto tem como objetivo criar um website com as principais ferramentas da
           biblioteca REACT apresentadas ao longo do curso, sem levar em consideração ao template trabalhado em sala de

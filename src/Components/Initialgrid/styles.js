@@ -9,11 +9,13 @@ export const Container = styled.section`
       padding: 64px 24px;
       align-items: center;
       border-top: 1px solid #a07918;
+      text-transform: uppercase;
     }
     .image {
       max-width: 350px;
       display: block;
       height: auto;
+      box-shadow: 30px -30px 0px 5px #c3c3c3;
     }
 
     .title {
@@ -21,6 +23,13 @@ export const Container = styled.section`
       color: #a07918;
       display: flex;
       line-height: 1.2;
+    }
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      text-align: center;
     }
   `}
 `;

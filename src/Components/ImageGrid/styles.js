@@ -10,21 +10,21 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     padding: 40px;
-    border-top: 2px solid #a07918;
-    border-radius: 200px 1px;
+    border-top: 3px solid #a07918;
+    border-radius: 200px 2px;
 
     img {
       max-width: 200px;
       max-height: auto;
-      transition: all 300ms ease-in-out;
+      transition: all 200ms ease-in-out;
       overflow: hidden;
       width: 100%;
       border-radius: 500px 500px;
-      box-shadow: 0 0px 2px 2px;
+      box-shadow: 0 0px 0px 2px #a07918;
     }
 
     img:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
 
     @media ${theme.media.lteMedium} {
@@ -34,10 +34,11 @@ export const Container = styled.div`
       align-items: center;
       max-width: 100%;
       justify-items: center;
+
       > img {
         max-width: auto;
         max-height: auto;
-        transition: all 300ms ease-in-out;
+        transition: all 200ms ease-in-out;
         overflow: hidden;
         width: 100%;
       }

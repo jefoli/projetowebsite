@@ -5,9 +5,7 @@ export const Container = styled.div`
     text-align: center;
     font-size: ${theme.fonts.sizes.small};
     padding: ${theme.spacings.xsmall};
-    background: -webkit-linear-gradient(to top, #111, #af20f4);
-    background: -o-linear-gradient(to top, #111, #af20f4);
-    background: -moz-linear-gradient(to top, #111, #af20f4);
-    background: linear-gradient(to top, #111, ##af20f4);
+    background-color: #111;
+    color: #c3c3c3;
   `}
 `;

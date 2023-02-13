@@ -14,7 +14,7 @@ export const Container = styled.section`
       min-height: 350px;
       border-radius: 4px;
       object-fit: cover;
-      box-shadow: 0 1px 5px 0px;
+      box-shadow: 0px 0px 0px 1px #c3c3c3;
     }
 
     .right-arrow {

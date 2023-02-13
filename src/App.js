@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyles from './Styles/GlobalStyles';
-import { Footer } from './Components/Footer';
+import { Footer } from './Pages/Footer';
 import RoutesSistem from './routes/routes';
 import { GoTop } from './Components/GoTop';
 

@@ -3,11 +3,17 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   ${({ theme }) => css`
     display: block;
+    border-radius: 200px 2px;
+    border-bottom: 2px solid #a07918;
+    max-width: 100%;
 
     .section-wrapper {
+      max-width: 100%;
       font-size: 2rem;
       line-height: 1.43;
       letter-spacing: 0.01071em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 70px;
     }
 
     .styleGrid {
@@ -16,53 +22,54 @@ export const Container = styled.section`
       height: 100%;
       gap: 10px;
       justify-items: stretch;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       justify-content: stretch;
-      border-bottom: 2px solid #a07918;
-      border-radius: 200px 1px;
+      padding: 2.5rem;
     }
 
     .StyledGridItem {
       margin: 0 1rem 1rem 0;
       padding: 0.5rem;
-      margin: 0 1rem 1rem 0;
-      background: -webkit-linear-gradient(to top, #003c58, #222);
-      background: -o-linear-gradient(to top, #003c58, #222);
-      background: -moz-linear-gradient(to top, #003c58, #222);
-      background: linear-gradient(to top, #003c58, #222);
+      background-color: #a07918;
       border-radius: 4px;
     }
 
     .styledBox {
-      font-size: 2rem;
+      font-size: 1.8rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-    }
-
-    p {
+      padding: 0.5rem;
+      line-height: 1.8;
     }
 
     .link-style {
       display: flex;
-      color: #a07918;
       padding: 4px;
       font-size: 20px;
       line-height: 1.2;
-      color: #adadad;
-    }
-
-    a {
-      text-decoration: none;
+      color: #003c58;
+      padding: 0.5rem;
+      text-decoration: underline;
     }
 
     .style-icons {
       font-size: 25px;
       display: flex;
-      color: #adadad;
+      color: #b9b9b9;
       justify-items: center;
       align-items: flex-end;
       text-decoration: none;
+    }
+
+    @media ${theme.media.lteMedium} {
+      .styleGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        max-width: 100%;
+        justify-items: center;
+      }
     }
   `}
 `;

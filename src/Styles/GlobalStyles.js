@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -16,14 +16,7 @@ export default createGlobalStyle`
     background: -o-linear-gradient(to top, #003c58, #111);
     background: -moz-linear-gradient(to top, #003c58, #111);
     background: linear-gradient(to top, #003c58, #111);
-    color: white;
+
   }
 
-`;
-
-export const Container = styled.section`
-  max-width: auto;
-  padding: 30px;
-  background: #fff;
-  text-align: center;
 `;

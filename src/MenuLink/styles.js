@@ -7,35 +7,35 @@ export const Container = styled.li`
     font-size: ${theme.fonts.sizes.medium};
     padding: ${theme.spacings.small};
     width: auto;
-    -webkit-box-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 
     .navbar-li {
       display: flex;
       position: relative;
       flex-direction: row;
-      padding-left: 30px;
     }
 
     .navbar-li a {
       text-decoration: none;
-      color: #a07918;
+      color: #111;
+      padding: 20px;
     }
 
-    > :hover {
-      color: ${theme.colors.mediumGray};
-      transition: 150ms ease-in-out;
-      border-radius: 4px;
-    }
-
-    > ::after {
+    a::after {
       content: '';
       position: absolute;
-      bottom: 0.76rem;
+      bottom: 2rem;
       left: 50%;
-      width: 0;
+      width: 0%;
       height: 0.2rem;
-      background-color: ${theme.colors.secundaryColor};
-      transition: all 300ms ease-in-out;
+      background: #c3c3c3;
+      transition: all 150ms ease-in-out;
+      justify-content: center;
+    }
+
+    a:hover::after {
+      width: 50%;
+      left: 25%;
     }
 
     @media ${theme.media.lteMedium} {

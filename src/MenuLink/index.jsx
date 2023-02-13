@@ -15,9 +15,6 @@ export const MenuLink = () => {
         <Link to="/servicos">Serviços</Link>
       </li>
       <li className="navbar-li">
-        <Link to="/historia">História</Link>
-      </li>
-      <li className="navbar-li">
         <Link to="/contato">Contato</Link>
       </li>
       <li className="navbar-li">
