@@ -1,5 +1,4 @@
 import * as Styled from './styles';
-import P from 'prop-types';
 export const InitialGrid = () => {
   return (
     <Styled.Container>
@@ -13,8 +12,4 @@ export const InitialGrid = () => {
       </div>
     </Styled.Container>
   );
-};
-
-InitialGrid.propTypes = {
-  children: P.node.isRequired,
 };
