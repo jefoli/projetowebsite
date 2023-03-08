@@ -25,47 +25,43 @@ export const Login = () => {
 
   return (
     <Styled.Container>
-      <div className="container">
-        <LayoutComponents>
-          <span className="login-form-title">Faça seu login</span>
+      <LayoutComponents>
+        <Styled.LoginFormTitle>Faça seu login</Styled.LoginFormTitle>
 
-          <span className="login-form-title">
-            <img src={pngIMG} alt="logoexample" />
-          </span>
+        <Styled.LoginFormTitle>
+          <img src={pngIMG} alt="logoexample" />
+        </Styled.LoginFormTitle>
 
-          <div className="wrap-input">
-            <input
-              className={email !== '' ? 'has-val input' : 'input'}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Email"></span>
-          </div>
+        <Styled.WrapInput>
+          <Styled.FocusInput
+            className={email !== '' ? 'has-val input' : 'input'}
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <span className="focus-input" data-placeholder="Email"></span>
+        </Styled.WrapInput>
 
-          <div className="wrap-input">
-            <input
-              className={password !== '' ? 'has-val input' : 'input'}
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Password"></span>
-          </div>
-          <div className="container-login-form-btn">
-            <button className="login-form-btn" onClick={handleclick}>
-              Login
-            </button>
-          </div>
+        <Styled.WrapInput>
+          <Styled.FocusInput
+            className={password !== '' ? 'has-val input' : 'input'}
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <span className="focus-input" data-placeholder="Password"></span>
+        </Styled.WrapInput>
 
-          <div className="text-center">
-            <span className="txt1">Não possui conta?</span>
-            <Link className="txt2" to="/register">
-              clique aqui
-            </Link>
-          </div>
-        </LayoutComponents>
-      </div>
+        <Styled.ContainerBtnEnter>
+          <Styled.BtnEnter onClick={handleclick}>Login</Styled.BtnEnter>
+        </Styled.ContainerBtnEnter>
+
+        <Styled.ContainerTextCenter>
+          <span>Não possui conta?</span>
+          <Link to="/register">clique aqui</Link>
+        </Styled.ContainerTextCenter>
+      </LayoutComponents>
+
       <ToastContainer />
     </Styled.Container>
   );

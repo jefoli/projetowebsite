@@ -35,51 +35,53 @@ export const Register = () => {
   return (
     <Styled.Container>
       <LayoutComponents>
-        <span className="login-form-title">Cadastre-se aqui</span>
-        <span className="login-form-title">
+        <Styled.LoginFormTitle>Cadastre-se aqui</Styled.LoginFormTitle>
+
+        <Styled.LoginFormTitle>
           <img src={pngIMG} alt="logoexample" />
-        </span>
-        <div className="wrap-input">
-          <input
+        </Styled.LoginFormTitle>
+
+        <Styled.WrapInput>
+          <Styled.FocusInput
             className={name !== '' ? 'has-val input' : 'input'}
             type="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <span className="focus-input" data-placeholder="Nome Completo"></span>
-        </div>
+        </Styled.WrapInput>
 
-        <div className="wrap-input">
-          <input
+        <Styled.WrapInput>
+          <Styled.FocusInput
             className={email !== '' ? 'has-val input' : 'input'}
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <span className="focus-input" data-placeholder="Email"></span>
-        </div>
+        </Styled.WrapInput>
 
-        <div className="wrap-input">
-          <input
+        <Styled.WrapInput>
+          <Styled.FocusInput
             className={password !== '' ? 'has-val input' : 'input'}
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <span className="focus-input" data-placeholder="Password"></span>
-        </div>
+        </Styled.WrapInput>
+
         <div className="container-login-form-btn">
-          <button className="login-form-btn" onClick={handleclick}>
-            continuar
-          </button>
+          <Styled.BtnEnter onClick={handleclick}>continuar</Styled.BtnEnter>
         </div>
 
-        <div className="text-center">
+        <Styled.ContainerTextCenter>
           <span className="txt1">Já é cadastrado?</span>
           <Link className="txt2" to="/login">
             clique aqui
           </Link>
-        </div>
+        </Styled.ContainerTextCenter>
+
         <ToastContainer />
       </LayoutComponents>
     </Styled.Container>

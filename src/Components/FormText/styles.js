@@ -28,27 +28,28 @@ export const InputArea = styled.input`
 `;
 
 export const BtnSubmit = styled.button`
-  font-size: 15px;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-width: 60px;
-  height: 30px;
-  padding: 20px;
-  background: -webkit-linear-gradient(to left, #003c58, #111);
-  background: -o-linear-gradient(to left, #003c58, #111);
-  background: -moz-linear-gradient(to left, #003c58, #111);
-  background: linear-gradient(to left, #003c58, #111);
-  cursor: pointer;
+  ${({ theme }) => css`
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    color: ${theme.colors.white};
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    min-width: 60px;
+    height: 30px;
+    padding: 20px;
+    background: -webkit-linear-gradient(to left, #003c58, #111);
+    background: -o-linear-gradient(to left, #003c58, #111);
+    background: -moz-linear-gradient(to left, #003c58, #111);
+    background: linear-gradient(to left, #003c58, #111);
+    cursor: pointer;
 
-  &:focus {
-    background: gray;
-    transition: all 50ms;
-  }
+    &:focus {
+      background: gray;
+      transition: all 50ms;
+    }
+  `}
 `;
 
 export const InputBox = styled.textarea`
