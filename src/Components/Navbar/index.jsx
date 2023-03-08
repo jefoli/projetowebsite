@@ -19,7 +19,7 @@ export default function NavBar() {
         <Styled.MenuContainer>
           <LogoComponent />
           <MenuLink />
-          <ButtonLogin />
+          <ButtonLogin aria-label="Login" />
         </Styled.MenuContainer>
       </Styled.Container>
     </>

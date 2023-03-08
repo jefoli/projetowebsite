@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import P from 'prop-types';
 import * as Styled from './styles';
 
 export const LayoutComponents = (props) => {
@@ -11,4 +11,8 @@ export const LayoutComponents = (props) => {
       </div>
     </Styled.Container>
   );
+};
+
+LayoutComponents.propTypes = {
+  children: P.node.isRequired,
 };

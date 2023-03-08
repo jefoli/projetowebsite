@@ -3,23 +3,27 @@ import * as Styled from './styles';
 export const FormText = () => {
   return (
     <Styled.Container>
-      <label>
+      <Styled.LabelText>
         Nome:
-        <input type="text" name="nome" placeholder="digite seu email"></input>
-      </label>
-      <label>
+        <Styled.InputArea type="text" name="nome" placeholder="digite seu email"></Styled.InputArea>
+      </Styled.LabelText>
+
+      <Styled.LabelText>
         Sobrenome:
-        <input type="text" name="sobrenome" placeholder="digite seu sobrenome"></input>
-      </label>
-      <label>
+        <Styled.InputArea type="text" name="sobrenome" placeholder="digite seu sobrenome"></Styled.InputArea>
+      </Styled.LabelText>
+
+      <Styled.LabelText>
         Email:
-        <input type="email" name="email" placeholder="digite seu email"></input>
-      </label>
-      <label>
+        <Styled.InputArea type="email" name="email" placeholder="digite seu email"></Styled.InputArea>
+      </Styled.LabelText>
+
+      <Styled.LabelText>
         Telefone:
-        <input type="tel" name="tel" placeholder="digite seu telefone"></input>
-      </label>
-      <label>
+        <Styled.InputArea type="tel" name="tel" placeholder="digite seu telefone"></Styled.InputArea>
+      </Styled.LabelText>
+
+      <Styled.LabelText>
         Dúvidas, Sugestões, Reclamações:
         <Styled.InputBox
           type="text"
@@ -27,8 +31,8 @@ export const FormText = () => {
           className="input"
           placeholder="digite sua dúvida, sugestão, reclamação, etc..."
         />
-        <button type="submit">Enviar</button>
-      </label>
+        <Styled.BtnSubmit type="submit">Enviar</Styled.BtnSubmit>
+      </Styled.LabelText>
     </Styled.Container>
   );
 };

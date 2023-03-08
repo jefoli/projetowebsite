@@ -4,7 +4,7 @@ export const ButtonLogin = () => {
   return (
     <Styled.Container>
       <Link to="/login">
-        <button className="login-form-btn">Login</button>
+        <Styled.BtnLogin>Login</Styled.BtnLogin>
       </Link>
     </Styled.Container>
   );
