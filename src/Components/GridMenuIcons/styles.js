@@ -9,11 +9,11 @@ export const Container = styled.section`
 
     .section-wrapper {
       max-width: 100%;
-      font-size: 2rem;
+      font-size: calc(${theme.fonts.sizes.medium} - 0.2rem);
       line-height: 1.43;
       letter-spacing: 0.01071em;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-bottom: 70px;
+      margin-bottom: calc(${theme.spacings.xhuge} + 0.6rem);
     }
 
     .styleGrid {
@@ -24,14 +24,14 @@ export const Container = styled.section`
       justify-items: stretch;
       grid-template-columns: repeat(4, 1fr);
       justify-content: stretch;
-      padding: 2.5rem;
+      padding: ${theme.spacings.medium};
     }
 
     .StyledGridItem {
-      margin: 0 1rem 1rem 0;
-      padding: 0.5rem;
+      margin: 0 ${theme.spacings.xsmall} ${theme.spacings.xsmall} 0;
+      padding: ${theme.spacings.xxsmall};
       background-color: #a07918;
-      border-radius: 4px;
+      border-radius: ${theme.spacings.xxsmall};
     }
 
     .styledBox {
@@ -39,22 +39,21 @@ export const Container = styled.section`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 0.5rem;
+      padding: ${theme.spacings.xxsmall};
       line-height: 1.8;
     }
 
     .link-style {
       display: flex;
-      padding: 4px;
+      padding: ${theme.spacings.xxsmall};
       font-size: 20px;
       line-height: 1.2;
       color: #003c58;
-      padding: 0.5rem;
       text-decoration: underline;
     }
 
     .style-icons {
-      font-size: 25px;
+      font-size: ${theme.spacings.medium};
       display: flex;
       color: #b9b9b9;
       justify-items: center;

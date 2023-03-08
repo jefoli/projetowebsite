@@ -2,6 +2,7 @@ import * as Styled from './styles';
 import { BsFilePost, BsArrowRightShort, BsInfoSquare } from 'react-icons/bs';
 import { RiContactsLine } from 'react-icons/ri';
 import { MdMiscellaneousServices } from 'react-icons/md';
+
 import { Link } from 'react-router-dom';
 export const GridMenuIcons = () => {
   return (

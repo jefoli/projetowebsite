@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
@@ -9,7 +8,7 @@ export const Container = styled.div`
       width: 100%;
       flex-wrap: center;
       justify-content: center;
-      padding: 15px;
+      padding: ${theme.spacings.medium};
       text-align: center;
     }
 

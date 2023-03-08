@@ -7,11 +7,11 @@ export const Container = styled.a`
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 40px;
-    width: 4rem;
-    height: 4rem;
-    bottom: 2rem;
-    right: 2rem;
+    font-size: ${theme.fonts.sizes.xlarge};
+    width: ${theme.spacings.xlarge};
+    height: ${theme.spacings.xlarge};
+    bottom: calc(${theme.spacings.medium} - 0.2rem);
+    right: calc(${theme.spacings.medium} - 0.2rem);
     z-index: 2;
     border-radius: 25% 25%;
 

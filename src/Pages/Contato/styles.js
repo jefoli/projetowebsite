@@ -6,12 +6,10 @@ export const Container = styled.div`
     box-sizing: border-box;
     padding: ${theme.spacings.large};
     color: ${theme.colors.white};
-    width: 100%;
-    height: 900px;
     text-align: center;
     border-radius: ${theme.fonts.sizes.xxsmall};
-    max-width: 120rem;
-    margin: 15px auto;
+    max-width: 100%;
+    margin: ${theme.fonts.sizes.small} auto;
     font-size: ${theme.fonts.sizes.small};
   `}
 `;

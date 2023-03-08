@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   ${({ theme }) => css`
     display: flex;
-    column-gap: 32px;
+    column-gap: ${theme.spacings.large};
     justify-content: center;
-    padding: 64px 24px;
+    padding: ${theme.spacings.xhuge} ${theme.spacings.xlarge};
     align-items: center;
     border-top: 1px solid #a07918;
     text-transform: uppercase;
@@ -27,9 +27,11 @@ export const Container = styled.section`
 `;
 
 export const InitialGridTitle = styled.h1`
-  font-size: 35px;
+  ${({ theme }) => css`
+  font-size: ${theme.fonts.sizes.large};
   color: #a07918;
   display: flex;
   line-height: 1.2;
   }
+  `}
 `;

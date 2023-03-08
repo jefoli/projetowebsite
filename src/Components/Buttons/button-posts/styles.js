@@ -4,7 +4,8 @@ export const Container = styled.button`
   ${({ theme }) => css`
     width: 100%;
     border: none;
-    padding: 15px 30px;
+    padding: ${theme.spacings.small};
+
     cursor: pointer;
     border-radius: ${theme.spacings.xxsmall};
     font-size: ${theme.fonts.sizes.small};
@@ -12,7 +13,7 @@ export const Container = styled.button`
     background: -o-linear-gradient(to left, #003c58, #493b18);
     background: -moz-linear-gradient(to left, #003c58, #493b18);
     background: linear-gradient(to left, #003c58, #493b18);
-    color: white;
+    color: ${theme.colors.white};
 
     &:disabled {
       background: ${theme.colors.mediumGray};

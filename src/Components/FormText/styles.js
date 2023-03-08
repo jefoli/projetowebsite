@@ -4,7 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
     border-radius: ${theme.fonts.sizes.xxsmall};
-    margin-top: 50px;
+    margin-top: ${theme.spacings.xxlarge};
     background: none;
   `}
 `;
@@ -19,8 +19,8 @@ export const LabelText = styled.label`
 
 export const InputArea = styled.input`
   ${({ theme }) => css`
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: calc(${theme.spacings.xsmall} + 0.2rem);
+    margin-bottom: ${theme.spacings.medium};
     width: 100%;
     border-radius: ${theme.fonts.sizes.xxsmall};
     border: 1px solid ${theme.colors.secundaryColor};
@@ -36,9 +36,9 @@ export const BtnSubmit = styled.button`
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    min-width: 60px;
-    height: 30px;
-    padding: 20px;
+    min-width: calc(${theme.spacings.huge} + 0.6rem);
+    height: ${theme.spacings.large};
+    padding: ${theme.spacings.medium};
     background: -webkit-linear-gradient(to left, #003c58, #111);
     background: -o-linear-gradient(to left, #003c58, #111);
     background: -moz-linear-gradient(to left, #003c58, #111);

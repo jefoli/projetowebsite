@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.li`
+export const Container = styled.ul`
   ${({ theme }) => css`
     display: flex;
     justify-content: space-between;
@@ -9,22 +9,30 @@ export const Container = styled.li`
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
 
-    .navbar-li {
-      display: flex;
-      position: relative;
-      flex-direction: row;
+    @media ${theme.media.lteMedium} {
+      flex-flow: column wrap;
+      align-content: center;
     }
+  `};
+`;
 
-    .navbar-li a {
+export const LiContent = styled.li`
+  ${({ theme }) => css`
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+
+    > a {
       text-decoration: none;
       color: #111;
-      padding: 20px;
+      padding: ${theme.spacings.medium};
     }
 
-    a::after {
+    > a::after {
       content: '';
       position: absolute;
-      bottom: 2rem;
+      bottom: ${theme.spacings.medium};
       left: 50%;
       width: 0%;
       height: 0.2rem;
@@ -33,7 +41,7 @@ export const Container = styled.li`
       justify-content: center;
     }
 
-    a:hover::after {
+    > a:hover::after {
       width: 50%;
       left: 25%;
     }
@@ -42,5 +50,5 @@ export const Container = styled.li`
       flex-flow: column wrap;
       align-content: center;
     }
-  `};
+  `}
 `;

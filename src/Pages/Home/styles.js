@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 export const Container = styled.section`
-  ${({ theme }) => css``}
   margin: 0 auto;
   color: white;
 `;

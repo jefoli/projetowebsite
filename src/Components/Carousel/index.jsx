@@ -22,8 +22,14 @@ export const ComponentCarousel = ({ slides }) => {
 
   return (
     <Styled.Container>
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+      <Styled.ArrowCarouselLeft>
+        <FaArrowAltCircleLeft onClick={prevSlide} />
+      </Styled.ArrowCarouselLeft>
+
+      <Styled.ArrowCarouselRight>
+        <FaArrowAltCircleRight onClick={nextSlide} />
+      </Styled.ArrowCarouselRight>
+
       {SliderData.map((slide, index) => {
         return (
           <div className={index === current ? 'slide active' : 'slide'} key={index}>

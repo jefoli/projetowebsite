@@ -5,10 +5,10 @@ export const Container = styled.section`
       display: flex;
       text-align: center;
       max-width: 100%;
-      padding: 60px 20px;
+      padding: 0 ${theme.fonts.sizes.small} 0;
       flex-wrap: nowrap;
       line-height: 1.6;
-      align-items:center;
+      align-items: center;
 
     @media ${theme.media.lteMedium} {
         max-width: 100%;
@@ -30,7 +30,7 @@ export const MainTitle = styled.h1`
     color: #a07918;
     line-height: 1.2;
     justify-items: center;
-    padding: 20px;
+    padding: ${theme.fonts.sizes.medium};
   `}
 `;
 

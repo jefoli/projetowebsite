@@ -13,7 +13,7 @@ export const Container = styled.div`
     }
 
     .logo {
-      width: 20px;
+      width: ${theme.spacings.medium};
     }
   `}
 `;

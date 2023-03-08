@@ -15,7 +15,7 @@ export const Container = styled.div`
     .menu-icon {
       display: flex;
       color: ${theme.colors.white};
-      font-size: 30px;
+      font-size: ${theme.spacings.medium};
       padding-left: 5px;
     }
 

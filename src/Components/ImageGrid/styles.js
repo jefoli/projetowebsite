@@ -5,10 +5,10 @@ export const Container = styled.div`
     display: flex;
     position: relative;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: ${theme.spacings.large};
     justify-content: center;
     width: 100%;
-    padding: 40px;
+    padding: ${theme.spacings.xlarge};
     border-top: 3px solid #a07918;
     border-radius: 200px 2px;
 
