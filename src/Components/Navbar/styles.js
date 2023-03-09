@@ -46,11 +46,6 @@ export const Button = styled.div`
     pointer-events: ${visible ? 'none' : 'all'};
     justify-text: center;
 
-    > svg {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-
     @media ${theme.media.lteMedium} {
       position: fixed;
       top: 1rem;
