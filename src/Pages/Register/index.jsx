@@ -18,18 +18,24 @@ export const Register = () => {
 
     if (name.length < 3 || name.length > 50) {
       toast.error('Digite o nome e o sobrenome');
+      return;
     }
 
     if (!isEmail(email)) {
       toast.error('Digite um e-mail válido');
+      return;
     }
 
     if (password.length <= 8) {
       toast.error('Use 8 caracteres ou mais para sua senha');
-    } else if (!isStrongPassword(password)) {
+      return;
+    }
+
+    if (!isStrongPassword(password)) {
       toast.error(
         'Escolha uma senha mais segura. Use uma combinação de letras maíusculas e mínusculas, números e símbolos',
       );
+      return;
     }
   }
 

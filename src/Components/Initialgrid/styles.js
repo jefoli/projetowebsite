@@ -28,10 +28,18 @@ export const Container = styled.section`
 
 export const InitialGridTitle = styled.h1`
   ${({ theme }) => css`
+
   font-size: ${theme.fonts.sizes.large};
   color: #a07918;
   display: flex;
   line-height: 1.2;
+  }
+
+  @media ${theme.media.lteMedium} {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
   }
   `}
 `;
