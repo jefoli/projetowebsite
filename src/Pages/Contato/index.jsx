@@ -2,7 +2,7 @@ import { FormText } from '../../Components/FormText';
 import { SectionContainer } from '../../Components/SectionContainer';
 import * as Styled from './styles';
 
-export default function Contato() {
+export const Contato = () => {
   return (
     <SectionContainer>
       <Styled.Container>
@@ -12,4 +12,4 @@ export default function Contato() {
       </Styled.Container>
     </SectionContainer>
   );
-}
+};

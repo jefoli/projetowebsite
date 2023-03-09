@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components';
 export const Container = styled.div`
-  > a {
-    text-decoration: none;
-  }
+  ${({ theme }) => css`
+    > a {
+      text-decoration: none;
+      text-align: center;
+    }
+  `}
 `;
 
 export const BtnLogin = styled.button`
@@ -10,8 +13,8 @@ export const BtnLogin = styled.button`
     display: flex;
     font-size: calc(${theme.fonts.sizes.small} - 0.1rem);
     border: none;
-    border-radius: 4px;
-    color: #fff;
+    border-radius: ${theme.spacings.xxsmall};
+    color: ${theme.colors.white};
     text-transform: uppercase;
     align-items: center;
     width: 100%;
@@ -22,5 +25,9 @@ export const BtnLogin = styled.button`
     background: -moz-linear-gradient(to left, #003c58, #111);
     background: linear-gradient(to left, #003c58, #111);
     cursor: pointer;
+
+    @media ${theme.media.lteMedium} {
+      text-align: center;
+    }
   `}
 `;

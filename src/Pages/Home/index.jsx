@@ -11,8 +11,8 @@ import { TextGridContentFinal } from '../../Components/TextGridContentFinal';
 
 export const Home = () => {
   return (
-    <Styled.Container>
-      <SectionContainer>
+    <SectionContainer>
+      <Styled.Container>
         <TextGridInitial />
         <TextGridInitialTwo />
         <ComponentCarousel slides={SliderData} />
@@ -20,7 +20,7 @@ export const Home = () => {
         <GridMenuIcons />
         <ImageGrid />
         <TextGridContentFinal />
-      </SectionContainer>
-    </Styled.Container>
+      </Styled.Container>
+    </SectionContainer>
   );
 };

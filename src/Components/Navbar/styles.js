@@ -16,8 +16,7 @@ export const MenuContainer = styled.div`
     align-items: center;
     background: ${theme.colors.white};
     padding: 15px 100px;
-    height: 50px;
-
+    height: ${theme.spacings.xxlarge};
     & svg {
       color: ${theme.colors.primaryColor};
     }
@@ -78,17 +77,18 @@ export const Container = styled.div`
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
     justify-content: center;
+    box-shadow: 0px 1px ${theme.colors.mediumGray};
 
     > ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: white;
     }
 
     @media ${theme.media.lteMedium} {
-      height: 160vh;
+      min-height: 100vh;
       visibility: hidden;
       opacity: 0;
+
       ${visible && menuVisible(theme)}
       display: flex;
 

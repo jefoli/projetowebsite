@@ -1,9 +1,9 @@
 import React from 'react';
 import { Home } from '../Pages/Home';
-import NavBar from '../Components/Navbar';
-import Contato from '../Pages/Contato';
+import { NavBar } from '../Components/Navbar';
+import { Contato } from '../Pages/Contato';
 import { Servicos } from '../Pages/Servicos';
-import Sobre from '../Pages/Sobre';
+import { Sobre } from '../Pages/Sobre';
 import { PostsText } from '../Pages/Posts';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NotFound } from '../Pages/NotFound';

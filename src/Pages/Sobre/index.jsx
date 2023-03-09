@@ -1,7 +1,8 @@
 import { SectionContainer } from '../../Components/SectionContainer';
 import { TextGrid } from '../../Components/TextGrid';
 import * as Styled from './styles';
-export default function Sobre() {
+
+export const Sobre = () => {
   return (
     <SectionContainer>
       <Styled.Container>
@@ -10,4 +11,4 @@ export default function Sobre() {
       </Styled.Container>
     </SectionContainer>
   );
-}
+};

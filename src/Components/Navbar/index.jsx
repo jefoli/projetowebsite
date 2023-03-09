@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { MenuLink } from '../../MenuLink';
 import { ButtonLogin } from '../Buttons/ButtonLogin';
 
-export default function NavBar() {
+export const NavBar = () => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -24,4 +24,4 @@ export default function NavBar() {
       </Styled.Container>
     </>
   );
-}
+};
