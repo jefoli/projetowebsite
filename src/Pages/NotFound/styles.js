@@ -1,8 +1,13 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  text-align: center;
-  font-size: 20px;
-  padding: 30px;
-  margin: 500px 0;
+  ${({ theme }) => css`
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: ${theme.fonts.sizes.medium};
+    padding: ${theme.spacings.small};
+    margin: ${theme.spacings.xhuge};
+    line-heigth: 5.4;
+  `}
 `;

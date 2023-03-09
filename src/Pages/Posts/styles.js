@@ -6,7 +6,7 @@ export const Container = styled.div`
     padding: ${theme.spacings.large};
     border-radius: ${theme.fonts.sizes.xxsmall};
     max-width: 120rem;
-    margin: 15px auto;
+    margin: ${theme.spacings.small} auto;
 
     @media ${theme.media.lteMedium} {
       align-items: center;

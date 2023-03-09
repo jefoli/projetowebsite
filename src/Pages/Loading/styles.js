@@ -27,7 +27,7 @@ export const Container = styled.div`
       top: 50%;
       left: 50%;
       transform: translate(-50%, 50%);
-      border-width: 0.5rem;
+      border-width: ${theme.spacings.xxsmall};
       border-color: transparent;
       border-style: solid;
       border-radius: 50%;
@@ -36,16 +36,16 @@ export const Container = styled.div`
     &:after {
       width: 6rem;
       height: 6rem;
-      border-left: 0.5rem solid ${theme.colors.white};
-      border-top: 0.5rem solid ${theme.colors.white};
+      border-left: ${theme.spacings.xxsmall} solid ${theme.colors.white};
+      border-top: ${theme.spacings.xxsmall} solid ${theme.colors.white};
       animation: ${rotate()} 900ms reverse ease-in-out infinite;
     }
 
     &:before {
       width: 2rem;
       height: 2rem;
-      border-left: 0.5rem solid ${theme.colors.white};
-      border-top: 0.5rem solid ${theme.colors.white};
+      border-left: ${theme.spacings.xxsmall} solid ${theme.colors.white};
+      border-top: ${theme.spacings.xxsmall} solid ${theme.colors.white};
       animation: ${rotate()} 1s ease-in-out infinite;
     }
   `}

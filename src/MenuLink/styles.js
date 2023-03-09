@@ -25,7 +25,7 @@ export const LiContent = styled.li`
 
     > a {
       text-decoration: none;
-      color: #111;
+      color: ${theme.colors.black};
       padding: ${theme.spacings.medium};
     }
 
@@ -35,8 +35,8 @@ export const LiContent = styled.li`
       bottom: ${theme.spacings.medium};
       left: 50%;
       width: 0%;
-      height: 0.2rem;
-      background: #c3c3c3;
+      height: calc(${theme.spacings.xxsmall} - 0.2rem);
+      background: ${theme.colors.mediumGray};
       transition: all 150ms ease-in-out;
       justify-content: center;
     }

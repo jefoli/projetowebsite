@@ -5,7 +5,7 @@ export const Container = styled.div`
     text-align: center;
     font-size: ${theme.fonts.sizes.small};
     padding: ${theme.spacings.xsmall};
-    background-color: #111;
-    color: #c3c3c3;
+    background-color: ${theme.colors.black};
+    color: ${theme.colors.mediumGray};
   `}
 `;
