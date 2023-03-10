@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 import * as Styled from './styles';
-import pngIMG from '../../Components/Logo/logoexample.png';
+// import pngIMG from '../../Components/Logo/logoexample.png';
 import { useState } from 'react';
 import { LayoutComponents } from '../../Components/LayoutComponentsLogin-Register';
 import { isEmail, isStrongPassword } from 'validator';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SectionContainer } from '../../Components/SectionContainer';
+import logoPng from '../../assets/images/logo.png';
 
 export const Register = () => {
   const [name, setName] = useState('');
@@ -46,7 +47,7 @@ export const Register = () => {
           <Styled.LoginFormTitle>Cadastre-se aqui</Styled.LoginFormTitle>
 
           <Styled.LoginFormTitle>
-            <img src={pngIMG} alt="logoexample" />
+            <img src={logoPng} alt="logoexample" />
           </Styled.LoginFormTitle>
 
           <Styled.WrapInput>
