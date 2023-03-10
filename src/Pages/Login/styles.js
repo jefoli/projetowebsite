@@ -142,7 +142,7 @@ export const ContainerTextCenter = styled.div`
 
     > span {
       font-size: ${theme.fonts.sizes.small};
-      color: #adadad;
+      color: ${theme.colors.mediumGray};
       line-height: 1.5;
       padding-right: ${theme.spacings.xsmall};
       text-decoration: none;

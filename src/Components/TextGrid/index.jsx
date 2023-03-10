@@ -1,4 +1,3 @@
-import { SectionContainer } from '../SectionContainer';
 import * as Styled from './styles';
 
 export const TextGrid = () => {
