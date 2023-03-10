@@ -29,20 +29,17 @@ export const InputArea = styled.input`
 
 export const BtnSubmit = styled.button`
   ${({ theme }) => css`
-    font-size: 15px;
-    border: none;
-    border-radius: 4px;
-    color: ${theme.colors.white};
-    text-transform: uppercase;
     display: flex;
     align-items: center;
+    font-size: calc(${theme.fonts.sizes.small} - 0.1rem);
     min-width: calc(${theme.spacings.huge} + 0.6rem);
     height: ${theme.spacings.large};
     padding: ${theme.spacings.medium};
-    background: -webkit-linear-gradient(to left, #003c58, #111);
-    background: -o-linear-gradient(to left, #003c58, #111);
-    background: -moz-linear-gradient(to left, #003c58, #111);
-    background: linear-gradient(to left, #003c58, #111);
+    border: none;
+    border-radius: ${theme.spacings.xxsmall};
+    background: ${theme.colors.backgroundGradientLeft};
+    color: ${theme.colors.white};
+    text-transform: uppercase;
     cursor: pointer;
 
     &:focus {
@@ -55,9 +52,11 @@ export const BtnSubmit = styled.button`
 export const InputBox = styled.textarea`
   ${({ theme }) => css`
     width: 100%;
-    min-height: 200px;
-    padding: 0.625rem;
-    margin-bottom: 0.5rem;
+    height: 150px;
+    min-height: 100px;
+    max-height: 300px;
+    padding: ${theme.spacings.small};
+    margin-bottom: ${theme.spacings.xsmall};
     resize: vertical;
     border: 1px solid ${theme.colors.secundaryColor};
     border-radius: ${theme.fonts.sizes.xxsmall};

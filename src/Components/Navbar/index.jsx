@@ -1,5 +1,4 @@
 import * as Styled from './styles';
-// import { LogoComponent } from '../Logo';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import { useState } from 'react';

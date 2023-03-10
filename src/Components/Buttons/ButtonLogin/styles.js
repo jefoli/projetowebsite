@@ -20,10 +20,7 @@ export const BtnLogin = styled.button`
     width: 100%;
     height: calc(${theme.spacings.large} - 0.2rem);
     padding: calc(${theme.spacings.medium} - 0.4rem);
-    background: -webkit-linear-gradient(to left, #003c58, #111);
-    background: -o-linear-gradient(to left, #003c58, #111);
-    background: -moz-linear-gradient(to left, #003c58, #111);
-    background: linear-gradient(to left, #003c58, #111);
+    background: ${theme.colors.backgroundGradientLeft};
     cursor: pointer;
 
     @media ${theme.media.lteMedium} {

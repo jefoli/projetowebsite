@@ -27,13 +27,8 @@ export const Container = styled.div`
       width: 0;
       bottom: -2px;
       height: 2px;
-      -webkit-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      background: -webkit-linear-gradient(to left, #003c58, #493b18);
-      background: -o-linear-gradient(to left, #003c58, #493b18);
-      background: -moz-linear-gradient(to left, #003c58, #493b18);
-      background: linear-gradient(to left, #003c58, #493b18);
+      transition: all 0.4s;
+      background: ${theme.colors.backgroundGradientLeft};
     }
 
     .focus-input::after {
@@ -46,10 +41,8 @@ export const Container = styled.div`
       position: absolute;
       top: ${theme.spacings.small};
       left: 0px;
-      padding-left: 5px;
-      -webkit-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      -moz-transition: all 0.4s;
+      padding-left: ${theme.spacings.xxsmall};
+      transition: all 0.4s;
     }
 
     .input:focus {
@@ -134,10 +127,7 @@ export const BtnEnter = styled.button`
       width: 100%;
       height: ${theme.spacings.xxlarge};
       scroll-behavior: smooth;
-      background: -webkit-linear-gradient(to left, #003c58, #111);
-      background: -o-linear-gradient(to left, #003c58, #111);
-      background: -moz-linear-gradient(to left, #003c58, #111);
-      background: linear-gradient(to left, #003c58, #111);
+      background: ${theme.colors.backgroundGradientLeft};
       cursor: pointer;
     `}
   }

@@ -7,10 +7,7 @@ export const Container = styled.div`
     padding: ${theme.spacings.large};
     width: 100%;
     color: white;
-    background: -webkit-linear-gradient(to top, #003c58, #111);
-    background: -o-linear-gradient(to top, #003c58, #111);
-    background: -moz-linear-gradient(to top, #003c58, #111);
-    background: linear-gradient(to top, #003c58, #111);
+    background: ${theme.colors.backgroundGradientTop};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

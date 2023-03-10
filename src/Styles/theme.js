@@ -6,6 +6,8 @@ export const theme = {
     black: '#111',
     mediumGray: '#c3c3c3',
     backgroundColor: '#bddee530',
+    backgroundGradientTop: 'linear-gradient(to top, #003c58, #111)',
+    backgroundGradientLeft: 'linear-gradient(to left, #003c58, #111)',
   },
   fonts: {
     family: {

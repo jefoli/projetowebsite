@@ -18,9 +18,9 @@ export const MenuContainer = styled.div`
     padding: 15px 100px;
     height: ${theme.spacings.xxlarge};
 
-    > img {
-      width: ${theme.fonts.sizes.medium};
-      height: ${theme.fonts.sizes.medium};
+    & img {
+      width: ${theme.fonts.sizes.large};
+      height: ${theme.fonts.sizes.large};
     }
 
     @media ${theme.media.lteMedium} {
@@ -28,11 +28,6 @@ export const MenuContainer = styled.div`
       text-align: center;
       padding: ${theme.spacings.xxlarge} 0;
       font-size: ${theme.fonts.sizes.xsmall};
-
-      & img {
-        width: ${theme.fonts.sizes.huge};
-        height: ${theme.fonts.sizes.huge};
-      }
     }
   `}
 `;
@@ -89,10 +84,6 @@ export const Container = styled.div`
     > ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
-    }
-
-    > img {
-      font-size: ${theme.fonts.sizes.small};
     }
 
     @media ${theme.media.lteMedium} {
