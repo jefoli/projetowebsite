@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
+    display: grid;
     text-align: center;
     margin: ${theme.spacings.small} auto;
     padding: ${theme.spacings.large};
