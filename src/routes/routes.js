@@ -22,7 +22,6 @@ export default function RoutesSistem() {
         <Route path="post" element={<PostsText />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

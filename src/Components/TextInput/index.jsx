@@ -4,7 +4,6 @@ import * as Styled from './styles';
 export const TextInput = ({ searchValue, handleChange }) => {
   return (
     <Styled.Container
-      className="text-input"
       onChange={handleChange}
       value={searchValue}
       type="search"
