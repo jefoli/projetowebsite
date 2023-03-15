@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { MenuLink } from '../../MenuLink';
 import { ButtonLogin } from '../Buttons/ButtonLogin';
 import logoPng from '../../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
@@ -25,7 +26,9 @@ export const NavBar = () => {
 
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <Styled.MenuContainer>
-          <img src={logoPng} alt="logoexample" />
+          <Link to="/">
+            <img src={logoPng} alt="logoexample" />
+          </Link>
           <MenuLink />
           <ButtonLogin aria-label="Login" />
         </Styled.MenuContainer>
