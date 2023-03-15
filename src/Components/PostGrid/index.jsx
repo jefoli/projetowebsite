@@ -6,7 +6,13 @@ import { PostCard } from '../PostCard';
 export const Postsone = ({ posts }) => (
   <Styled.Container>
     {posts.map((post) => (
-      <PostCard key={post.id} title={post.title} body={post.body} id={post.id} cover={post.cover} />
+      <PostCard
+        key={post.id}
+        title={post.title}
+        body={post.body}
+        id={post.id}
+        cover={post.cover}
+      />
     ))}
   </Styled.Container>
 );

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import * as Styled from './styles';
 export const TextGridInitial = () => {
   return (

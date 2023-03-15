@@ -11,8 +11,16 @@ export const NavBar = () => {
 
   return (
     <>
-      <Styled.Button visible={visible} onClick={() => setVisible(true)} aria-label="Open/Close menu">
-        {visible ? <AiOutlineMenuFold aria-label="Close menu" /> : <AiOutlineMenuUnfold aria-label="Open menu" />}
+      <Styled.Button
+        visible={visible}
+        onClick={() => setVisible(true)}
+        aria-label="Open/Close menu"
+      >
+        {visible ? (
+          <AiOutlineMenuFold aria-label="Close menu" />
+        ) : (
+          <AiOutlineMenuUnfold aria-label="Open menu" />
+        )}
       </Styled.Button>
 
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>

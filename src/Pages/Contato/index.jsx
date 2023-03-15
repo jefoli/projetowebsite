@@ -7,7 +7,9 @@ export const Contato = () => {
     <SectionContainer>
       <Styled.Container>
         <h1>CONTATO</h1>
-        <h4> Seu contato é muito importante para aprimorarmos nossos serviços!</h4>
+        <h4>
+          Seu contato é muito importante para aprimorarmos nossos serviços!
+        </h4>
         <FormText />
       </Styled.Container>
     </SectionContainer>

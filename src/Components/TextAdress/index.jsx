@@ -10,10 +10,12 @@ export const TextAdress = () => {
         <BsBuilding /> Sorocaba/SP: Rua Teste, 000, bairro Teste, CEP 00000-000
       </p>
       <p>
-        <TbBuildingStore /> São Paulo/SP: Rua Teste, 000, bairro Teste, CEP 00000-000
+        <TbBuildingStore /> São Paulo/SP: Rua Teste, 000, bairro Teste, CEP
+        00000-000
       </p>
       <p>
-        <TbBuildingSkyscraper /> Campinas/SP: Rua Teste, 000, bairro Teste, CEP 00000-000
+        <TbBuildingSkyscraper /> Campinas/SP: Rua Teste, 000, bairro Teste, CEP
+        00000-000
       </p>
     </Styled.Container>
   );

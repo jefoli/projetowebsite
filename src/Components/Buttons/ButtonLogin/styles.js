@@ -1,11 +1,9 @@
 import styled, { css } from 'styled-components';
 export const Container = styled.div`
-  ${({ theme }) => css`
-    > a {
-      text-decoration: none;
-      text-align: center;
-    }
-  `}
+  > a {
+    text-decoration: none;
+    text-align: center;
+  }
 `;
 
 export const BtnLogin = styled.button`

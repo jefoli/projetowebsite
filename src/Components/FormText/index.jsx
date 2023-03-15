@@ -5,22 +5,38 @@ export const FormText = () => {
     <Styled.Container>
       <Styled.LabelText>
         Nome:
-        <Styled.InputArea type="text" name="nome" placeholder="digite seu email"></Styled.InputArea>
+        <Styled.InputArea
+          type="text"
+          name="nome"
+          placeholder="digite seu email"
+        ></Styled.InputArea>
       </Styled.LabelText>
 
       <Styled.LabelText>
         Sobrenome:
-        <Styled.InputArea type="text" name="sobrenome" placeholder="digite seu sobrenome"></Styled.InputArea>
+        <Styled.InputArea
+          type="text"
+          name="sobrenome"
+          placeholder="digite seu sobrenome"
+        ></Styled.InputArea>
       </Styled.LabelText>
 
       <Styled.LabelText>
         Email:
-        <Styled.InputArea type="email" name="email" placeholder="digite seu email"></Styled.InputArea>
+        <Styled.InputArea
+          type="email"
+          name="email"
+          placeholder="digite seu email"
+        ></Styled.InputArea>
       </Styled.LabelText>
 
       <Styled.LabelText>
         Telefone:
-        <Styled.InputArea type="tel" name="tel" placeholder="digite seu telefone"></Styled.InputArea>
+        <Styled.InputArea
+          type="tel"
+          name="tel"
+          placeholder="digite seu telefone"
+        ></Styled.InputArea>
       </Styled.LabelText>
 
       <Styled.LabelText>

@@ -1,5 +1,10 @@
 import * as Styled from './styles';
-import { FaWhatsappSquare, FaInstagramSquare, FaLinkedin, FaFacebookSquare } from 'react-icons/fa';
+import {
+  FaWhatsappSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaFacebookSquare,
+} from 'react-icons/fa';
 export const MenuIcons = () => {
   return (
     <Styled.Container>

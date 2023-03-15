@@ -59,7 +59,13 @@ export const PostsText = () => {
 
         {filteredPosts.length === 0 && <Loading />}
         <Styled.ButtonContainer>
-          {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
+          {!searchValue && (
+            <Button
+              text="Load more posts"
+              onClick={loadMorePosts}
+              disabled={noMorePosts}
+            />
+          )}
         </Styled.ButtonContainer>
       </Styled.Container>
     </SectionContainer>

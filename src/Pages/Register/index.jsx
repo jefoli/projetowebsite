@@ -57,7 +57,10 @@ export const Register = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <span className="focus-input" data-placeholder="Nome Completo"></span>
+            <span
+              className="focus-input"
+              data-placeholder="Nome Completo"
+            ></span>
           </Styled.WrapInput>
 
           <Styled.WrapInput>

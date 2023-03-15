@@ -2,7 +2,9 @@ import * as Styled from './styles';
 export const InitialGrid = () => {
   return (
     <Styled.Wrapper>
-      <Styled.InitialGridTitle>experiência e sofisticação são nossas prioridades</Styled.InitialGridTitle>
+      <Styled.InitialGridTitle>
+        experiência e sofisticação são nossas prioridades
+      </Styled.InitialGridTitle>
       <Styled.Container>
         <img
           className="image"

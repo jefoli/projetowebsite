@@ -3,7 +3,9 @@ import axios from 'axios';
 export const loadPosts = async () => {
   const postsResponse = axios.get('https://jsonplaceholder.typicode.com/posts');
 
-  const photosResponse = axios.get('https://jsonplaceholder.typicode.com/photos');
+  const photosResponse = axios.get(
+    'https://jsonplaceholder.typicode.com/photos',
+  );
 
   const [posts, photos] = await Promise.all([postsResponse, photosResponse]);
 
