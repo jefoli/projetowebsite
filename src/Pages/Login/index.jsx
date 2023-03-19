@@ -17,11 +17,15 @@ export const Login = () => {
 
     if (!isEmail(email)) {
       toast.error('Email inválido');
+      return;
     }
 
     if (!isStrongPassword(password)) {
       toast.error('Senha inválida');
+      return;
     }
+
+    toast.success('Dados corretos!');
   }
 
   return (

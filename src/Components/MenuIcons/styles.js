@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
-    font-size: ${theme.fonts.sizes.medium};
     display: flex;
     flex-direction: row-reverse;
     padding: 20px 30px;
@@ -15,7 +14,7 @@ export const Container = styled.div`
     .menu-icon {
       display: flex;
       color: ${theme.colors.white};
-      font-size: ${theme.spacings.medium};
+      font-size: ${theme.spacings.large};
       padding-left: 5px;
     }
 

@@ -38,6 +38,7 @@ export const Register = () => {
       );
       return;
     }
+    toast.success('Cadastro criado com sucesso');
   }
 
   return (
