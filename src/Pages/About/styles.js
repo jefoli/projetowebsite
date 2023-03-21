@@ -3,12 +3,13 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     text-align: center;
     margin: ${theme.spacings.small} auto;
     padding-top: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes.small};
+    color: ${theme.colors.black};
 
     > h1 {
       margin: 30px 0px;

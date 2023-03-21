@@ -1,49 +1,69 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
-
+import fullwidthimage from './fullwidthslider.png';
 export const Wrapper = styled.section`
   ${({ theme }) => css`
-    display: flex;
     width: 100%;
+    height: 48rem;
     border-top: 1px solid #a07918;
-    text-transform: uppercase;
-    padding: ${theme.spacings.xhuge} ${theme.spacings.xlarge};
-    gap: ${theme.spacings.huge};
+    border-bottom: 1px solid #a07918;
+    background-image: url(https://mosaicoo.tech/wp-content/uploads/2015/10/image-slider-3-home-main.jpg);
+    object-fit: cover;
 
     @media ${theme.media.lteMedium} {
-      display: flex;
       max-width: 100%;
-      flex-flow: column wrap;
-      box-shadow: 0;
+
     }
   `}
 `;
 
 export const Container = styled.div`
-  ${({ theme }) => css`
-    display: flex;
+${({ theme }) => css`
+
+  background: #242424f7;
+  width: 51%;
+  height: 100%;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url(${fullwidthimage}) left center no-repeat;
+    height: 100%;
+    position: absolute;
+    width: 50.1%;
+    right: -25%;
+    top: 50%;
+    transform: translate(50%, -50%);
+
+  }
+
+  > h3 {
+    font-size: ${theme.fonts.sizes.small};
+    padding: 15px;
+
+  }
+
+  @media ${theme.media.lteMedium} {
     max-width: 100%;
 
-    > img {
-      max-width: 340px;
-      box-shadow: 30px -30px 0px 5px #c3c3c3;
-
-      @media ${theme.media.lteMedium} {
-        max-width: 100%;
-        box-shadow: 0 0 4px #c3c3c3;
-      }
-    }
+  }
   `}
+
 `;
 
-export const InitialGridTitle = styled.h1`
+export const BoxContent = styled.h2`
   ${({ theme }) => css`
   display: flex;
   width: 100%;
-  font-size: ${theme.fonts.sizes.large};
+  font-size: ${theme.fonts.sizes.medium};
   color: #a07918;
-  align-items: center;
-  line-height: 1.2;
+  padding: 30px;
+  text-transform: uppercase;
+
+  @media ${theme.media.lteMedium} {
+    max-width: 100%;
+    padding: 0px;
+
   }
   `}
 `;

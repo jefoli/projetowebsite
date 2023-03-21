@@ -7,7 +7,7 @@ export const ContainerFlex = styled.p`
     text-align: center;
     line-height: 1.6;
     flex-direction: row;
-    color: white;
+    color: ${theme.colors.black};
     font-size: ${theme.fonts.sizes.medium};
     font-family: sans-serif;
 

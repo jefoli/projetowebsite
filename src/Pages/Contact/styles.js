@@ -4,7 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     box-sizing: border-box;
     padding: ${theme.spacings.large};
-    color: ${theme.colors.white};
+    color: ${theme.colors.black};
     text-align: center;
     border-radius: ${theme.fonts.sizes.xxsmall};
     max-width: 100%;

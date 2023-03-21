@@ -1,5 +1,9 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
+
+export const Wrapper = styled.div`
+`;
+
 export const Container = styled.section`
   ${({ theme }) => css`
     display: block;

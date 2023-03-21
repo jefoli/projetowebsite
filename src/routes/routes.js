@@ -1,7 +1,7 @@
 import React from 'react';
 import { Home } from '../Pages/Home';
 import { NavBar } from '../Components/Navbar';
-import { Contato } from '../Pages/Contato';
+import { Contato } from '../Pages/Contact';
 import { Servicos } from '../Pages/Services';
 import { Sobre } from '../Pages/About';
 import { PostsText } from '../Pages/Posts';

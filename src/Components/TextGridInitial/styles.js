@@ -24,7 +24,7 @@ export const Container = styled.section`
 export const MainTitle = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.xlarge};
-    color: #a07918;
+    color: #705000;
     line-height: 1.2;
     justify-items: center;
     padding: ${theme.fonts.sizes.medium};

@@ -9,14 +9,12 @@ export const Container = styled.div`
     margin: ${theme.spacings.small} auto;
     padding: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes.small};
+    color: ${theme.colors.black};
 
     > p {
       font-size: ${theme.fonts.sizes.medium};
-
     }
-
   `}
-
 `;
 
 export const AboutText = styled.div`

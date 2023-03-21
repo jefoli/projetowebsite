@@ -3,6 +3,7 @@ export const Container = styled.div`
   > a {
     text-decoration: none;
     text-align: center;
+
   }
 `;
 
@@ -15,6 +16,7 @@ export const BtnLogin = styled.button`
     color: ${theme.colors.white};
     text-transform: uppercase;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: calc(${theme.spacings.large} - 0.2rem);
     padding: calc(${theme.spacings.medium} - 0.4rem);
