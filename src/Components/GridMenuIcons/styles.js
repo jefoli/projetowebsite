@@ -2,6 +2,7 @@
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
+  background: #080c26;
 `;
 
 export const Container = styled.section`
@@ -9,7 +10,7 @@ export const Container = styled.section`
     display: block;
     border-radius: 200px 2px;
     border-bottom: 2px solid #a07918;
-    max-width: 100%;
+    width: 100%;
 
     .section-wrapper {
       max-width: 100%;

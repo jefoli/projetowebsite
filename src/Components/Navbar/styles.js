@@ -14,7 +14,7 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: ${theme.colors.white};
+    background: #56565633;
     padding: 15px 100px;
     height: ${theme.spacings.xxlarge};
 
@@ -66,7 +66,6 @@ export const Button = styled.div`
     }
   `}
 `;
-
 export const Container = styled.div`
   ${({ theme, visible }) => css`
     position: fixed;
@@ -75,15 +74,23 @@ export const Container = styled.div`
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: ${theme.colors.mediumGray};
-    background: ${theme.colors.white};
-    transition: all 300ms ease-in-out;
+    background: #56565633;
     justify-content: center;
     box-shadow: 0px 1px ${theme.colors.mediumGray};
 
     > ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
+    }
+
+    .navbar {
+    background: #56565633;
+      height: 50px;
+      transition: background-color 0.3s ease-in-out;
+
+      &.scroll {
+        background-color: #fff;
+      }
     }
 
     @media ${theme.media.lteMedium} {

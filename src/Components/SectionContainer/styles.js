@@ -6,7 +6,7 @@ export const Container = styled.div`
     padding: ${theme.spacings.large};
     width: 100%;
     color: white;
-    background: ${theme.colors.backgroundGradientGray};
+    background: #080c26;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

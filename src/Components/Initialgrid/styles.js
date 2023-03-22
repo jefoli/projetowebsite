@@ -1,7 +1,18 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 import fullwidthimage from './fullwidthslider.png';
-export const Wrapper = styled.section`
+
+export const Container = styled.section`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  border-top: 1px solid #a07918;
+  background: #080c26;
+  color: white;
+  `;
+
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     width: 100%;
     height: 48rem;
@@ -17,7 +28,7 @@ export const Wrapper = styled.section`
   `}
 `;
 
-export const Container = styled.div`
+export const Content = styled.div`
 ${({ theme }) => css`
 
   background: #242424f7;

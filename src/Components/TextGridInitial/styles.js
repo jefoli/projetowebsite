@@ -3,14 +3,13 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   ${({ theme }) => css`
       display: flex;
+      flex-direction: column;
       text-align: center;
       max-width: 100%;
       flex-wrap: nowrap;
       line-height: 1.6;
       align-items: center;
       padding: 10px 0;
-      margin: calc(${theme.spacings.xhuge} + 0.5rem) 0;
-
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
@@ -23,8 +22,8 @@ export const Container = styled.section`
 
 export const MainTitle = styled.h1`
   ${({ theme }) => css`
-    font-size: ${theme.fonts.sizes.xlarge};
-    color: #705000;
+    font-size: ${theme.fonts.sizes.xxlarge};
+    color: #fbd100;
     line-height: 1.2;
     justify-items: center;
     padding: ${theme.fonts.sizes.medium};
@@ -34,11 +33,11 @@ export const MainTitle = styled.h1`
 export const ContainerContent = styled.div`
   border-bottom: 3px solid #a07918;
   border-radius: 0px 600px;
+  padding: 20px 0;
 `;
 
 export const TextInitial = styled.p`
   ${({ theme }) => css`
-    display: flex;
     font-size: ${theme.fonts.sizes.medium};
-  `}
+    margin: 20px 50px;  `}
 `;

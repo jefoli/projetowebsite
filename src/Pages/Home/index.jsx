@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { ComponentCarousel } from '../../Components/Carousel';
 import { ImageGrid } from '../../Components/ImageGrid';
 import * as Styled from './styles';
@@ -7,20 +8,22 @@ import { GridMenuIcons } from '../../Components/GridMenuIcons';
 import { TextGridInitialTwo } from '../../Components/TextGridInitialTwo';
 import { TextGridInitial } from '../../Components/TextGridInitial';
 import { SectionContainer } from '../../Components/SectionContainer';
-import { TextGridContentFinal } from '../../Components/TextGridContentFinal';
+
+import Video from './video-test.mp4';
 
 export const Home = () => {
   return (
-    <SectionContainer>
+    <>
       <Styled.Container>
+        <Styled.VideoContent preload="auto" loop muted autoPlay>
+          <source src={Video} type="video/mp4" />
+        </Styled.VideoContent>
         <TextGridInitial />
         <TextGridInitialTwo />
-        <ComponentCarousel slides={SliderData} />
-        <InitialGrid />
-        <GridMenuIcons />
-        <ImageGrid />
-        <TextGridContentFinal />
       </Styled.Container>
-    </SectionContainer>
+      <InitialGrid />
+      <ComponentCarousel slides={SliderData} />
+      <ImageGrid />
+    </>
   );
 };

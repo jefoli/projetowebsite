@@ -5,7 +5,7 @@ export const Container = styled.ul`
     display: flex;
     justify-content: space-between;
     font-size: ${theme.fonts.sizes.medium};
-    padding: ${theme.spacings.small};
+    padding: 0 ${theme.spacings.small};
     width: auto;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -26,7 +26,7 @@ export const LiContent = styled.li`
     > a {
       text-decoration: none;
       color: ${theme.colors.black};
-      padding: ${theme.spacings.medium};
+      padding: 0 ${theme.spacings.medium};
     }
 
     > a::after {

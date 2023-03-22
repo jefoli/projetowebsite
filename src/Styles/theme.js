@@ -8,7 +8,7 @@ export const theme = {
     backgroundColor: '#bddee530',
     backgroundGradientTop: 'linear-gradient(to top, #003c58, #111)',
     backgroundGradientLeft: 'linear-gradient(to left, #003c58, #111)',
-    backgroundGradientGray: 'linear-gradient(to top, #fdfdfd40, #7a7a7ab0)',
+    backgroundGradientGray: 'linear-gradient(to top, #4e4e4e7d, #7a7a7ab0)',
   },
   fonts: {
     family: {

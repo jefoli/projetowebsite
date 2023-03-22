@@ -1,12 +1,31 @@
+/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
-export const Container = styled.section`
+export const Wrapper = styled.section`
   ${({ theme }) => css`
     display: flex;
     justify-content: center;
     position: relative;
     width: 100%;
+    height: 70vh;
+    background: #080c26;
+
+  `}
+`;
+
+export const Container = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
     padding: calc(${theme.spacings.large} - 0.2rem);
+    border-right: 3px solid #a07918;
+    background: white;
+
+    border-radius: 0 0 300px 0;
+    background: white;
 
     .image {
       width: 100%;
@@ -54,9 +73,7 @@ export const Container = styled.section`
 
 export const ArrowCarouselLeft = styled.div`
   ${({ theme }) => css`
-    position: absolute;
-    top: 50%;
-    left: calc(${theme.spacings.xhuge} + ${theme.spacings.xlarge});
+    left: 5px;
     font-size: 3rem;
     color: ${theme.colors.white};
     z-index: 1;
@@ -67,7 +84,6 @@ export const ArrowCarouselLeft = styled.div`
 
 export const ArrowCarouselRight = styled.div`
   ${({ theme }) => css`
-    position: absolute;
     top: 50%;
     right: calc(${theme.spacings.xhuge} + ${theme.spacings.xlarge});
     font-size: 3rem;

@@ -21,28 +21,30 @@ export const ComponentCarousel = ({ slides }) => {
   };
 
   return (
-    <Styled.Container>
-      <Styled.ArrowCarouselLeft>
-        <FaArrowAltCircleLeft onClick={prevSlide} />
-      </Styled.ArrowCarouselLeft>
+    <Styled.Wrapper>
+      <Styled.Container>
+        <Styled.ArrowCarouselLeft>
+          <FaArrowAltCircleLeft onClick={prevSlide} />
+        </Styled.ArrowCarouselLeft>
 
-      <Styled.ArrowCarouselRight>
-        <FaArrowAltCircleRight onClick={nextSlide} />
-      </Styled.ArrowCarouselRight>
+        <Styled.ArrowCarouselRight>
+          <FaArrowAltCircleRight onClick={nextSlide} />
+        </Styled.ArrowCarouselRight>
 
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img src={slide.image} alt="text" className="image" />
-            )}
-          </div>
-        );
-      })}
-    </Styled.Container>
+        {SliderData.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? 'slide active' : 'slide'}
+              key={index}
+            >
+              {index === current && (
+                <img src={slide.image} alt="text" className="image" />
+              )}
+            </div>
+          );
+        })}
+      </Styled.Container>
+    </Styled.Wrapper>
   );
 };
 

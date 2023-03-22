@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+export const Wrapper = styled.section`
+  background: white;
+`;
+
 export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
@@ -9,8 +13,10 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     padding: ${theme.spacings.xlarge};
+    border-radius: 300px 0px 0px;
+    border-left: 3px solid #a07918;
+    background: #080c26;
     border-top: 3px solid #a07918;
-    border-radius: 200px 2px;
 
     img {
       max-width: 200px;

@@ -1,7 +1,7 @@
 import * as Styled from './styles';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { AiOutlineMenuFold } from 'react-icons/ai';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MenuLink } from '../../MenuLink';
 import { ButtonLogin } from '../Buttons/ButtonLogin';
 import logoPng from '../../assets/images/logo.png';
@@ -9,6 +9,21 @@ import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
 
   return (
     <>
@@ -25,7 +40,9 @@ export const NavBar = () => {
       </Styled.Button>
 
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
-        <Styled.MenuContainer>
+        <Styled.MenuContainer
+          className={`navbar ${isScrolled ? 'scroll' : ''}`}
+        >
           <Link to="/">
             <img src={logoPng} alt="logoexample" />
           </Link>
