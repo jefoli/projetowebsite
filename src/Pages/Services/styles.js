@@ -9,7 +9,9 @@ export const Container = styled.div`
     margin: ${theme.spacings.small} auto;
     padding: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes.small};
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
+    line-height: 60px;
+    max-width: 1310px;
 
     > p {
       font-size: ${theme.fonts.sizes.medium};

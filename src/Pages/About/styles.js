@@ -3,13 +3,15 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
-    width: 100%;
+    align-items: center;
+    max-width: 1310px;
+    min-height: 80vh;
     flex-direction: column;
     text-align: center;
     margin: ${theme.spacings.small} auto;
     padding-top: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes.small};
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
 
     > h1 {
       margin: 30px 0px;
@@ -22,18 +24,20 @@ export const AboutText = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
     font-size: ${theme.fonts.sizes.medium};
     line-height: 1.3;
     grid-column-gap: 10px;
     grid-row-gap: 2rem;
     align-items: center;
+    line-height: 60px;
 
     .box1 {
       grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 3;
+      padding: 20px 0;
+
     }
 
     .box2 {

@@ -6,16 +6,18 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   border-top: 1px solid #a07918;
   background: #080c26;
   color: white;
-  `;
+  line-height: 50px;
+
+`;
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    height: 48rem;
+    height: 65rem;
     border-top: 1px solid #a07918;
     border-bottom: 1px solid #a07918;
     background-image: url(https://mosaicoo.tech/wp-content/uploads/2015/10/image-slider-3-home-main.jpg);

@@ -2,13 +2,16 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    box-sizing: border-box;
+    display: block;
+    margin: 50px auto;
+    margin-right: auto;
     padding: ${theme.spacings.large};
-    color: ${theme.colors.black};
     text-align: center;
     border-radius: ${theme.fonts.sizes.xxsmall};
-    max-width: 100%;
-    margin: ${theme.fonts.sizes.small} auto;
+    min-height: 80vh;
     font-size: ${theme.fonts.sizes.small};
+    max-width: 1310px;
+    line-height: 50px;
+
   `}
 `;
