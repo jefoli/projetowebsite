@@ -6,25 +6,29 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  max-height: auto;
   border-top: 1px solid #a07918;
   background: #080c26;
-  color: white;
   line-height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 `;
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    width: 100%;
-    height: 65rem;
+    max-width: 100%;
+    max-height: auto;
     border-top: 1px solid #a07918;
     border-bottom: 1px solid #a07918;
     background-image: url(https://mosaicoo.tech/wp-content/uploads/2015/10/image-slider-3-home-main.jpg);
+    background-repeat: no-repeat;
     object-fit: cover;
+    background-size: cover;
+    background-position: top right;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
+      font-size: ${theme.fonts.sizes.small};
 
     }
   `}
@@ -32,46 +36,27 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
 ${({ theme }) => css`
-
-  background: #242424f7;
-  width: 51%;
-  height: 100%;
-  position: relative;
-
-  &::after {
-    content: '';
-    background: url(${fullwidthimage}) left center no-repeat;
-    height: 100%;
-    position: absolute;
-    width: 50.1%;
-    right: -25%;
-    top: 50%;
-    transform: translate(50%, -50%);
-
-  }
-
-  > h3 {
-    font-size: ${theme.fonts.sizes.small};
-    padding: 15px;
-
-  }
+  display: flex;
+  flex-direction: column;
+  background: #ffffffd1;
+  max-width: 51%;
+  max-height: 100%;
 
   @media ${theme.media.lteMedium} {
     max-width: 100%;
-
   }
   `}
-
 `;
 
 export const BoxContent = styled.h2`
   ${({ theme }) => css`
-  display: flex;
-  width: 100%;
-  font-size: ${theme.fonts.sizes.medium};
+  max-width: 100%;
+  font-size: ${theme.fonts.sizes.large};
   color: #a07918;
-  padding: 30px;
+  padding: 15px;
   text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
 
   @media ${theme.media.lteMedium} {
     max-width: 100%;
@@ -79,4 +64,19 @@ export const BoxContent = styled.h2`
 
   }
   `}
+`;
+
+export const BoxTextContent = styled.div`
+${({ theme }) => css`
+max-width: 100%;
+font-size: ${theme.fonts.sizes.medium};
+padding: 15px;
+font-weight: 200;
+
+@media ${theme.media.lteMedium} {
+  max-width: 100%;
+  font-size: ${theme.fonts.sizes.small};
+
+}
+`}
 `;

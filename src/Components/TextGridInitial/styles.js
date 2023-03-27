@@ -23,11 +23,12 @@ export const Container = styled.section`
 export const MainTitle = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.xxlarge};
-    color: #fbd100;
+    color: #cf9900;
     line-height: 1.2;
     justify-items: center;
     padding: ${theme.fonts.sizes.medium};
-  `}
+    font-weight: 400;
+    `}
 `;
 
 export const ContainerContent = styled.div`
@@ -36,8 +37,12 @@ export const ContainerContent = styled.div`
   padding: 20px 0;
 `;
 
-export const TextInitial = styled.p`
+export const TextInitial = styled.h2`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.medium};
-    margin: 20px 50px;  `}
+    font-weight: 500;
+    padding: 20px 0;
+    line-height: 50px;
+
+  `}
 `;

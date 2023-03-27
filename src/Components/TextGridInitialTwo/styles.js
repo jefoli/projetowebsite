@@ -26,8 +26,9 @@ export const TextinInitialTwo = styled.p`
     display: flex;
     font-size: ${theme.fonts.sizes.medium};
     max-width: 100%;
-    line-height: 1.6;
+    line-height: 50px;
     padding: 0 20px;
     text-align: center;
+    font-weight: 500;
   `}
 `;

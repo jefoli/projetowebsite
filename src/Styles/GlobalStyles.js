@@ -6,6 +6,8 @@ export default createGlobalStyle`
       margin:0;
       padding: 0;
       outline:0;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
   }
 
   html {

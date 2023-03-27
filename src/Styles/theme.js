@@ -13,7 +13,7 @@ export const theme = {
   fonts: {
     family: {
       default: "'Open Sans', sans-serif",
-      secondary: "'Montserrat', sans-serif",
+      secondary: "'Raleway', sans-serif",
     },
     sizes: {
       xxsmall: '0.4rem',

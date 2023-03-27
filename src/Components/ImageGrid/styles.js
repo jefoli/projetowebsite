@@ -48,6 +48,8 @@ ${({ theme }) => css`
   color: white;
   padding: 30px 0px;
   text-transform: uppercase;
+  font-weight: 700;
+
   `}
 `;
 

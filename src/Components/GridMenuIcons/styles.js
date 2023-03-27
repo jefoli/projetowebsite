@@ -1,41 +1,42 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
-export const Wrapper = styled.div`
-  background: #080c26;
-`;
-
 export const Container = styled.section`
   ${({ theme }) => css`
-    display: block;
+    display: flex;
     border-bottom: 2px solid #a07918;
     width: 100%;
+    min-height: 80vh;
+    background: #080c26;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+    padding: 15px;
 
-    .section-wrapper {
+
+    >.section-wrapper {
       max-width: 100%;
       font-size: calc(${theme.fonts.sizes.medium} - 0.2rem);
-      line-height: 1.43;
-      letter-spacing: 0.01071em;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-bottom: calc(${theme.spacings.xhuge} + 0.6rem);
+      padding: 15px;
+
     }
 
     .styleGrid {
       display: grid;
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
       gap: 10px;
-      justify-items: stretch;
       grid-template-columns: repeat(4, 1fr);
-      justify-content: stretch;
-      padding: ${theme.spacings.medium};
+      font-weight: 200;
     }
 
     .StyledGridItem {
-      margin: 0 ${theme.spacings.xsmall} ${theme.spacings.xsmall} 0;
-      padding: ${theme.spacings.xxsmall};
-      background-color: #a07918;
+      max-width: 100%;
+      background-color: #cf9900;
       border-radius: ${theme.spacings.xxsmall};
+      box-shadow: white 5px 5px 0px 2px;
+
     }
 
     .styledBox {
@@ -45,23 +46,6 @@ export const Container = styled.section`
       align-items: flex-start;
       padding: ${theme.spacings.xxsmall};
       line-height: 1.8;
-    }
-
-    .link-style {
-      display: flex;
-      padding: ${theme.spacings.xxsmall};
-      font-size: 20px;
-      line-height: 1.2;
-      color: #003c58;
-      text-decoration: underline;
-    }
-
-    .style-icons {
-      font-size: ${theme.spacings.medium};
-      color: white;
-      justify-items: center;
-      align-items: flex-end;
-      text-decoration: none;
     }
 
     @media ${theme.media.lteMedium} {
@@ -74,4 +58,58 @@ export const Container = styled.section`
       }
     }
   `}
+`;
+
+export const LinkStyled = styled.span`
+  ${({ theme }) => css`
+  display: flex;
+  padding: ${theme.spacings.xxsmall};
+  font-size: 20px;
+  line-height: 1.2;
+  color: #003c58;
+  text-decoration: underline;
+  align-items: center;
+  `}
+`;
+
+export const StyleIcons = styled.div`
+${({ theme }) => css`
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-size: auto;
+  padding: 15px;
+
+`}
+`;
+
+export const Wrapper = styled.div`
+${({ theme }) => css`
+max-width: 50%;
+font-size: ${theme.fonts.sizes.large};
+color: #a07918;
+padding: 15px;
+text-transform: uppercase;
+font-weight: 400;
+
+@media ${theme.media.lteMedium} {
+  max-width: 100%;
+}
+  `}
+
+`;
+
+export const BoxTextContent = styled.div`
+${({ theme }) => css`
+max-width: 70%;
+font-size: ${theme.fonts.sizes.medium};
+padding: 15px;
+font-weight: 200;
+line-height: 50px;
+
+@media ${theme.media.lteMedium} {
+  max-width: 100%;
+  font-size: ${theme.fonts.sizes.small};
+}
+`}
 `;
