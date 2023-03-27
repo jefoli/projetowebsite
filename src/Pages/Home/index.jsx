@@ -22,6 +22,7 @@ export const Home = () => {
         <TextGridInitialTwo />
       </Styled.Container>
       <InitialGrid />
+      <GridMenuIcons />
       <ComponentCarousel slides={SliderData} />
       <ImageGrid />
     </>

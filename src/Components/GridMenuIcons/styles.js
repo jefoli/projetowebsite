@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 export const Container = styled.section`
   ${({ theme }) => css`
     display: block;
-    border-radius: 200px 2px;
     border-bottom: 2px solid #a07918;
     width: 100%;
 
@@ -59,8 +58,7 @@ export const Container = styled.section`
 
     .style-icons {
       font-size: ${theme.spacings.medium};
-      display: flex;
-      color: #b9b9b9;
+      color: white;
       justify-items: center;
       align-items: flex-end;
       text-decoration: none;

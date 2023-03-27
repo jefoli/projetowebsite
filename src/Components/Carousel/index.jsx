@@ -27,10 +27,6 @@ export const ComponentCarousel = ({ slides }) => {
           <FaArrowAltCircleLeft onClick={prevSlide} />
         </Styled.ArrowCarouselLeft>
 
-        <Styled.ArrowCarouselRight>
-          <FaArrowAltCircleRight onClick={nextSlide} />
-        </Styled.ArrowCarouselRight>
-
         {SliderData.map((slide, index) => {
           return (
             <div
@@ -43,6 +39,10 @@ export const ComponentCarousel = ({ slides }) => {
             </div>
           );
         })}
+
+        <Styled.ArrowCarouselRight>
+          <FaArrowAltCircleRight onClick={nextSlide} />
+        </Styled.ArrowCarouselRight>
       </Styled.Container>
     </Styled.Wrapper>
   );
