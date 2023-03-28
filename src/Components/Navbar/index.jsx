@@ -2,7 +2,7 @@ import * as Styled from './styles';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
-import { MenuLink } from '../../MenuLink';
+import { MenuLink } from '../MenuLink';
 import { ButtonLogin } from '../Buttons/ButtonLogin';
 import logoPng from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
