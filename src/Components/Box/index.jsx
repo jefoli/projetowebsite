@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import * as Styled from './styles';
-import { BsArrowRightShort, BsInfoSquare } from 'react-icons/bs';
+import { BsArrowRightShort } from 'react-icons/bs';
 import P from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export const Box = ({ menuText, ParagraphText }) => {
+export const Box = ({ menuText, ParagraphText, icons }) => {
   const text = 'Saiba mais';
 
   return (
@@ -12,9 +12,7 @@ export const Box = ({ menuText, ParagraphText }) => {
       <div className="StyledGridItem">
         <Styled.BoxStyled>
           <div className="styledBox">
-            <Styled.StyleIcons>
-              <BsInfoSquare className="style-icons" />
-            </Styled.StyleIcons>
+            <Styled.StyleIcons>{icons}</Styled.StyleIcons>
             <h3>{menuText}</h3>
             <p>{ParagraphText}</p>
             <div className="styledBox">

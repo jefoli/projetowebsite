@@ -1,14 +1,10 @@
-/* eslint-disable no-unused-vars */
 import * as Styled from './styles';
-import { BsFilePost, BsArrowRightShort, BsInfoSquare } from 'react-icons/bs';
+import { BsFilePost } from 'react-icons/bs';
 import { RiContactsLine } from 'react-icons/ri';
 import { MdMiscellaneousServices } from 'react-icons/md';
-
-import { Link } from 'react-router-dom';
 import { Box } from '../Box';
-export const GridMenuIcons = () => {
-  const text = 'Saiba Mais';
 
+export const GridMenuIcons = () => {
   return (
     <Styled.Container>
       <Styled.Wrapper>
@@ -26,18 +22,22 @@ export const GridMenuIcons = () => {
           <Box
             menuText="Sobre nós"
             ParagraphText="conheça um pouco sobre nossa trajetória."
+            icons={<BsFilePost />}
           />
           <Box
             menuText="Nossos serviços"
             ParagraphText="Conheça na integra sobre todos nossos serviços."
+            icons={<MdMiscellaneousServices />}
           />
           <Box
             menuText="Entre em contato"
             ParagraphText="Fale conosco, pois queremos te ouvir."
+            icons={<RiContactsLine />}
           />
           <Box
             menuText="Nossos Posts"
             ParagraphText="Leia sobre as principais novidades e lançamentos."
+            icons={<BsFilePost />}
           />
         </div>
       </div>

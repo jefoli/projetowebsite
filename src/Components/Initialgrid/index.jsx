@@ -3,7 +3,7 @@ export const InitialGrid = () => {
   return (
     <Styled.Container>
       <Styled.Wrapper>
-        <Styled.Content className="fullwidthimage">
+        <Styled.Content>
           <Styled.BoxContent>
             experiência e sofisticação são nossas prioridades{' '}
           </Styled.BoxContent>

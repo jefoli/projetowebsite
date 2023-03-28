@@ -3,19 +3,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   ${({ theme }) => css`
-    display: flex;
-    border-bottom: 2px solid #a07918;
-    width: 100%;
-    min-height: 80vh;
-    background: #080c26;
-    justify-content: flex-start;
-    flex-direction: column;
-    color: white;
-    justify-content: space-evenly;
-    padding: 15px;
-
-
-    >.section-wrapper {
+     >.section-wrapper {
       max-width: 100%;
       font-size: calc(${theme.fonts.sizes.medium} - 0.2rem);
       padding: 15px;
