@@ -4,9 +4,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 import P from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export const Box = ({ menuText, ParagraphText, icons }) => {
-  const text = 'Saiba mais';
-
+export const Box = ({ menuText, ParagraphText, icons, menuLink }) => {
   return (
     <Styled.Container>
       <div className="StyledGridItem">
@@ -16,9 +14,9 @@ export const Box = ({ menuText, ParagraphText, icons }) => {
             <h3>{menuText}</h3>
             <p>{ParagraphText}</p>
             <div className="styledBox">
-              <Link to="/sobre">
+              <Link to={menuLink}>
                 <Styled.LinkStyled>
-                  {text}
+                  <span>Saiba mais</span>
                   <Styled.StyleIcons>
                     <BsArrowRightShort />
                   </Styled.StyleIcons>
@@ -35,4 +33,5 @@ export const Box = ({ menuText, ParagraphText, icons }) => {
 Box.propTypes = {
   menuText: P.string.isRequired,
   ParagraphText: P.string.isRequired,
+  icons: P.element.isRequired,
 };

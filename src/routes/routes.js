@@ -16,10 +16,10 @@ export default function RoutesSistem() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="sobre" element={<Sobre />} />
-        <Route path="contato" element={<Contato />} />
-        <Route path="servicos" element={<Servicos />} />
-        <Route path="post" element={<PostsText />} />
+        <Route path="about" element={<Sobre />} />
+        <Route path="contact" element={<Contato />} />
+        <Route path="services" element={<Servicos />} />
+        <Route path="posts" element={<PostsText />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
