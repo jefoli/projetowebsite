@@ -84,7 +84,7 @@ export const Container = styled.div`
     }
 
     .navbar {
-    background: #56565633;
+      background: #56565633;
       height: 50px;
       transition: background-color 0.3s ease-in-out;
 
@@ -97,6 +97,7 @@ export const Container = styled.div`
       min-height: 100vh;
       visibility: hidden;
       opacity: 0;
+      background: white;
 
       ${visible && menuVisible(theme)}
       display: flex;

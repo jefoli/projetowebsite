@@ -3,16 +3,9 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   ${({ theme }) => css`
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: relative;
+    justify-content: center;
     width: 100%;
-    min-height: 100vh;
-    padding: 0px 15% 0px 15%;
-    background: #06060659;
-    justify-content: space-around;
-    color: white;
-    font-weight: bold;
+    background: #ffffffbd;
   `}
 `;
 

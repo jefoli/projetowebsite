@@ -101,7 +101,7 @@ font-weight: 400;
 
 export const BoxTextContent = styled.div`
 ${({ theme }) => css`
-max-width: 70%;
+max-width: 75%;
 font-size: ${theme.fonts.sizes.medium};
 padding: 15px;
 font-weight: 200;

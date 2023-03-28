@@ -36,7 +36,7 @@ export const LiContent = styled.li`
       left: 50%;
       width: 0%;
       height: calc(${theme.spacings.xxsmall} - 0.2rem);
-      background: ${theme.colors.mediumGray};
+      background: #a07918;
       transition: all 150ms ease-in-out;
       justify-content: center;
     }
@@ -44,6 +44,7 @@ export const LiContent = styled.li`
     > a:hover::after {
       width: 50%;
       left: 25%;
+      bottom: 2%;
     }
 
     @media ${theme.media.lteMedium} {
