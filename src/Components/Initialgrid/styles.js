@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
-import fullwidthimage from './fullwidthslider.png';
 
 export const Container = styled.section`
   display: flex;
