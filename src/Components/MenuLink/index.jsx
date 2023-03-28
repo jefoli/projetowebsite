@@ -10,19 +10,19 @@ export const MenuLink = () => {
       </Styled.LiContent>
 
       <Styled.LiContent>
-        <Link to="/sobre">Sobre</Link>
+        <Link to="/about">Sobre</Link>
       </Styled.LiContent>
 
       <Styled.LiContent>
-        <Link to="/servicos">Serviços</Link>
+        <Link to="/services">Serviços</Link>
       </Styled.LiContent>
 
       <Styled.LiContent>
-        <Link to="/contato">Contato</Link>
+        <Link to="/contact">Contato</Link>
       </Styled.LiContent>
 
       <Styled.LiContent>
-        <Link to="/post">Posts</Link>
+        <Link to="/posts">Posts</Link>
       </Styled.LiContent>
     </Styled.Container>
   );

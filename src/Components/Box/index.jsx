@@ -9,20 +9,18 @@ export const Box = ({ menuText, ParagraphText, icons, menuLink }) => {
     <Styled.Container>
       <div className="StyledGridItem">
         <Styled.BoxStyled>
+          <Styled.StyleIcons>{icons}</Styled.StyleIcons>
+          <h3>{menuText}</h3>
+          <p>{ParagraphText}</p>
           <div className="styledBox">
-            <Styled.StyleIcons>{icons}</Styled.StyleIcons>
-            <h3>{menuText}</h3>
-            <p>{ParagraphText}</p>
-            <div className="styledBox">
-              <Link to={menuLink}>
-                <Styled.LinkStyled>
-                  <span>Saiba mais</span>
-                  <Styled.StyleIcons>
-                    <BsArrowRightShort />
-                  </Styled.StyleIcons>
-                </Styled.LinkStyled>
-              </Link>
-            </div>
+            <Link to={menuLink}>
+              <Styled.LinkStyled>
+                <span>Saiba mais</span>
+                <Styled.StyleIcons>
+                  <BsArrowRightShort />
+                </Styled.StyleIcons>
+              </Styled.LinkStyled>
+            </Link>
           </div>
         </Styled.BoxStyled>
       </div>
