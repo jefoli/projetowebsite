@@ -70,7 +70,7 @@ export const Container = styled.div`
   `}
 `;
 
-export const StyleCircle = styled.div`
+export const StyleCircle = styled.img`
   ${({ theme }) => css`
     width: 120px;
     height: 100%;
@@ -88,7 +88,5 @@ export const StyleCircle = styled.div`
     &:hover {
       transform: scale(1.1);
     }
-
-
   `}
 `;
