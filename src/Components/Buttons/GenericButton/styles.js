@@ -7,7 +7,7 @@ export const Container = styled.div`
   }
 `;
 
-export const BtnLogin = styled.button`
+export const Button = styled.button`
   ${({ theme }) => css`
     display: flex;
     font-size: calc(${theme.fonts.sizes.small} - 0.1rem);

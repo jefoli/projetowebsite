@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import * as Styled from './styles';
-// import pngIMG from '../../Components/Logo/logoexample.png';
 import { useState } from 'react';
 import { LayoutComponents } from '../../Components/LayoutComponentsLogin-Register';
 import { isEmail, isStrongPassword } from 'validator';
@@ -8,17 +7,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SectionContainer } from '../../Components/SectionContainer';
 import logoPng from '../../assets/images/logo.png';
+import { GenericButton } from '../../Components/Buttons/GenericButton';
 
 export const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleclick(e) {
+  function handleClick(e) {
     e.preventDefault();
 
     if (name.length < 3 || name.length > 50) {
       toast.error('Digite o nome e o sobrenome');
+      console.log('teste');
       return;
     }
 
@@ -85,7 +86,11 @@ export const Register = () => {
           </Styled.WrapInput>
 
           <div className="container-login-form-btn">
-            <Styled.BtnEnter onClick={handleclick}>continuar</Styled.BtnEnter>
+            <GenericButton
+              text="continuar"
+              link="/login"
+              onClick={handleClick}
+            />
           </div>
 
           <Styled.ContainerTextCenter>

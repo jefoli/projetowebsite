@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { isEmail, isStrongPassword } from 'validator';
 import { SectionContainer } from '../../Components/SectionContainer';
 import logoPng from '../../assets/images/logo.png';
+import { GenericButton } from '../../Components/Buttons/GenericButton';
 
 export const Login = () => {
   const [email, setEmail] = useState('');
@@ -59,7 +60,12 @@ export const Login = () => {
           </Styled.WrapInput>
 
           <Styled.ContainerBtnEnter>
-            <Styled.BtnEnter onClick={handleclick}>Login</Styled.BtnEnter>
+            <GenericButton
+              text={'Login'}
+              link="/login"
+              onClick={handleclick}
+              aria-label="Login"
+            />
           </Styled.ContainerBtnEnter>
 
           <Styled.ContainerTextCenter>

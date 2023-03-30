@@ -3,7 +3,7 @@ import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import { MenuLink } from '../MenuLink';
-import { ButtonLogin } from '../Buttons/ButtonLogin';
+import { GenericButton } from '../Buttons/GenericButton';
 import logoPng from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 
@@ -47,7 +47,7 @@ export const NavBar = () => {
             <img src={logoPng} alt="logoexample" />
           </Link>
           <MenuLink />
-          <ButtonLogin aria-label="Login" />
+          <GenericButton text={'Login'} link={'/login'} aria-label="Login" />
         </Styled.MenuContainer>
       </Styled.Container>
     </>

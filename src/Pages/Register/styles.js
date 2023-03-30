@@ -113,26 +113,6 @@ export const ContainerBtnEnter = styled.div`
   `}
 `;
 
-export const BtnEnter = styled.button`
-    ${({ theme }) => css`
-      font-size: ${theme.fonts.sizes.small};
-      border: none;
-      border-radius: ${theme.fonts.sizes.xsmall};
-      color: ${theme.colors.white};
-      line-height: 1.2;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: ${theme.spacings.xxlarge};
-      scroll-behavior: smooth;
-      background: ${theme.colors.backgroundGradientLeft};
-      cursor: pointer;
-    `}
-  }
-`;
-
 export const ContainerTextCenter = styled.div`
   ${({ theme }) => css`
     display: flex;
