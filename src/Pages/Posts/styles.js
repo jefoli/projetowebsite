@@ -1,5 +1,6 @@
-/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
+import { Button as ButtonStyle } from '../../Components/Buttons/GenericButton/styles';
+
 export const Container = styled.div`
   ${({ theme }) => css`
     min-height: 100vh;
@@ -15,12 +16,22 @@ export const Container = styled.div`
   `}
 `;
 
-export const ButtonContainer = styled.div`
+export const StyledButton = styled.div`
   ${({ theme }) => css`
-    min-height: 100px;
+  width: 100%;
+  padding: ${theme.spacings.small};
+
+  & ${ButtonStyle} {
     display: flex;
-    align-items: flex-end;
+    background: ${theme.colors.backgroundGradientLeft};
+    &:disabled {
+      background: ${theme.colors.mediumGray};
+      cursor: not-allowed;
+    }
   `}
+
+  }
+
 `;
 
 export const SearchContainer = styled.div`
