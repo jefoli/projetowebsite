@@ -85,13 +85,7 @@ export const Register = () => {
             <span className="focus-input" data-placeholder="Password"></span>
           </Styled.WrapInput>
 
-          <div className="container-login-form-btn">
-            <GenericButton
-              text="continuar"
-              link="/login"
-              onClick={handleClick}
-            />
-          </div>
+          <GenericButton text="continuar" link="/login" onClick={handleClick} />
 
           <Styled.ContainerTextCenter>
             <span>Já é cadastrado?</span>

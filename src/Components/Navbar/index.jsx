@@ -4,8 +4,8 @@ import { AiOutlineMenuFold } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import { MenuLink } from '../MenuLink';
 import { GenericButton } from '../Buttons/GenericButton';
-import logoPng from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
+import { Logo } from '../Logo';
 
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
@@ -44,7 +44,7 @@ export const NavBar = () => {
           className={`navbar ${isScrolled ? 'scroll' : ''}`}
         >
           <Link to="/">
-            <img src={logoPng} alt="logoexample" />
+            <Logo />
           </Link>
           <MenuLink />
           <GenericButton text={'Login'} link={'/login'} aria-label="Login" />

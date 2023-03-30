@@ -6,14 +6,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { isEmail, isStrongPassword } from 'validator';
 import { SectionContainer } from '../../Components/SectionContainer';
-import logoPng from '../../assets/images/logo.png';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
+import { Logo } from '../../Components/Logo';
 
 export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleclick(e) {
+  function handleClick(e) {
     e.preventDefault();
 
     if (!isEmail(email)) {
@@ -36,7 +36,7 @@ export const Login = () => {
           <Styled.LoginFormTitle>Faça seu login</Styled.LoginFormTitle>
 
           <Styled.LoginFormTitle>
-            <img src={logoPng} alt="logoexample" />
+            <Logo />
           </Styled.LoginFormTitle>
 
           <Styled.WrapInput>
@@ -59,14 +59,7 @@ export const Login = () => {
             <span className="focus-input" data-placeholder="Password"></span>
           </Styled.WrapInput>
 
-          <Styled.ContainerBtnEnter>
-            <GenericButton
-              text={'Login'}
-              link="/login"
-              onClick={handleclick}
-              aria-label="Login"
-            />
-          </Styled.ContainerBtnEnter>
+          <GenericButton text="entre" link="/login" onClick={handleClick} />
 
           <Styled.ContainerTextCenter>
             <span>Não possui conta?</span>

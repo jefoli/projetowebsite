@@ -104,15 +104,6 @@ export const LoginFormTitle = styled.span`
   `}
 `;
 
-export const ContainerBtnEnter = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: ${theme.spacings.small};
-  `}
-`;
-
 export const BtnEnter = styled.button`
     ${({ theme }) => css`
       font-size: ${theme.fonts.sizes.small};

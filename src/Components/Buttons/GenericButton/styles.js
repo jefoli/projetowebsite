@@ -22,7 +22,7 @@ export const Button = styled.button`
     padding: calc(${theme.spacings.medium} - 0.4rem);
     background: ${theme.colors.backgroundGradientLeft};
     cursor: pointer;
-
+    font-weight: 700;
     @media ${theme.media.lteMedium} {
       text-align: center;
     }
