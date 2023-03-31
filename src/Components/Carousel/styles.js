@@ -1,16 +1,25 @@
-/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
-  ${({ theme }) => css`
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 70vh;
-    background: #080c26;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  height: 70vh;
+  background: #080c26;
+`;
 
-  `}
+export const imageContent = styled.img`
+${({ theme }) => css`
+  width: 700px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px #c3c3c3;
+
+  @media ${theme.media.lteMedium} {
+    width: 320px;
+    height: auto;
+`}
 `;
 
 export const Container = styled.div`
@@ -23,17 +32,8 @@ export const Container = styled.div`
     padding: calc(${theme.spacings.large} - 0.2rem);
     border-right: 3px solid #a07918;
     background: white;
-
     border-radius: 0 0 300px 0;
     background: white;
-
-    .image {
-      width: 100%;
-      min-height: 30px;
-      border-radius: 4px;
-      object-fit: cover;
-      box-shadow: 0px 0px 0px 1px #c3c3c3;
-    }
 
     .slide {
       opacity: 0;
@@ -56,10 +56,6 @@ export const Container = styled.div`
           transition-duration: 1s ease;
         }
 
-        .image {
-          min-height: 340px;
-        }
-
         .slide.active {
           opacity: 1;
           transition-duration: 1s;
@@ -79,17 +75,24 @@ export const ArrowCarouselLeft = styled.div`
     z-index: 1;
     cursor: pointer;
     user-select: none;
+    text-align: center;
+
+    @media ${theme.media.lteMedium} {
+      text-align: center;
   `}
 `;
 
 export const ArrowCarouselRight = styled.div`
   ${({ theme }) => css`
-    top: 50%;
-    right: calc(${theme.spacings.xhuge} + ${theme.spacings.xlarge});
+  text-align: center;
+  right: calc(${theme.spacings.xhuge} + ${theme.spacings.xlarge});
     font-size: 3rem;
     color: ${theme.colors.white};
     z-index: 1;
     cursor: pointer;
     user-select: none;
+
+    @media ${theme.media.lteMedium} {
+      text-align: center;
   `}
 `;

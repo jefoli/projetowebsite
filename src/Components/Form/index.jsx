@@ -1,48 +1,37 @@
 import { GenericButton } from '../Buttons/GenericButton';
+import { InputBox } from '../Input';
 import * as Styled from './styles';
 
-export const FormText = () => {
+export const Form = () => {
   return (
     <Styled.Container>
       <Styled.LabelText>
         Nome:
-        <Styled.InputArea
-          type="text"
-          name="nome"
-          placeholder="digite seu email"
-        ></Styled.InputArea>
+        <InputBox type="text" name="firstname" placeholder="digite seu nome" />
       </Styled.LabelText>
 
       <Styled.LabelText>
         Sobrenome:
-        <Styled.InputArea
+        <InputBox
           type="text"
-          name="sobrenome"
+          name="lastname"
           placeholder="digite seu sobrenome"
-        ></Styled.InputArea>
+        />
       </Styled.LabelText>
 
       <Styled.LabelText>
         Email:
-        <Styled.InputArea
-          type="email"
-          name="email"
-          placeholder="digite seu email"
-        ></Styled.InputArea>
+        <InputBox type="email" name="email" placeholder="digite seu email" />
       </Styled.LabelText>
 
       <Styled.LabelText>
         Telefone:
-        <Styled.InputArea
-          type="tel"
-          name="tel"
-          placeholder="digite seu telefone"
-        ></Styled.InputArea>
+        <InputBox type="tel" name="tel" placeholder="digite seu telefone" />
       </Styled.LabelText>
 
       <Styled.LabelText>
         Dúvidas, Sugestões, Reclamações:
-        <Styled.InputBox
+        <InputBox
           type="text"
           name="box"
           className="input"

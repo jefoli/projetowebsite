@@ -4,7 +4,6 @@ import { AiOutlineMenuFold } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import { MenuLink } from '../MenuLink';
 import { GenericButton } from '../Buttons/GenericButton';
-import { Link } from 'react-router-dom';
 import { Logo } from '../Logo';
 
 export const NavBar = () => {
@@ -43,9 +42,7 @@ export const NavBar = () => {
         <Styled.MenuContainer
           className={`navbar ${isScrolled ? 'scroll' : ''}`}
         >
-          <Link to="/">
-            <Logo />
-          </Link>
+          <Logo link="/" />
           <MenuLink />
           <GenericButton text={'Login'} link={'/login'} aria-label="Login" />
         </Styled.MenuContainer>

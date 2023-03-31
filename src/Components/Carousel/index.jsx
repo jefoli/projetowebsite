@@ -1,11 +1,21 @@
-import { useState } from 'react';
-import { SliderData } from './SlidersData';
+import { useState, useEffect } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import * as Styled from './styles';
 import P from 'prop-types';
+import { loadPosts } from '../../util/load-posts';
 
-export const ComponentCarousel = ({ slides }) => {
+export const ComponentCarousel = () => {
   const [current, setCurrent] = useState(0);
+  const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+    const fetchSlides = async () => {
+      const posts = await loadPosts();
+      setSlides(posts);
+    };
+    fetchSlides();
+  }, []);
+
   const length = slides.length;
 
   const nextSlide = () => {
@@ -26,20 +36,18 @@ export const ComponentCarousel = ({ slides }) => {
         <Styled.ArrowCarouselLeft>
           <FaArrowAltCircleLeft onClick={prevSlide} />
         </Styled.ArrowCarouselLeft>
-
-        {SliderData.map((slide, index) => {
+        {slides.map((slide, index) => {
           return (
             <div
               className={index === current ? 'slide active' : 'slide'}
               key={index}
             >
               {index === current && (
-                <img src={slide.image} alt="text" className="image" />
+                <Styled.imageContent src={slide.cover} alt={slide.title} />
               )}
             </div>
           );
         })}
-
         <Styled.ArrowCarouselRight>
           <FaArrowAltCircleRight onClick={nextSlide} />
         </Styled.ArrowCarouselRight>
@@ -49,5 +57,10 @@ export const ComponentCarousel = ({ slides }) => {
 };
 
 ComponentCarousel.propTypes = {
-  slides: P.array.isRequired,
+  slides: P.arrayOf(
+    P.shape({
+      cover: P.string.isRequired,
+      title: P.string.isRequired,
+    }),
+  ),
 };

@@ -18,16 +18,6 @@ export const LabelText = styled.label`
   `}
 `;
 
-export const InputArea = styled.input`
-  ${({ theme }) => css`
-    padding: calc(${theme.spacings.xsmall} + 0.2rem);
-    margin-bottom: ${theme.spacings.medium};
-    width: 100%;
-    border-radius: ${theme.fonts.sizes.xxsmall};
-    border: 1px solid ${theme.colors.secundaryColor};
-  `}
-`;
-
 export const BtnSubmit = styled.div`
   ${({ theme }) => css`
     display: flex;
@@ -40,22 +30,4 @@ export const BtnSubmit = styled.div`
       }
     }
   `}
-`;
-
-export const InputBox = styled.textarea`
-  ${({ theme }) => css`
-    width: 100%;
-    height: 150px;
-    min-height: 100px;
-    max-height: 300px;
-    padding: ${theme.spacings.small};
-    margin-bottom: ${theme.spacings.xsmall};
-    resize: vertical;
-    border: 1px solid ${theme.colors.secundaryColor};
-    border-radius: ${theme.fonts.sizes.xxsmall};
-  `}
-
-  >:focus {
-    outline: 0;
-  }
 `;

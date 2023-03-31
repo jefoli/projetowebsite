@@ -1,7 +1,6 @@
 import { ComponentCarousel } from '../../Components/Carousel';
 import { ImageGrid } from '../../Components/ImageGrid';
 import * as Styled from './styles';
-import { SliderData } from '../../Components/Carousel/SlidersData';
 import { InitialGrid } from '../../Components/Initialgrid';
 import { GridMenuIcons } from '../../Components/GridMenuIcons';
 import { TextGridInitial } from '../../Components/TextGridInitial';
@@ -19,7 +18,7 @@ export const Home = () => {
       </Styled.Container>
       <InitialGrid />
       <GridMenuIcons />
-      <ComponentCarousel slides={SliderData} />
+      <ComponentCarousel />
       <ImageGrid />
     </>
   );

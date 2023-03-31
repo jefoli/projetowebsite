@@ -1,4 +1,4 @@
-import { FormText } from '../../Components/FormText';
+import { Form } from '../../Components/Form';
 import { SectionContainer } from '../../Components/SectionContainer';
 import * as Styled from './styles';
 
@@ -10,7 +10,7 @@ export const Contato = () => {
         <h2>
           Seu contato é muito importante para aprimorarmos nossos serviços!
         </h2>
-        <FormText />
+        <Form />
       </Styled.Container>
     </SectionContainer>
   );

@@ -14,7 +14,7 @@ export const GenericButton = ({ link, text, onClick, disabled = false }) => {
 
 GenericButton.propTypes = {
   text: P.string.isRequired,
-  link: P.string.isRequired,
+  link: P.string,
   onClick: P.func,
   disabled: P.bool,
 };
