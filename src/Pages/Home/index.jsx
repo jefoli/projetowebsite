@@ -4,16 +4,13 @@ import * as Styled from './styles';
 import { InitialGrid } from '../../Components/Initialgrid';
 import { GridMenuIcons } from '../../Components/GridMenuIcons';
 import { TextGridInitial } from '../../Components/TextGridInitial';
-
-import Video from './video-test.mp4';
+import { VideoPlayer } from '../../Components/VideoPlayer';
 
 export const Home = () => {
   return (
     <>
       <Styled.Container>
-        <Styled.VideoContent preload="auto" loop muted autoPlay>
-          <source src={Video} type="video/mp4" />
-        </Styled.VideoContent>
+        <VideoPlayer />
         <TextGridInitial />
       </Styled.Container>
       <InitialGrid />
