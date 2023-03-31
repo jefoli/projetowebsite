@@ -12,5 +12,5 @@ export const CustomLink = ({ to, name }) => {
 
 CustomLink.propTypes = {
   to: P.string.isRequired,
-  name: P.string.isRequired,
+  name: P.string,
 };

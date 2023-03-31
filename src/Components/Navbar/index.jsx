@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import * as Styled from './styles';
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { AiOutlineMenuFold } from 'react-icons/ai';
@@ -5,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { MenuLink } from '../MenuLink';
 import { GenericButton } from '../Buttons/GenericButton';
 import { Logo } from '../Logo';
+import { ButtonOpenCloseMenu } from '../Buttons/ButtonOpenCloseMenu';
 
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);
@@ -26,18 +28,11 @@ export const NavBar = () => {
 
   return (
     <>
-      <Styled.Button
+      <ButtonOpenCloseMenu
         visible={visible}
+        icon={<AiOutlineMenuFold />}
         onClick={() => setVisible(true)}
-        aria-label="Open/Close menu"
-      >
-        {visible ? (
-          <AiOutlineMenuFold aria-label="Close menu" />
-        ) : (
-          <AiOutlineMenuUnfold aria-label="Open menu" />
-        )}
-      </Styled.Button>
-
+      />
       <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <Styled.MenuContainer
           className={`navbar ${isScrolled ? 'scroll' : ''}`}
