@@ -21,17 +21,16 @@ export const StyledButton = styled.div`
   width: 100%;
   padding: ${theme.spacings.small};
 
-  & ${ButtonStyle} {
+  > ${ButtonStyle} {
     display: flex;
     background: ${theme.colors.backgroundGradientLeft};
+
     &:disabled {
       background: ${theme.colors.mediumGray};
       cursor: not-allowed;
     }
   `}
-
   }
-
 `;
 
 export const SearchContainer = styled.div`

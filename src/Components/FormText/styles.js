@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Button as ButtonStyle } from '../../Components/Buttons/GenericButton/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -27,24 +28,16 @@ export const InputArea = styled.input`
   `}
 `;
 
-export const BtnSubmit = styled.button`
+export const BtnSubmit = styled.div`
   ${({ theme }) => css`
     display: flex;
-    align-items: center;
-    font-size: calc(${theme.fonts.sizes.small} - 0.1rem);
     min-width: calc(${theme.spacings.huge} + 0.6rem);
-    height: ${theme.spacings.large};
-    padding: ${theme.spacings.medium};
-    border: none;
-    border-radius: ${theme.spacings.xxsmall};
-    background: ${theme.colors.backgroundGradientLeft};
-    color: ${theme.colors.white};
-    text-transform: uppercase;
-    cursor: pointer;
 
-    &:focus {
-      background: gray;
-      transition: all 50ms;
+    & ${ButtonStyle}{
+      &:focus {
+        background: gray;
+        transition: all 50ms;
+      }
     }
   `}
 `;

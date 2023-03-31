@@ -1,3 +1,4 @@
+import { GenericButton } from '../Buttons/GenericButton';
 import * as Styled from './styles';
 
 export const FormText = () => {
@@ -47,7 +48,9 @@ export const FormText = () => {
           className="input"
           placeholder="digite sua dúvida, sugestão, reclamação, etc..."
         />
-        <Styled.BtnSubmit type="submit">Enviar</Styled.BtnSubmit>
+        <Styled.BtnSubmit>
+          <GenericButton text="Enviar" type="submit" />
+        </Styled.BtnSubmit>
       </Styled.LabelText>
     </Styled.Container>
   );

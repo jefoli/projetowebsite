@@ -5,7 +5,7 @@ import {
   FaLinkedin,
   FaFacebookSquare,
 } from 'react-icons/fa';
-export const MenuIcons = () => {
+export const SocialIcons = () => {
   return (
     <Styled.Container>
       <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
