@@ -1,29 +1,18 @@
 import * as Styled from './styles';
-
-import { Link } from 'react-router-dom';
+import { CustomLink } from '../CustomLink';
 
 export const MenuLink = () => {
   return (
     <Styled.Container>
-      <Styled.LiContent>
-        <Link to="/">Home</Link>
-      </Styled.LiContent>
+      <CustomLink to={'/'} name="Home" />
 
-      <Styled.LiContent>
-        <Link to="/about">Sobre</Link>
-      </Styled.LiContent>
+      <CustomLink to={'/about'} name="About" />
 
-      <Styled.LiContent>
-        <Link to="/services">Serviços</Link>
-      </Styled.LiContent>
+      <CustomLink to={'/services'} name="Services" />
 
-      <Styled.LiContent>
-        <Link to="/contact">Contato</Link>
-      </Styled.LiContent>
+      <CustomLink to={'/contact'} name="Contact" />
 
-      <Styled.LiContent>
-        <Link to="/posts">Posts</Link>
-      </Styled.LiContent>
+      <CustomLink to={'/posts'} name="Posts" />
     </Styled.Container>
   );
 };
