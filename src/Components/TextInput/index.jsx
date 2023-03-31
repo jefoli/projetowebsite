@@ -1,14 +1,15 @@
 import P from 'prop-types';
-import * as Styled from './styles';
+import { InputBox } from '../InputBox';
 
 export const TextInput = ({ searchValue, handleChange }) => {
   return (
-    <Styled.Container
-      onChange={handleChange}
+    <InputBox
       value={searchValue}
+      onChange={handleChange}
       type="search"
+      name="input-text"
       placeholder="Type your search"
-    ></Styled.Container>
+    />
   );
 };
 

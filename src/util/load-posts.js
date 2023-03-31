@@ -4,7 +4,7 @@ export const loadPosts = async () => {
   const postsResponse = axios.get('https://jsonplaceholder.typicode.com/posts');
 
   const photosResponse = axios.get(
-    'https://picsum.photos/v2/list?page=1&limit=100&width=400&height=400',
+    'https://picsum.photos/v2/list?page=1&limit=10&width=400&height=400',
   );
 
   const photosResponseAlternative = axios.get(
