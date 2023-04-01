@@ -3,6 +3,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import * as Styled from './styles';
 import P from 'prop-types';
 import { loadPosts } from '../../util/load-posts';
+import { SliderButton } from '../Buttons/SliderButton';
 
 export const ComponentCarousel = () => {
   const [current, setCurrent] = useState(0);
@@ -33,9 +34,7 @@ export const ComponentCarousel = () => {
   return (
     <Styled.Wrapper>
       <Styled.Container>
-        <Styled.ArrowCarouselLeft>
-          <FaArrowAltCircleLeft onClick={prevSlide} />
-        </Styled.ArrowCarouselLeft>
+        <SliderButton icon={<FaArrowAltCircleLeft />} onClick={prevSlide} />
         {slides.map((slide, index) => {
           return (
             <div
@@ -48,9 +47,7 @@ export const ComponentCarousel = () => {
             </div>
           );
         })}
-        <Styled.ArrowCarouselRight>
-          <FaArrowAltCircleRight onClick={nextSlide} />
-        </Styled.ArrowCarouselRight>
+        <SliderButton icon={<FaArrowAltCircleRight />} onClick={nextSlide} />
       </Styled.Container>
     </Styled.Wrapper>
   );

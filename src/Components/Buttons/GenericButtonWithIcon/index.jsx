@@ -1,7 +1,7 @@
 import * as Styled from './styles';
 import P from 'prop-types';
 
-export const IconButton = ({ title, ariaLabel, icon }) => {
+export const GenericButtonWithIcon = ({ title, ariaLabel, icon }) => {
   return (
     <Styled.Container title={title} aria-label={ariaLabel}>
       {icon}
@@ -9,7 +9,7 @@ export const IconButton = ({ title, ariaLabel, icon }) => {
   );
 };
 
-IconButton.propTypes = {
+GenericButtonWithIcon.propTypes = {
   href: P.string,
   title: P.string,
   ariaLabel: P.string,

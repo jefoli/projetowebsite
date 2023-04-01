@@ -6,8 +6,8 @@ import { isEmail, isStrongPassword } from 'validator';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SectionContainer } from '../../Components/SectionContainer';
-import logoPng from '../../assets/images/logo.png';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
+import { Logo } from '../../Components/Logo';
 
 export const Register = () => {
   const [name, setName] = useState('');
@@ -47,11 +47,7 @@ export const Register = () => {
       <Styled.Container>
         <LayoutComponents>
           <Styled.LoginFormTitle>Cadastre-se aqui</Styled.LoginFormTitle>
-
-          <Styled.LoginFormTitle>
-            <img src={logoPng} alt="logoexample" />
-          </Styled.LoginFormTitle>
-
+          <Logo />
           <Styled.WrapInput>
             <Styled.FocusInput
               className={name !== '' ? 'has-val input' : 'input'}

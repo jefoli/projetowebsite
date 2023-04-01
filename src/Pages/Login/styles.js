@@ -97,10 +97,7 @@ export const LoginFormTitle = styled.span`
     color: ${theme.colors.white};
     line-height: 1.2;
     text-align: center;
-
-    > img {
-      width: 90px;
-    }
+    width: 100%;
   `}
 `;
 

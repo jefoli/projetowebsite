@@ -1,11 +1,11 @@
 import { CgArrowUpR } from 'react-icons/cg';
-import { IconButton } from '../ButtonWithIcon';
+import { GenericButtonWithIcon } from '../GenericButtonWithIcon';
 import * as Styled from './styles';
 
-export const ButtomGoTop = () => {
+export const ButtonGoTop = () => {
   return (
     <Styled.Container href="#">
-      <IconButton
+      <GenericButtonWithIcon
         ariaLabel="Go to top"
         title="Go to top"
         icon={<CgArrowUpR />}

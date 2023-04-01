@@ -34,10 +34,7 @@ export const Login = () => {
       <Styled.Container>
         <LayoutComponents>
           <Styled.LoginFormTitle>Faça seu login</Styled.LoginFormTitle>
-
-          <Styled.LoginFormTitle>
-            <Logo />
-          </Styled.LoginFormTitle>
+          <Logo />
 
           <Styled.WrapInput>
             <Styled.FocusInput

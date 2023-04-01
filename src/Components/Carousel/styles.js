@@ -66,33 +66,3 @@ export const Container = styled.div`
     }
   `}
 `;
-
-export const ArrowCarouselLeft = styled.div`
-  ${({ theme }) => css`
-    left: 5px;
-    font-size: 3rem;
-    color: ${theme.colors.white};
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
-
-    @media ${theme.media.lteMedium} {
-      text-align: center;
-  `}
-`;
-
-export const ArrowCarouselRight = styled.div`
-  ${({ theme }) => css`
-  text-align: center;
-  right: calc(${theme.spacings.xhuge} + ${theme.spacings.xlarge});
-    font-size: 3rem;
-    color: ${theme.colors.white};
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-
-    @media ${theme.media.lteMedium} {
-      text-align: center;
-  `}
-`;
