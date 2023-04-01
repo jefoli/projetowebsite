@@ -13,6 +13,15 @@ export const Container = styled.div`
     line-height: 60px;
     max-width: 1310px;
 
+    h1 {
+      font-weight: 700;
+    }
+
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
     > p {
       font-size: ${theme.fonts.sizes.medium};
     }

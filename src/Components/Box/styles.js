@@ -16,6 +16,14 @@ export const Container = styled.section`
       justify-items: center;
     }
   `}
+
+  h3 {
+    font-weight: 600;
+  }
+
+  p, span {
+    font-weight: 500;
+  }
 `;
 
 export const LinkStyled = styled.span`
@@ -57,7 +65,6 @@ export const Wrapper = styled.div`
     color: #a07918;
     padding: 15px;
     text-transform: uppercase;
-    font-weight: 400;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
@@ -70,7 +77,6 @@ export const BoxTextContent = styled.div`
     max-width: 75%;
     font-size: ${theme.fonts.sizes.medium};
     padding: 15px;
-    font-weight: 200;
     line-height: 50px;
 
     @media ${theme.media.lteMedium} {

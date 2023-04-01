@@ -1,6 +1,6 @@
 import { SectionContainer } from '../../Components/SectionContainer';
 import * as Styled from './styles';
-
+import { dataAwards } from './dataAwards';
 export const Sobre = () => {
   return (
     <SectionContainer>
@@ -19,29 +19,9 @@ export const Sobre = () => {
           </p>
           <div>
             <h3>NOSSAS PREMIAÇÕES</h3>
-
-            <div className="box2">
-              <img
-                src="http://source.unsplash.com/random/360x360?r=1"
-                alt="random image from unsplash"
-              />
-              <img
-                src="http://source.unsplash.com/random/360x360?r=2"
-                alt="random image from unsplash"
-              />
-              <img
-                src="http://source.unsplash.com/random/360x360?r=3"
-                alt="random image from unsplash"
-              />
-              <img
-                src="http://source.unsplash.com/random/360x360?r=4"
-                alt="random image from unsplash"
-              />
-              <img
-                src="http://source.unsplash.com/random/360x360?r=5"
-                alt="random image from unsplash"
-              />
-            </div>
+            {dataAwards.map((data, index) => {
+              return <img className="box2" key={index} src={data.award} />;
+            })}
           </div>
           <div className="box3">
             <p>

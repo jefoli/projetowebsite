@@ -7,5 +7,8 @@ export const Container = styled.div`
     padding: ${theme.spacings.xsmall};
     background-color: ${theme.colors.black};
     color: ${theme.colors.mediumGray};
+    p {
+      font-weight: 500;
+    }
   `}
 `;

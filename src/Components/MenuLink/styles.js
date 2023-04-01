@@ -7,7 +7,6 @@ export const Container = styled.ul`
     font-size: ${theme.fonts.sizes.medium};
     padding: 0 ${theme.spacings.small};
     width: auto;
-    font-family: Arial, Helvetica, sans-serif;
 
     @media ${theme.media.lteMedium} {
       flex-flow: column wrap;

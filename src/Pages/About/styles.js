@@ -15,6 +15,7 @@ export const Container = styled.div`
 
     > h1 {
       margin: 30px 0px;
+      font-weight: 700;
     }
   `}
 
@@ -47,17 +48,10 @@ export const AboutText = styled.div`
       border-right: solid rgb(160, 121, 24);
       border-left: solid ${theme.colors.mediumGray};
       border-radius: 30px;
-      padding-top: 10px;
-
-      > img {
-        max-width: 100%;
-        heigth: 150px;
-        width: 150px;
-        border-radius: 50px;
-        padding: 5px;
-
-      }
-
+      padding: 10px 0;
+      margin: 0 5px;
+      width: 175px;
+      gap: 10px;
     }
 
     .box3 {
@@ -74,6 +68,10 @@ export const AboutText = styled.div`
       grid-row-end: 4;
       padding-top: 10px;
 
+    }
+
+    h3 {
+      font-weight: 400;
     }
   `}
 `;

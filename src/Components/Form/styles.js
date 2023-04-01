@@ -15,6 +15,7 @@ export const LabelText = styled.label`
     font-size: ${theme.fonts.sizes.medium};
     padding: ${theme.spacings.xsmall};
     text-align: left;
+    font-weight: 500;
   `}
 `;
 

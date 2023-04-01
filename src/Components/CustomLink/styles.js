@@ -11,6 +11,8 @@ export const Container = styled.li`
       text-decoration: none;
       color: ${theme.colors.black};
       padding: 0 ${theme.spacings.medium};
+      font-weight: 500;
+
     }
 
     > a::after {
