@@ -4,19 +4,12 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    max-width: 1310px;
     min-height: 80vh;
     flex-direction: column;
     text-align: center;
     margin: ${theme.spacings.small} auto;
     padding-top: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes.small};
-    color: ${theme.colors.white};
-
-    > h1 {
-      margin: 30px 0px;
-      font-weight: 700;
-    }
   `}
 
 `;
