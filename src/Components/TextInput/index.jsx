@@ -1,5 +1,5 @@
 import P from 'prop-types';
-import { InputBox } from '../InputBox';
+import { InputBox } from '../Inputs/InputBox';
 
 export const TextInput = ({ searchValue, handleChange }) => {
   return (

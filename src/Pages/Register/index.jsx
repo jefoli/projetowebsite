@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as Styled from './styles';
 import { useState } from 'react';
-import { LayoutComponents } from '../../Components/LayoutComponentsLogin-Register';
+import { LayoutAuthForm } from '../../Components/LayoutAuthForm';
 import { isEmail, isStrongPassword } from 'validator';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -45,7 +45,7 @@ export const Register = () => {
   return (
     <SectionContainer>
       <Styled.Container>
-        <LayoutComponents>
+        <LayoutAuthForm>
           <Styled.LoginFormTitle>Cadastre-se aqui</Styled.LoginFormTitle>
           <Logo />
           <Styled.WrapInput>
@@ -89,7 +89,7 @@ export const Register = () => {
           </Styled.ContainerTextCenter>
 
           <ToastContainer />
-        </LayoutComponents>
+        </LayoutAuthForm>
       </Styled.Container>
     </SectionContainer>
   );

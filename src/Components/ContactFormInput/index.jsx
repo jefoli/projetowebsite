@@ -1,6 +1,6 @@
-import { InputBox } from '../InputBox';
 import * as Styled from './styles';
 import P from 'prop-types';
+import { InputBox } from '../Inputs/InputBox';
 
 export const ContactFormInput = ({ labelText, type, name, placeholder }) => {
   return (

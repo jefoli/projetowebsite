@@ -8,6 +8,5 @@ export const InputArea = styled.input`
     border-radius: ${theme.fonts.sizes.xxsmall};
     border: 1px solid ${theme.colors.secundaryColor};
     font-weight: 300;
-
   `}
 `;
