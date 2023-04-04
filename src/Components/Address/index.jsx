@@ -15,7 +15,7 @@ export const Address = ({
   return (
     <Styled.Container>
       {icon} {local} | Rua {street} | Nº {number} | Bairro {neighborhood} |{' '}
-      {city}-{state} | {country} | CEP:{zipCode}
+      {city}-{state} | {country} | CEP {zipCode}
     </Styled.Container>
   );
 };

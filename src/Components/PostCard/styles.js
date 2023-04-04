@@ -14,30 +14,36 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
-      max-width: 100%;
-      font-size: ${theme.fonts.sizes.small};
+      width: 100%;
+      padding: ${theme.spacings.xsmall};
+      text-align: center;
     }
   `};
 `;
 
 export const PostContainer = styled.div`
   ${({ theme }) => css`
-      padding: ${theme.fonts.sizes.large};
-    }
+    padding: ${theme.fonts.sizes.large};
 
     @media ${theme.media.lteMedium} {
-      max-width: 100%;
-      font-size: ${theme.fonts.sizes.small};
+      width: 100%;
+      padding: ${theme.spacings.xsmall};
+      text-align: center;
     }
-  `}
+  `};
 `;
 
 export const PostTitle = styled.h2`
 ${({ theme }) => css`
-      font-weight: 500;
-      padding: ${theme.fonts.sizes.xxsmall} 0;
-      font-family: 'Poppins', sans-serif;
-      text-transform: uppercase;
+    font-weight: 500;
+    padding: ${theme.fonts.sizes.xxsmall} 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+      padding: ${theme.spacings.xsmall};
+      text-align: center;
     }
   `}
 `;

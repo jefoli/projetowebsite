@@ -16,6 +16,11 @@ export const Container = styled.div`
       text-transform: uppercase;
       margin: 10px 0;
     }
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      padding: ${theme.spacings.xxsmall};
+    }
   `}
 `;
 

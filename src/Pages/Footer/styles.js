@@ -20,7 +20,7 @@ ${({ theme }) => css`
   `}
 `;
 
-export const FooterAuthor = styled.h1`
+export const FooterAuthor = styled.h2`
   ${({ theme }) => css`
     font-weight: 400;
     color: ${theme.colors.white};

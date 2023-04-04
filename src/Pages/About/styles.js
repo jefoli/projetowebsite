@@ -5,12 +5,14 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    min-height: 80vh;
     flex-direction: column;
     text-align: center;
-    margin: ${theme.spacings.small} auto;
     padding-top: ${theme.spacings.large};
-    font-size: ${theme.fonts.sizes.small};
+
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+      text-align: center;
+    }
   `}
 
 `;
@@ -21,7 +23,11 @@ export const AboutText = styled.div`
     flex-direction: column;
     font-size: ${theme.fonts.sizes.medium};
     align-items: center;
-    line-height: 60px;
+
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+      text-align: center;
+    }
   `}
 `;
 
@@ -31,7 +37,13 @@ export const AwardText = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 60px;
-  gap: 10px;
+  padding: 0 79px;
+  gap: 78px;
+  margin: 20px 0;
+
+  @media ${theme.media.lteMedium} {
+    width: 100%;
+    text-align: center;
+  }
   `}
 `;

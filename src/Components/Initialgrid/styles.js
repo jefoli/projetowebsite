@@ -56,23 +56,21 @@ export const BoxContent = styled.h2`
 
   @media ${theme.media.lteMedium} {
     max-width: 100%;
-    padding: 0px;
-
+    text-align: center;
   }
   `}
 `;
 
 export const BoxTextContent = styled.div`
 ${({ theme }) => css`
-max-width: 100%;
-font-size: ${theme.fonts.sizes.medium};
-padding: 15px;
-font-weight: 200;
-
-@media ${theme.media.lteMedium} {
   max-width: 100%;
-  font-size: ${theme.fonts.sizes.small};
+  font-size: ${theme.fonts.sizes.medium};
+  padding: 15px;
+  font-weight: 200;
 
-}
+  @media ${theme.media.lteMedium} {
+    max-width: 100%;
+    text-align: center;
+  }
 `}
 `;

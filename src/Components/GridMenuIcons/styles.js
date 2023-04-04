@@ -1,16 +1,23 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
-  border-bottom: 2px solid #a07918;
-  width: 100%;
-  min-height: 80vh;
-  background: #080c26;
-  justify-content: flex-start;
-  flex-direction: column;
-  color: white;
-  justify-content: space-evenly;
-  padding: 15px;
+${({ theme }) => css`
+    display: flex;
+    border-bottom: 2px solid #a07918;
+    width: 100%;
+    min-height: 80vh;
+    background: #080c26;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+    padding: 15px;
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+    }
+  `}
 `;
 
 export const SectionWrapper = styled.div`
@@ -18,6 +25,11 @@ export const SectionWrapper = styled.div`
     max-width: 100%;
     font-size: calc(${theme.fonts.sizes.medium} - 0.2rem);
     padding: 15px;
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+    }
   `}
 `;
 
@@ -30,11 +42,13 @@ ${({ theme }) => css`
   grid-template-columns: repeat(4, 1fr);
 
   @media ${theme.media.lteMedium} {
+    display: flex;
+    max-width: 100%;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
     width: 100%;
-    justify-items: center;
+    align-items: center;
   }
 `}
 `;
@@ -50,6 +64,7 @@ export const Title = styled.h1`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
+      text-align: center;
     }
   `}
 `;
@@ -64,7 +79,7 @@ export const TextContent = styled.h2`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
-      font-size: ${theme.fonts.sizes.small};
+      text-align: center;
     }
   `}
 `;

@@ -11,6 +11,8 @@ export const Container = styled.section`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
+      text-align: center;
+    }
   `}
 `;
 

@@ -1,24 +1,32 @@
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
+${({ theme }) => css`
+
   display: flex;
   justify-content: center;
   position: relative;
-  max-width: 100%;
-  height: 70vh;
+  width: 100%;
+  min-height: 70vh;
   background: #080c26;
+
+  @media ${theme.media.lteMedium} {
+    width: 100%;
+    align-items: center;
+  }
+`}
 `;
 
 export const imageContent = styled.img`
 ${({ theme }) => css`
-  width: 700px;
-  height: auto;
+  width: 600px;
   border-radius: 4px;
   box-shadow: 0px 0px 0px 1px #c3c3c3;
 
   @media ${theme.media.lteMedium} {
-    width: 320px;
+    max-width: 320px;
     height: auto;
+  }
 `}
 `;
 
@@ -48,7 +56,7 @@ export const Container = styled.div`
 
     @media ${theme.media.lteMedium} {
       ${({ theme }) => css`
-        width: 100%;
+        max-width: 100%;
 
         .slide {
           min-height: 340px;

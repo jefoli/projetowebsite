@@ -28,17 +28,19 @@ export const Container = styled.section`
 
 export const LinkStyled = styled.span`
   ${({ theme }) => css`
-  display: flex;
-  padding: ${theme.spacings.xxsmall};
-  font-size: 20px;
-  line-height: 1.2;
-  color: #003c58;
-  text-decoration: underline;
-  align-items: center;
-  @media ${theme.media.lteMedium} {
-    max-width: 100%;
-    font-size: ${theme.fonts.sizes.small};
-  }
+    display: flex;
+    padding: ${theme.spacings.xxsmall};
+    font-size: 20px;
+    line-height: 1.2;
+    color: #003c58;
+    text-decoration: underline;
+    align-items: center;
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+      align-items: center;
+    }
   `}
 `;
 
@@ -52,9 +54,9 @@ export const StyleIcons = styled.div`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
-      font-size: ${theme.fonts.sizes.small};
+      text-align: center;
+      align-items: center;
     }
-
   `}
 `;
 
@@ -68,6 +70,8 @@ export const Wrapper = styled.div`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
+      text-align: center;
+      align-items: center;
     }
   `}
 `;
@@ -81,7 +85,8 @@ export const BoxTextContent = styled.div`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
-      font-size: ${theme.fonts.sizes.small};
+      text-align: center;
+      align-items: center;
     }
   `}
 `;
@@ -97,7 +102,8 @@ export const BoxStyled = styled.div`
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
-      font-size: ${theme.fonts.sizes.small};
+      text-align: center;
+      align-items: center;
     }
   `}
 `;
