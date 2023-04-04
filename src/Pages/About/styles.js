@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
@@ -16,55 +17,21 @@ export const Container = styled.div`
 
 export const AboutText = styled.div`
   ${({ theme }) => css`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     font-size: ${theme.fonts.sizes.medium};
-    line-height: 1.3;
-    grid-column-gap: 10px;
-    grid-row-gap: 2rem;
     align-items: center;
     line-height: 60px;
+  `}
+`;
 
-    .box1 {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      padding: 20px 0;
-
-    }
-
-    .box2 {
-      grid-column-start: 1;
-      grid-row-start: 4;
-      grid-row-end: 3;
-      border-right: solid rgb(160, 121, 24);
-      border-left: solid ${theme.colors.mediumGray};
-      border-radius: 30px;
-      padding: 10px 0;
-      margin: 0 5px;
-      width: 175px;
-      gap: 10px;
-    }
-
-    .box3 {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      grid-row-start: 3;
-      grid-row-end: 4;
-    }
-
-    .box4 {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 4;
-      grid-row-end: 4;
-      padding-top: 10px;
-
-    }
-
-    h3 {
-      font-weight: 400;
-    }
+export const AwardText = styled.div`
+  ${({ theme }) => css`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+  gap: 10px;
   `}
 `;

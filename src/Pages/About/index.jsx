@@ -1,7 +1,7 @@
 import { SectionContainer } from '../../Components/SectionContainer';
 import * as Styled from './styles';
-import { dataAwards } from './dataAwards';
 import { DefaultContainer } from '../../Components/DefaultContainer';
+import { Awards } from '../../Components/Awards';
 export const Sobre = () => {
   return (
     <SectionContainer>
@@ -19,13 +19,12 @@ export const Sobre = () => {
               consultoria em tecnologia, gerenciamento de projetos, design de
               interface do usuário e muito mais.
             </p>
-            <div>
-              <h3>NOSSAS PREMIAÇÕES</h3>
-              {dataAwards.map((data, index) => {
-                return <img className="box2" key={index} src={data.award} />;
-              })}
-            </div>
-            <div className="box3">
+
+            <Styled.AwardText>
+              <h2>PREMIAÇÕES</h2>
+              <Styled.AwardText>
+                <Awards />
+              </Styled.AwardText>
               <p>
                 Temos uma equipe de especialistas em tecnologia altamente
                 qualificados e experientes que estão prontos para ajudar a
@@ -33,7 +32,7 @@ export const Sobre = () => {
                 preços competitivos e uma abordagem centrada no cliente para
                 garantir que você esteja sempre satisfeito com nosso trabalho.
               </p>
-            </div>
+            </Styled.AwardText>
 
             <div className="box4">
               <p>
