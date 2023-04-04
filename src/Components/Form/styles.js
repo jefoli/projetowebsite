@@ -10,15 +10,6 @@ export const Container = styled.div`
   `}
 `;
 
-export const LabelText = styled.label`
-  ${({ theme }) => css`
-    font-size: ${theme.fonts.sizes.medium};
-    padding: ${theme.spacings.xsmall};
-    text-align: left;
-    font-weight: 500;
-  `}
-`;
-
 export const BtnSubmit = styled.div`
   ${({ theme }) => css`
     display: flex;

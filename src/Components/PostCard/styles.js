@@ -7,15 +7,10 @@ export const Container = styled.div`
       transition: transform 100ms ease-in-out;
       font-size: ${theme.fonts.sizes.small};
       color: #000;
-      font-family: 'Rubik', sans-serif;
     }
 
     &:hover {
       transform: scale(1.05);
-    }
-
-    & img {
-      max-width: 100%;
     }
 
     @media ${theme.media.lteMedium} {
@@ -28,13 +23,25 @@ export const Container = styled.div`
 export const PostContainer = styled.div`
   ${({ theme }) => css`
       padding: ${theme.fonts.sizes.large};
-
     }
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
       font-size: ${theme.fonts.sizes.small};
     }
-
   `}
+`;
+
+export const PostTitle = styled.h2`
+${({ theme }) => css`
+      font-weight: 500;
+      padding: ${theme.fonts.sizes.xxsmall} 0;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+    }
+  `}
+`;
+
+export const PostImage = styled.img`
+max-width: 100%;
 `;

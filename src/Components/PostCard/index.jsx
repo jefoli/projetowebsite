@@ -4,17 +4,13 @@ import P from 'prop-types';
 export const PostCard = ({ title, cover, body, id }) => {
   return (
     <Styled.Container>
-      <div>
-        <img src={cover} alt={title} />
-        <Styled.PostContainer>
-          <div>
-            <h2>
-              {title} {id}
-            </h2>
-            <p>{body}</p>
-          </div>
-        </Styled.PostContainer>
-      </div>
+      <Styled.PostImage src={cover} alt={title} />
+      <Styled.PostContainer>
+        <Styled.PostTitle>
+          {title} {id}
+        </Styled.PostTitle>
+        {body}
+      </Styled.PostContainer>
     </Styled.Container>
   );
 };
