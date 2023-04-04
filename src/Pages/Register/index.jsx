@@ -1,13 +1,10 @@
-import { Link } from 'react-router-dom';
-import * as Styled from './styles';
 import { useState } from 'react';
 import { LayoutAuthForm } from '../../Components/LayoutAuthForm';
 import { isEmail, isStrongPassword } from 'validator';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
-import { Logo } from '../../Components/Logo';
+import { InputWithPlaceholder } from '../../Components/Inputs/InputWithPlaceholder';
 
 export const Register = () => {
   const [name, setName] = useState('');
@@ -44,53 +41,34 @@ export const Register = () => {
 
   return (
     <SectionContainer>
-      <Styled.Container>
-        <LayoutAuthForm>
-          <Styled.LoginFormTitle>Cadastre-se aqui</Styled.LoginFormTitle>
-          <Logo />
-          <Styled.WrapInput>
-            <Styled.FocusInput
-              className={name !== '' ? 'has-val input' : 'input'}
-              type="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <span
-              className="focus-input"
-              data-placeholder="Nome Completo"
-            ></span>
-          </Styled.WrapInput>
+      <LayoutAuthForm
+        title="Cadastre-se aqui"
+        titleTextButton="Já é cadastrado?"
+        textButton="clique aqui"
+        to={'/login'}
+      >
+        <InputWithPlaceholder
+          value={name}
+          type="name"
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Nome Completo"
+        />
 
-          <Styled.WrapInput>
-            <Styled.FocusInput
-              className={email !== '' ? 'has-val input' : 'input'}
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Email"></span>
-          </Styled.WrapInput>
+        <InputWithPlaceholder
+          value={password}
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+        />
 
-          <Styled.WrapInput>
-            <Styled.FocusInput
-              className={password !== '' ? 'has-val input' : 'input'}
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <span className="focus-input" data-placeholder="Password"></span>
-          </Styled.WrapInput>
-
-          <GenericButton text="continuar" link="/login" onClick={handleClick} />
-
-          <Styled.ContainerTextCenter>
-            <span>Já é cadastrado?</span>
-            <Link to="/login">clique aqui</Link>
-          </Styled.ContainerTextCenter>
-
-          <ToastContainer />
-        </LayoutAuthForm>
-      </Styled.Container>
+        <InputWithPlaceholder
+          value={password}
+          type="password"
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+        />
+        <GenericButton text="continuar" link="/login" onClick={handleClick} />
+      </LayoutAuthForm>
     </SectionContainer>
   );
 };
