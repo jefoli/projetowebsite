@@ -4,7 +4,7 @@ import { MenuLink } from '../MenuLink';
 import { GenericButton } from '../Buttons/GenericButton';
 import { Logo } from '../Logo';
 import { ButtonOpenCloseMenu } from '../Buttons/ButtonOpenCloseMenu';
-import { useHideOnScroll } from '../../util/hide-scroll';
+import { useHideOnScroll } from '../../utils/hide-scroll';
 
 export const NavBar = () => {
   const [visible, setVisible] = useState(false);

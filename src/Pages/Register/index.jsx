@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { LayoutAuthForm } from '../../Components/LayoutAuthForm';
-import { isEmail, isStrongPassword } from 'validator';
 import { toast } from 'react-toastify';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
 import { InputWithPlaceholder } from '../../Components/Inputs/InputWithPlaceholder';
+import { validateUser } from '../../utils/validateUser';
 
 export const Register = () => {
   const [name, setName] = useState('');
@@ -13,27 +13,7 @@ export const Register = () => {
 
   function handleClick(e) {
     e.preventDefault();
-
-    if (name.length < 3 || name.length > 50) {
-      toast.error('Digite o nome e o sobrenome');
-      console.log('teste');
-      return;
-    }
-
-    if (!isEmail(email)) {
-      toast.error('Digite um e-mail válido');
-      return;
-    }
-
-    if (password.length <= 8) {
-      toast.error('Use 8 caracteres ou mais para sua senha');
-      return;
-    }
-
-    if (!isStrongPassword(password)) {
-      toast.error(
-        'Escolha uma senha mais segura. Use uma combinação de letras maíusculas e mínusculas, números e símbolos',
-      );
+    if (!validateUser(name, email, password)) {
       return;
     }
     toast.success('Cadastro criado com sucesso');
@@ -55,7 +35,7 @@ export const Register = () => {
         />
 
         <InputWithPlaceholder
-          value={password}
+          value={email}
           type="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"

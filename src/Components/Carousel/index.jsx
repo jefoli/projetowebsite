@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import * as Styled from './styles';
 import P from 'prop-types';
-import { loadPosts } from '../../util/load-posts';
+import { loadPosts } from '../../utils/load-posts';
 import { SliderButton } from '../Buttons/SliderButton';
 
 export const ComponentCarousel = () => {

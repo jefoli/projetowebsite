@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import * as Styled from './styles';
 import { Postsone } from '../../Components/PostGrid';
-import { loadPosts } from '../../util/load-posts';
+import { loadPosts } from '../../utils/load-posts';
 import { TextInput } from '../../Components/TextInput';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { Loading } from '../../Components/Loading';

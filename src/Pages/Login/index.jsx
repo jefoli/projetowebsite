@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
-import { validateUser } from '../../Components/FormValidator';
+import { validateUser } from '../../utils/validateUser';
 import { InputWithPlaceholder } from '../../Components/Inputs/InputWithPlaceholder';
 
 export const Login = () => {
@@ -13,9 +13,10 @@ export const Login = () => {
 
   function handleClick(e) {
     e.preventDefault();
-    if (validateUser(email, password)) {
-      toast.success('Dados corretos!');
+    if (!validateUser(email, password)) {
+      return;
     }
+    toast.success('Dados corretos!');
   }
 
   return (
