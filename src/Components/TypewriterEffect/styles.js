@@ -8,5 +8,6 @@ export const MainTitle = styled.h1`
     padding: ${theme.fonts.sizes.large};
     font-weight: 400;
     text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
   `}
 `;
