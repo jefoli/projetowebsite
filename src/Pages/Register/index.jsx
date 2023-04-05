@@ -4,19 +4,27 @@ import { toast } from 'react-toastify';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
 import { InputWithPlaceholder } from '../../Components/Inputs/InputWithPlaceholder';
-import { validateUser } from '../../utils/validateUser';
+import { validateUser } from '../../Auth/validateUser';
+import { validatePasswordStrength } from '../../Auth/validatePasswordStrength';
+import { validateCpf } from '../../Auth/validateCpf';
+import { validateEmail } from '../../Auth/validateEmail';
 
 export const Register = () => {
-  const [name, setName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [cpf, setCpf] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [repeatPassword, setRepeatPassword] = useState('');
 
   function handleClick(e) {
     e.preventDefault();
-    if (!validateUser(name, email, password)) {
-      return;
-    }
-    toast.success('Cadastro criado com sucesso');
+    !validateUser(firstName, lastName) ||
+    !validateCpf(cpf) ||
+    !validateEmail(email) ||
+    !validatePasswordStrength(password, repeatPassword, firstName, lastName)
+      ? false
+      : (toast.success('Cadastro criado com sucesso'), true);
   }
 
   return (
@@ -28,10 +36,24 @@ export const Register = () => {
         to={'/login'}
       >
         <InputWithPlaceholder
-          value={name}
-          type="name"
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Nome Completo"
+          value={firstName}
+          type="text"
+          onChange={(e) => setFirstName(e.target.value)}
+          placeholder="Nome"
+        />
+
+        <InputWithPlaceholder
+          value={lastName}
+          type="text"
+          onChange={(e) => setLastName(e.target.value)}
+          placeholder="Sobrenome"
+        />
+
+        <InputWithPlaceholder
+          value={cpf}
+          type="text"
+          onChange={(e) => setCpf(e.target.value)}
+          placeholder="CPF"
         />
 
         <InputWithPlaceholder
@@ -46,6 +68,13 @@ export const Register = () => {
           type="password"
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
+        />
+
+        <InputWithPlaceholder
+          value={repeatPassword}
+          type="password"
+          onChange={(e) => setRepeatPassword(e.target.value)}
+          placeholder="Confirme seu Password"
         />
         <GenericButton text="continuar" link="/login" onClick={handleClick} />
       </LayoutAuthForm>

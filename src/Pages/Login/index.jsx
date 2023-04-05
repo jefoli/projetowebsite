@@ -4,8 +4,9 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SectionContainer } from '../../Components/SectionContainer';
 import { GenericButton } from '../../Components/Buttons/GenericButton';
-import { validateUser } from '../../utils/validateUser';
 import { InputWithPlaceholder } from '../../Components/Inputs/InputWithPlaceholder';
+import { validateEmail } from '../../Auth/validateEmail';
+import { validatePasswordStrength } from '../../Auth/validatePasswordStrength';
 
 export const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,10 +14,9 @@ export const Login = () => {
 
   function handleClick(e) {
     e.preventDefault();
-    if (!validateUser(email, password)) {
-      return;
-    }
-    toast.success('Dados corretos!');
+    !validateEmail(email) || !validatePasswordStrength(password)
+      ? false
+      : (toast.success('Login realizado com sucesso'), true);
   }
 
   return (
