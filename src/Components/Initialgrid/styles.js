@@ -60,17 +60,3 @@ export const BoxContent = styled.h2`
   }
   `}
 `;
-
-export const BoxTextContent = styled.div`
-${({ theme }) => css`
-  max-width: 100%;
-  font-size: ${theme.fonts.sizes.medium};
-  padding: 15px;
-  font-weight: 200;
-
-  @media ${theme.media.lteMedium} {
-    max-width: 100%;
-    text-align: center;
-  }
-`}
-`;

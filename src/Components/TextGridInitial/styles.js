@@ -21,11 +21,3 @@ export const ContainerContent = styled.div`
   flex-wrap: wrap;
   padding: 20px 0;
 `;
-
-export const TextInitial = styled.h3`
-  ${({ theme }) => css`
-    font-size: calc(${theme.fonts.sizes.medium} + 0.3rem);
-    font-weight: 300;
-    padding: 15px;
-  `}
-`;
