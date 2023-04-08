@@ -12,6 +12,7 @@ export const Container = styled.ul`
     @media ${theme.media.lteMedium} {
       flex-flow: column wrap;
       align-content: center;
+      padding: 30px 0;
     }
   `};
 `;

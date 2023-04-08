@@ -2,11 +2,16 @@
 import * as Styled from './styles';
 import { TypewriterEffect } from '../TypewriterEffect';
 import { BoxTextContent } from '../BoxTextContent';
+import { DefaultContainer } from '../DefaultContainer';
+import { VideoPlayer } from '../VideoPlayer';
 
 export const TextGridInitial = () => {
   return (
-    <Styled.Container>
-        <TypewriterEffect title={'bem-vindo ao projeto react'} typingSpeed={70}/>
+  <>
+    <VideoPlayer />
+    <TypewriterEffect title={'bem-vindo ao projeto react'} typingSpeed={70}/>
+
+    <DefaultContainer>
       <Styled.ContainerContent>
 
       <BoxTextContent>
@@ -41,6 +46,8 @@ export const TextGridInitial = () => {
         Sabemos que a biblioteca React é amplamente utilizada no mercado e pode ser uma grande vantagem competitiva para os profissionais que dominam essa tecnologia.
       </BoxTextContent>
       </Styled.ContainerContent>
-    </Styled.Container>
-  );
+
+      </DefaultContainer>
+  </>
+    );
 };

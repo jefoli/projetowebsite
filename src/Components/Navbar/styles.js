@@ -11,17 +11,14 @@ export const Container = styled.div`
 ${({ theme }) => css`
   display: flex;
   align-items: center;
-  background: white;
-  position: fixed;
+  position: relative;
   width: 100%
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-  box-shadow: 0px 1px ${theme.colors.mediumGray};
 
   &.scroll {
     opacity: 0;
@@ -30,8 +27,7 @@ ${({ theme }) => css`
   }
 
   @media ${theme.media.lteMedium} {
-    min-height: 100vh;
-    background: none;
+    max-width: 100%;
   }
 `}
 `;
@@ -68,6 +64,8 @@ export const Wrapper = styled.div`
     right: 0;
     width: 100%;
     justify-content: center;
+    background: white;
+    box-shadow: 0px 1px ${theme.colors.mediumGray};
 
     @media ${theme.media.lteMedium} {
       min-height: 100vh;

@@ -53,7 +53,6 @@ export const BoxContent = styled.h2`
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-
   @media ${theme.media.lteMedium} {
     max-width: 100%;
     text-align: center;

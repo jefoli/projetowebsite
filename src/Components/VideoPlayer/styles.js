@@ -8,4 +8,5 @@ export const VideoContent = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  opacity: 0.3;
 `;

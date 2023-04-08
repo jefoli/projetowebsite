@@ -36,6 +36,7 @@ export const Container = styled.li`
     @media ${theme.media.lteMedium} {
       flex-flow: column wrap;
       align-content: center;
+      padding: 20px 0;
     }
   `}
 `;
