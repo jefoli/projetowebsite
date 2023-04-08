@@ -4,10 +4,9 @@ export const Container = styled.div`
   ${({ theme }) => css`
     .container-login {
       display: flex;
-      justify-content: center;
       width: 100%;
-      flex-wrap: center;
       justify-content: center;
+      flex-wrap: center;
       padding: ${theme.spacings.medium};
       text-align: center;
     }
@@ -149,22 +148,16 @@ export const ContainerTextCenter = styled.div`
   ${({ theme }) => css`
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: ${theme.spacings.xxlarge};
+    font-size: ${theme.fonts.sizes.small};
 
     > span {
-      font-size: ${theme.fonts.sizes.small};
       color: ${theme.colors.mediumGray};
-      line-height: 1.5;
       padding-right: ${theme.spacings.xsmall};
-      text-decoration: none;
     }
 
     > a {
-      font-size: ${theme.fonts.sizes.small};
       color: ${theme.colors.primaryColor};
-      line-height: 1.5;
-      text-decoration: none;
     }
   `}
 `;

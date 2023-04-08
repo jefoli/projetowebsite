@@ -16,6 +16,7 @@ ${({ theme }) => css`
     @media ${theme.media.lteMedium} {
       max-width: 100%;
       text-align: center;
+      padding: 0;
     }
   `}
 `;
@@ -42,10 +43,8 @@ ${({ theme }) => css`
   grid-template-columns: repeat(4, 1fr);
 
   @media ${theme.media.lteMedium} {
-    display: flex;
-    max-width: 100%;
-    text-align: center;
     display: grid;
+    text-align: center;
     grid-template-columns: 1fr;
     width: 100%;
     align-items: center;

@@ -1,14 +1,16 @@
 export const theme = {
   colors: {
-    primaryColor: '#003c58',
+    primaryColor: '#080c26',
     secundaryColor: '#00709b',
     white: '#FFFFFF',
     black: '#111',
+    boxColor: '#cf9900',
+    linkColor: '#003c58',
     mediumGray: '#c3c3c3',
     backgroundColor: '#bddee530',
     backgroundGradientTop: 'linear-gradient(to top, #003c58, #111)',
     backgroundGradientLeft: 'linear-gradient(to left, #003c58, #111)',
-    backgroundGradientGray: 'linear-gradient(to top, #4e4e4e7d, #7a7a7ab0)',
+    backgroundGradientGray: 'linear-gradient(to left, #afafaf, #545454)',
   },
   fonts: {
     family: {

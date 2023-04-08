@@ -5,12 +5,14 @@ export const Container = styled.div`
     margin: 0 auto;
     padding: ${theme.spacings.large};
     width: 100%;
-    color: white;
+    color: ${theme.colors.white};
     background: #080c26;
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
       padding: ${theme.spacings.xsmall};
+      text-align: center;
+      }
     }
   `}
 `;

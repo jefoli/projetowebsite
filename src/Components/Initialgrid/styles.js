@@ -31,31 +31,34 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-${({ theme }) => css`
-  display: flex;
-  flex-direction: column;
-  background: #fffffff0;
-  max-width: 51%;
-  max-height: 100%;
+  ${({ theme }) => css`
+    display: flex;
+    flex-direction: column;
+    background: #fffffff0;
+    max-width: 51%;
+    max-height: 100%;
 
-  @media ${theme.media.lteMedium} {
-    max-width: 100%;
-  }
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+      padding: 0;
+    }
   `}
 `;
 
 export const BoxContent = styled.h2`
   ${({ theme }) => css`
-  max-width: 100%;
-  font-size: ${theme.fonts.sizes.large};
-  color: #a07918;
-  padding: 15px;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center;
-  @media ${theme.media.lteMedium} {
     max-width: 100%;
+    font-size: ${theme.fonts.sizes.large};
+    color: #a07918;
+    padding: 15px;
+    text-transform: uppercase;
     text-align: center;
-  }
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+      padding: 0;
+    }
   `}
 `;

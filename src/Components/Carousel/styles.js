@@ -2,13 +2,12 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
 ${({ theme }) => css`
-
   display: flex;
   justify-content: center;
   position: relative;
   width: 100%;
   min-height: 70vh;
-  background: #080c26;
+  background: ${theme.colors.primaryColor};
 
   @media ${theme.media.lteMedium} {
     width: 100%;
@@ -39,9 +38,8 @@ export const Container = styled.div`
     width: 100%;
     padding: calc(${theme.spacings.large} - 0.2rem);
     border-right: 3px solid #a07918;
-    background: white;
     border-radius: 0 0 300px 0;
-    background: white;
+    background: ${theme.colors.white};
 
     .slide {
       opacity: 0;

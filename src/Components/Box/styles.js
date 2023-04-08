@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   ${({ theme }) => css`
     max-width: 100%;
-    background-color: #cf9900;
+    background: ${theme.colors.boxColor};
     border-radius: ${theme.spacings.xxsmall};
     box-shadow: white 5px 5px 0px 2px;
 
@@ -32,7 +32,7 @@ export const LinkStyled = styled.span`
     padding: ${theme.spacings.xxsmall};
     font-size: 20px;
     line-height: 1.2;
-    color: #003c58;
+    color: ${theme.colors.linkColor};
     text-decoration: underline;
     align-items: center;
 

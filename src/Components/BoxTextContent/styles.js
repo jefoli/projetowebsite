@@ -5,6 +5,6 @@ export const Container = styled.h3`
     font-size: calc(${theme.fonts.sizes.medium} + 0.3rem);
     font-weight: 400;
     padding: 15px;
-    color: black;
+    color: ${theme.colors.black};
   `}
 `;

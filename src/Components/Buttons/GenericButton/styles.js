@@ -16,6 +16,7 @@ export const Button = styled.button`
     background: ${theme.colors.backgroundGradientLeft};
     cursor: pointer;
     font-weight: 700;
+
     @media ${theme.media.lteMedium} {
       text-align: center;
     }

@@ -6,7 +6,7 @@ export const Container = styled.div`
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: transform 100ms ease-in-out;
       font-size: ${theme.fonts.sizes.small};
-      color: #000;
+      color: ${theme.colors.black};
     }
 
     &:hover {

@@ -1,10 +1,12 @@
 import styled, { css } from 'styled-components';
 
 const menuVisible = () => css`
-  display: block;
-  visibility: visible;
-  opacity: 1;
-  background: white;
+${({ theme }) => css`
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    background: ${theme.colors.primaryColor};
+  `}
 `;
 
 export const Container = styled.div`
@@ -42,8 +44,8 @@ export const MenuContainer = styled.div`
     height: ${theme.spacings.xxlarge};
 
     & img {
-      width: ${theme.fonts.sizes.large};
-      height: ${theme.fonts.sizes.large};
+      width: ${theme.fonts.sizes.xxlarge};
+      height: ${theme.fonts.sizes.xxlarge};
     }
 
     @media ${theme.media.lteMedium} {
@@ -64,7 +66,7 @@ export const Wrapper = styled.div`
     right: 0;
     width: 100%;
     justify-content: center;
-    background: white;
+    background: ${theme.colors.white};
     box-shadow: 0px 1px ${theme.colors.mediumGray};
 
     @media ${theme.media.lteMedium} {

@@ -11,18 +11,6 @@ export const Wrapper = styled.div`
     line-height: 60px;
     max-width: 1310px;
 
-    h1 {
-      font-weight: 700;
-    }
-
-    h2 {
-      font-weight: 500;
-    }
-
-    p {
-      font-size: ${theme.fonts.sizes.medium};
-    }
-
     @media ${theme.media.lteMedium} {
       max-width: 100%;
       padding: ${theme.spacings.xsmall};

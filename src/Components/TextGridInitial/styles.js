@@ -1,7 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const ContainerContent = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 0;
+  ${({ theme }) => css`
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+    }
+  `}
 `;
