@@ -10,5 +10,6 @@ export const ContainerContent = styled.div`
       max-width: 100%;
       text-align: center;
     }
+
   `}
 `;

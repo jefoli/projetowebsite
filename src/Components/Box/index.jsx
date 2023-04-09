@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import * as Styled from './styles';
 import { BsArrowRightShort } from 'react-icons/bs';
 import P from 'prop-types';
@@ -32,4 +31,5 @@ Box.propTypes = {
   menuText: P.string.isRequired,
   ParagraphText: P.string.isRequired,
   icons: P.element.isRequired,
+  menuLink: P.string.isRequired,
 };
