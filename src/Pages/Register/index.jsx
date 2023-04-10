@@ -76,7 +76,12 @@ export const Register = () => {
           onChange={(e) => setRepeatPassword(e.target.value)}
           placeholder="Confirme seu Password"
         />
-        <GenericButton text="continuar" link="/login" onClick={handleClick} />
+        <GenericButton
+          text="continuar"
+          link="/login"
+          onClick={handleClick}
+          backgroundButton={'backgroundGradientLeft'}
+        />
       </LayoutAuthForm>
     </SectionContainer>
   );

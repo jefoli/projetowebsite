@@ -17,7 +17,12 @@ export const NavBar = () => {
         <Styled.MenuContainer>
           <Logo link="/" />
           <MenuLink />
-          <GenericButton text={'Login'} link={'/login'} aria-label="Login" />
+          <GenericButton
+            text={'Login'}
+            link={'/login'}
+            backgroundButton={'backgroundGradientLeft'}
+            aria-label="Login"
+          />
         </Styled.MenuContainer>
       </Styled.Wrapper>
     </Styled.Container>

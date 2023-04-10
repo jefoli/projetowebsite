@@ -1,3 +1,4 @@
+import { GenericButton } from '../../Components/Buttons/GenericButton';
 import { DefaultContainer } from '../../Components/DefaultContainer';
 import { Form } from '../../Components/Form';
 import { SectionContainer } from '../../Components/SectionContainer';
@@ -12,7 +13,14 @@ export const Contato = () => {
           <h2>
             Seu contato é muito importante para aprimorarmos nossos serviços!
           </h2>
-          <Form />
+          <Form />{' '}
+          <Styled.BtnSubmit>
+            <GenericButton
+              text="Enviar"
+              type="submit"
+              backgroundButton={'backgroundGradientLeft'}
+            />
+          </Styled.BtnSubmit>
         </Styled.Container>
       </DefaultContainer>
     </SectionContainer>

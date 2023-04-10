@@ -4,6 +4,7 @@ import * as Styled from './styles';
 import P from 'prop-types';
 import { loadPosts } from '../../utils/load-posts';
 import { SliderButton } from '../Buttons/SliderButton';
+import { TypewriterEffect } from '../TypewriterEffect';
 
 export const ComponentCarousel = () => {
   const [current, setCurrent] = useState(0);
@@ -33,22 +34,26 @@ export const ComponentCarousel = () => {
 
   return (
     <Styled.Wrapper>
-      <Styled.Container>
-        <SliderButton icon={<FaArrowAltCircleLeft />} onClick={prevSlide} />
-        {slides.map((slide, index) => {
-          return (
-            <div
-              className={index === current ? 'slide active' : 'slide'}
-              key={index}
-            >
-              {index === current && (
-                <Styled.imageContent src={slide.cover} alt={slide.title} />
-              )}
-            </div>
-          );
-        })}
-        <SliderButton icon={<FaArrowAltCircleRight />} onClick={nextSlide} />
-      </Styled.Container>
+      <Styled.DefaultContainer>
+        <TypewriterEffect title={'teste'} typingSpeed={100} />
+        <Styled.Container>
+          <SliderButton icon={<FaArrowAltCircleLeft />} onClick={prevSlide} />
+
+          {slides.map((slide, index) => {
+            return (
+              <div
+                className={index === current ? 'slide active' : 'slide'}
+                key={index}
+              >
+                {index === current && (
+                  <Styled.imageContent src={slide.cover} alt={slide.title} />
+                )}
+              </div>
+            );
+          })}
+          <SliderButton icon={<FaArrowAltCircleRight />} onClick={nextSlide} />
+        </Styled.Container>
+      </Styled.DefaultContainer>
     </Styled.Wrapper>
   );
 };

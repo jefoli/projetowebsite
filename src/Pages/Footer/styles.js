@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
   ${({ theme }) => css`
     background-color: ${theme.colors.black};
     text-align: center;
-    font-size: ${theme.fonts.sizes.small};
+    font-size: calc(${theme.fonts.sizes.xsmall} + 0.3rem);
   `}
 `;
 

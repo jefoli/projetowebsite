@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Button = styled.button`
-  ${({ theme }) => css`
+  ${({ theme, backgroundButton }) => css`
     display: flex;
     font-size: calc(${theme.fonts.sizes.small} - 0.1rem);
     border: none;
@@ -13,7 +13,7 @@ export const Button = styled.button`
     width: 100%;
     height: calc(${theme.spacings.large} - 0.2rem);
     padding: calc(${theme.spacings.medium} - 0.4rem);
-    background: ${theme.colors.backgroundGradientLeft};
+    background: ${(props) => props.theme.colors[backgroundButton]};
     cursor: pointer;
     font-weight: 700;
 

@@ -50,10 +50,8 @@ export const PostsText = () => {
   return (
     <SectionContainer>
       <Styled.Container>
-        <Styled.SearchContainer>
-          {!!searchValue && <h1>Search value: {searchValue}</h1>}
-          <TextInput searchValue={searchValue} handleChange={handleChange} />
-        </Styled.SearchContainer>
+        {!!searchValue && <h1>Search value: {searchValue}</h1>}
+        <TextInput searchValue={searchValue} handleChange={handleChange} />
 
         {filteredPosts.length > 0 && <Postsone posts={filteredPosts} />}
 
@@ -64,6 +62,7 @@ export const PostsText = () => {
               text="Load more posts"
               onClick={loadMorePosts}
               disabled={noMorePosts}
+              backgroundButton={'backgroundGradientLeft'}
             />
           )}
         </Styled.StyledButton>

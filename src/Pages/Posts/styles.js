@@ -32,13 +32,3 @@ export const StyledButton = styled.div`
   `}
   }
 `;
-
-export const SearchContainer = styled.div`
-  ${({ theme }) => css`
-    margin-bottom: ${theme.spacings.large};
-
-    > h1 {
-      margin-bottom: ${theme.spacings.large};
-    }
-  `}
-`;

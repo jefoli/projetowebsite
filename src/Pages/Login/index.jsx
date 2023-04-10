@@ -41,7 +41,12 @@ export const Login = () => {
           placeholder="Password"
         />
 
-        <GenericButton text="entre" link="/login" onClick={handleClick} />
+        <GenericButton
+          text="entre"
+          link="/login"
+          onClick={handleClick}
+          backgroundButton={'backgroundGradientLeft'}
+        />
       </LayoutAuthForm>
     </SectionContainer>
   );

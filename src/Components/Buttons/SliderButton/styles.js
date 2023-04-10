@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
 
 ${({ theme }) => css`
-    left: 5px;
     font-size: 3rem;
     color: ${theme.colors.white};
     z-index: 1;

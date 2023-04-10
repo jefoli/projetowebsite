@@ -3,10 +3,12 @@ import { Address } from '../../Components/Address';
 import { SocialIcons } from '../../Components/SocialIcons';
 import { BsBuilding } from 'react-icons/bs';
 import { TbBuildingStore, TbBuildingSkyscraper } from 'react-icons/tb';
+import { Lgpd } from '../../Components/Lgpd';
 
 export const Footer = () => {
   return (
     <Styled.Wrapper>
+      <Lgpd />
       <SocialIcons />
       <Styled.Container>
         <Address

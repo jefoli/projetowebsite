@@ -1,4 +1,3 @@
-import { GenericButton } from '../Buttons/GenericButton';
 import { ContactFormInput } from '../ContactFormInput';
 import * as Styled from './styles';
 
@@ -39,9 +38,6 @@ export const Form = () => {
         name="box"
         placeholder="digite sua dúvida, sugestão, reclamação, etc..."
       />
-      <Styled.BtnSubmit>
-        <GenericButton text="Enviar" type="submit" />
-      </Styled.BtnSubmit>
     </Styled.Container>
   );
 };
