@@ -2,7 +2,7 @@ import * as Styled from './styles';
 
 import { DataIcons } from './DataIcons';
 
-export const ImageGrid = () => {
+export const Gallery = () => {
   return (
     <Styled.Wrapper>
       <Styled.BoxContent>

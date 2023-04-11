@@ -1,13 +1,12 @@
 import { BoxTextContent } from '../BoxTextContent';
+import { Title } from '../Title';
 import * as Styled from './styles';
-export const InitialGrid = () => {
+export const ExperienceSection = () => {
   return (
     <Styled.Container>
       <Styled.Wrapper>
         <Styled.Content>
-          <Styled.BoxContent>
-            experiência e sofisticação são nossas prioridades{' '}
-          </Styled.BoxContent>
+          <Title>experiência e sofisticação são nossas prioridades </Title>
 
           <BoxTextContent>
             Na busca por oferecer sempre o melhor para nossos clientes, a

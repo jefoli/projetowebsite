@@ -19,7 +19,7 @@ export const TypewriterEffect = ({ title, typingSpeed }) => {
     return () => clearTimeout(timer);
   }, [text, charIndex, title, typingSpeed]);
 
-  return <Styled.MainTitle>{text}</Styled.MainTitle>;
+  return <Styled.Container>{text}</Styled.Container>;
 };
 
 TypewriterEffect.propTypes = {

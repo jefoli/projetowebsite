@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
+
     .container-login {
       display: flex;
       width: 100%;
@@ -9,6 +10,7 @@ export const Container = styled.div`
       flex-wrap: center;
       padding: ${theme.spacings.medium};
       text-align: center;
+
     }
 
     .wrap-login {

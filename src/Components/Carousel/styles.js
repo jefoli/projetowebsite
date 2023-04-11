@@ -4,11 +4,10 @@ export const Wrapper = styled.section`
 ${({ theme }) => css`
   display: flex;
   justify-content: center;
-  position: relative;
   width: 100%;
-  min-height: 70vh;
+  max-height: 100vh;
   background: ${theme.colors.primaryColor};
-
+  align-items: center;
 
   @media ${theme.media.lteMedium} {
     max-width: 100%;
@@ -21,17 +20,23 @@ ${({ theme }) => css`
 export const DefaultContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row-reverse;
+    padding: 30px;
     border-right: 3px solid #a07918;
     border-radius: 0 0 300px 0;
     background: ${theme.colors.white};
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
 
     @media ${theme.media.lteMedium} {
-      max-width: 100%;
+      display: flex;
+      width: 100%;
       border-radius: 0 0 130px 0;
-      padding: 10px 10px 0px 10px;
+      padding: 10px;
+      flex-direction: column;
+
 
       .slide {
         opacity: 0;
@@ -54,8 +59,8 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    width: 50%;
+    height: 100%;
 
     .slide {
       opacity: 0;
@@ -69,6 +74,7 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
+      width: 100%;
       .slide {
         opacity: 0;
         transition-duration: 1s ease;
@@ -80,19 +86,30 @@ export const Container = styled.div`
         transform: scale(1.03);
       }
     }
+
+    & img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0px 0px 0px 1px #c3c3c3;
+
+      @media ${theme.media.lteMedium} {
+        height: auto;
+      }
+    }
   `}
 `;
 
-export const imageContent = styled.img`
-${({ theme }) => css`
-  width: 600px;
-  border-radius: 4px;
-  box-shadow: 0px 0px 0px 1px #c3c3c3;
+export const TextContent = styled.h2`
+  ${({ theme }) => css`
+    font-size: ${theme.fonts.sizes.large};
+    padding: 15px;
+    font-weight: 300;
+    line-height: 50px;
 
-  @media ${theme.media.lteMedium} {
-    max-width: 344px;
-    height: auto;
-    border-radius: 0 0 90px 0;
-  }
-`}
+    @media ${theme.media.lteMedium} {
+      max-width: 100%;
+      text-align: center;
+    }
+  `}
 `;

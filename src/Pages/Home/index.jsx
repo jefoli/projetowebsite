@@ -1,18 +1,18 @@
 import { ComponentCarousel } from '../../Components/Carousel';
-import { ImageGrid } from '../../Components/ImageGrid';
-import { InitialGrid } from '../../Components/Initialgrid';
-import { GridMenuIcons } from '../../Components/GridMenuIcons';
-import { TextGridInitial } from '../../Components/TextGridInitial';
+import { Gallery } from '../../Components/Gallery';
+import { ExperienceSection } from '../../Components/ExperienceSection';
+import { QuickLinksSection } from '../../Components/QuickLinksSection';
+import { IntroTextContent } from '../../Components/IntroTextContent';
 import { CookieBanner } from '../../Components/CookieBanner';
 
 export const Home = () => {
   return (
     <>
-      <TextGridInitial />
-      <InitialGrid />
-      <GridMenuIcons />
+      <IntroTextContent />
+      <ExperienceSection />
+      <QuickLinksSection />
       <ComponentCarousel />
-      <ImageGrid />
+      <Gallery />
       <CookieBanner />
     </>
   );

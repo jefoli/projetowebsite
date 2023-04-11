@@ -8,9 +8,8 @@ export const Footer = () => {
   return (
     <Styled.Wrapper>
       <Styled.FlexContainer>
-        <a href="/privacy-policy">Política de Privacidade</a>
         <a href="/terms-of-users">Termos de Uso</a>
-
+        <a href="/privacy-policy">Política de Privacidade</a>
         <SocialIcons />
       </Styled.FlexContainer>
 

@@ -52,22 +52,6 @@ ${({ theme }) => css`
 `}
 `;
 
-export const Title = styled.h1`
-  ${({ theme }) => css`
-    max-width: 50%;
-    font-size: ${theme.fonts.sizes.xxlarge};
-    color: #a07918;
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: 400;
-
-    @media ${theme.media.lteMedium} {
-      max-width: 100%;
-      text-align: center;
-    }
-  `}
-`;
-
 export const TextContent = styled.h2`
   ${({ theme }) => css`
     max-width: 75%;

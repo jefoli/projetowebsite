@@ -3,13 +3,12 @@ import { BsFilePost } from 'react-icons/bs';
 import { RiContactsLine } from 'react-icons/ri';
 import { MdMiscellaneousServices } from 'react-icons/md';
 import { Box } from '../Box';
+import { Title } from '../Title';
 
-export const GridMenuIcons = () => {
+export const QuickLinksSection = () => {
   return (
     <Styled.Container>
-      <Styled.Title>
-        Explore o site com facilidade usando nossos links rápidos
-      </Styled.Title>
+      <Title>Explore o site com facilidade usando nossos links rápidos</Title>
       <Styled.TextContent>
         Com apenas um clique, você pode acessar as informações mais importantes
         sobre a nossa empresa, incluindo nossa história, serviços oferecidos,

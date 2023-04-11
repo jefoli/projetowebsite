@@ -45,20 +45,3 @@ export const Content = styled.div`
     }
   `}
 `;
-
-export const BoxContent = styled.h2`
-  ${({ theme }) => css`
-    max-width: 100%;
-    font-size: ${theme.fonts.sizes.large};
-    color: #a07918;
-    padding: 15px;
-    text-transform: uppercase;
-    text-align: center;
-
-    @media ${theme.media.lteMedium} {
-      max-width: 100%;
-      text-align: center;
-      padding: 0;
-    }
-  `}
-`;

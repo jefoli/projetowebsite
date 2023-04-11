@@ -14,22 +14,18 @@ export const CookieBanner = () => {
     <>
       {state && (
         <Styled.Container>
-          <div>
+          <Styled.Wrapper>
             <h2>Política de Cookies</h2>
-            Usamos cookies para garantir que você obtenha a melhor experoência
-            em nosso site.
-            <br />
-            Consulte nossa
+            Usamos cookies para garantir que você obtenha a melhor experiência
+            em nosso site. Consulte nossa
             <Link to="/privacy-policy"> Política de Privacidade.</Link>
-          </div>
-          <div>
-            <GenericButton
-              text="OK"
-              link={'#'}
-              backgroundButton={'backgroundGradientLeft'}
-              onClick={handleButtonClick}
-            />
-          </div>
+          </Styled.Wrapper>
+          <GenericButton
+            text="OK"
+            link={'#'}
+            backgroundButton={'backgroundGradientLeft'}
+            onClick={handleButtonClick}
+          />
         </Styled.Container>
       )}
     </>

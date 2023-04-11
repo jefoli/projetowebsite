@@ -4,7 +4,7 @@ import * as Styled from './styles';
 import P from 'prop-types';
 import { loadPosts } from '../../utils/load-posts';
 import { SliderButton } from '../Buttons/SliderButton';
-import { TypewriterEffect } from '../TypewriterEffect';
+import { Title } from '../Title';
 
 export const ComponentCarousel = () => {
   const [current, setCurrent] = useState(0);
@@ -35,7 +35,13 @@ export const ComponentCarousel = () => {
   return (
     <Styled.Wrapper>
       <Styled.DefaultContainer>
-        <TypewriterEffect title={'teste'} typingSpeed={100} />
+        <div>
+          <Title>Carousel de Ddestaque de Imagens</Title>
+          <Styled.TextContent>
+            Explore nossas fotos com um slider interativo
+          </Styled.TextContent>
+        </div>
+
         <Styled.Container>
           <SliderButton icon={<FaArrowAltCircleLeft />} onClick={prevSlide} />
 
@@ -46,7 +52,7 @@ export const ComponentCarousel = () => {
                 key={index}
               >
                 {index === current && (
-                  <Styled.imageContent src={slide.cover} alt={slide.title} />
+                  <img src={slide.cover} alt={slide.title} />
                 )}
               </div>
             );
