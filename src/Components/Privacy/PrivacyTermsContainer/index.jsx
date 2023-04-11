@@ -1,14 +1,12 @@
-import { DefaultContainer } from '../DefaultContainer';
+import { DefaultContainer } from '../../DefaultContainer';
 import * as Styled from './styles';
 import P from 'prop-types';
 
 export const PrivacyTermsContainer = ({ title, children }) => {
   return (
     <DefaultContainer>
-      <Styled.Wrapper>
-        <h1>{title}</h1>
-        <Styled.Container>{children}</Styled.Container>
-      </Styled.Wrapper>
+      <Styled.Title>{title}</Styled.Title>
+      <Styled.Wrapper>{children}</Styled.Wrapper>
     </DefaultContainer>
   );
 };
