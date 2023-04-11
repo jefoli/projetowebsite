@@ -3,6 +3,7 @@ import { ImageGrid } from '../../Components/ImageGrid';
 import { InitialGrid } from '../../Components/Initialgrid';
 import { GridMenuIcons } from '../../Components/GridMenuIcons';
 import { TextGridInitial } from '../../Components/TextGridInitial';
+import { CookieBanner } from '../../Components/CookieBanner';
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <GridMenuIcons />
       <ComponentCarousel />
       <ImageGrid />
+      <CookieBanner />
     </>
   );
 };

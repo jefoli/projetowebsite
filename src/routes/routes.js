@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NotFound } from '../Pages/NotFound';
 import { Login } from '../Pages/Login';
 import { Register } from '../Pages/Register';
+import { PrivacyPolicyPage } from '../Pages/PrivacyPolicyPage/PrivacyPolicyPage';
+import { TermsOfUser } from '../Pages/TermsOfUser';
 
 export default function RoutesSistem() {
   return (
@@ -22,6 +24,8 @@ export default function RoutesSistem() {
         <Route path="posts" element={<PostsText />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="terms-of-users" element={<TermsOfUser />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
