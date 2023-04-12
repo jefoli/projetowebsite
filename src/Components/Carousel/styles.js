@@ -43,6 +43,7 @@ export const DefaultContainer = styled.div`
         transition-duration: 1s ease;
         min-height: 245px;
       }
+
       .slide.active {
         display: flex;
         opacity: 1;

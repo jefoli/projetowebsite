@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.li`
+export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     position: relative;
@@ -14,6 +14,7 @@ export const Container = styled.li`
       font-weight: 500;
     }
 
+
     > a::after {
       content: '';
       position: absolute;
@@ -21,8 +22,8 @@ export const Container = styled.li`
       left: 50%;
       width: 0%;
       height: calc(${theme.spacings.xxsmall} - 0.2rem);
-      color: ${theme.colors.linkColor};
-      transition: all 150ms ease-in-out;
+      background: ${theme.colors.mediumGray};
+      transition: all 300ms ease-in-out;
       justify-content: center;
     }
 
@@ -30,6 +31,7 @@ export const Container = styled.li`
       width: 50%;
       left: 25%;
       bottom: 2%;
+      background: ${theme.colors.primaryColor};
     }
 
     @media ${theme.media.lteMedium} {
