@@ -7,14 +7,14 @@ export const Container = styled.li`
     flex-direction: row;
     width: 100%;
 
-    a {
+    > a {
       text-decoration: none;
       color: ${theme.colors.black};
       padding: 0 ${theme.spacings.medium};
       font-weight: 500;
     }
 
-    a::after {
+    > a::after {
       content: '';
       position: absolute;
       bottom: ${theme.spacings.medium};
@@ -26,7 +26,7 @@ export const Container = styled.li`
       justify-content: center;
     }
 
-    a:hover::after {
+    > a:hover::after {
       width: 50%;
       left: 25%;
       bottom: 2%;

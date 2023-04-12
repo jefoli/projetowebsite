@@ -33,17 +33,17 @@ export const AboutText = styled.div`
 
 export const AwardText = styled.div`
   ${({ theme }) => css`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 79px;
-  gap: 78px;
-  margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 79px;
+    gap: 78px;
+    margin: 20px 0;
 
-  @media ${theme.media.lteMedium} {
-    width: 100%;
-    text-align: center;
-  }
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+      text-align: center;
+    }
   `}
 `;

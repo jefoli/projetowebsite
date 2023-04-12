@@ -36,7 +36,7 @@ export const ComponentCarousel = () => {
     <Styled.Wrapper>
       <Styled.DefaultContainer>
         <div>
-          <Title>Carousel de Ddestaque de Imagens</Title>
+          <Title>Carousel de destaque de Imagens</Title>
           <Styled.TextContent>
             Explore nossas fotos com um slider interativo
           </Styled.TextContent>

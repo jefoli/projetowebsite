@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
@@ -16,14 +15,10 @@ export const Container = styled.section`
       justify-items: center;
     }
   `}
+`;
 
-  h3 {
-    font-weight: 600;
-  }
-
-  p, span {
-    font-weight: 500;
-  }
+export const TitleBox = styled.h3`
+  font-weight: 600;
 `;
 
 export const LinkStyled = styled.span`

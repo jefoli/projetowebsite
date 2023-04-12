@@ -52,12 +52,11 @@ ${({ theme }) => css`
 `}
 `;
 
-export const TextContent = styled.h2`
+export const TextContent = styled.h3`
   ${({ theme }) => css`
     max-width: 75%;
     font-size: ${theme.fonts.sizes.large};
     padding: 15px;
-    font-weight: 300;
     line-height: 50px;
 
     @media ${theme.media.lteMedium} {

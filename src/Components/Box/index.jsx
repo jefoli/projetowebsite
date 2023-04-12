@@ -6,23 +6,19 @@ import { Link } from 'react-router-dom';
 export const Box = ({ menuText, ParagraphText, icons, menuLink }) => {
   return (
     <Styled.Container>
-      <div className="StyledGridItem">
-        <Styled.BoxStyled>
-          <Styled.StyleIcons>{icons}</Styled.StyleIcons>
-          <h3>{menuText}</h3>
-          <p>{ParagraphText}</p>
-          <div className="styledBox">
-            <Link to={menuLink}>
-              <Styled.LinkStyled>
-                <span>Saiba mais</span>
-                <Styled.StyleIcons>
-                  <BsArrowRightShort />
-                </Styled.StyleIcons>
-              </Styled.LinkStyled>
-            </Link>
-          </div>
-        </Styled.BoxStyled>
-      </div>
+      <Styled.BoxStyled>
+        <Styled.StyleIcons>{icons}</Styled.StyleIcons>
+        <Styled.TitleBox>{menuText}</Styled.TitleBox>
+        {ParagraphText}
+        <Link to={menuLink}>
+          <Styled.LinkStyled>
+            Saiba mais
+            <Styled.StyleIcons>
+              <BsArrowRightShort />
+            </Styled.StyleIcons>
+          </Styled.LinkStyled>
+        </Link>
+      </Styled.BoxStyled>
     </Styled.Container>
   );
 };

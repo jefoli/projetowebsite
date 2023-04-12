@@ -8,7 +8,6 @@ import { Title } from '../Title';
 export const IntroTextContent = () => {
   return (
     <>
-      <VideoPlayer />
       <Title>
         <TypewriterEffect
           title={'bem-vindo ao projeto react'}
@@ -55,6 +54,7 @@ export const IntroTextContent = () => {
           </BoxTextContent>
         </Styled.ContainerContent>
       </DefaultContainer>
+      <VideoPlayer />
     </>
   );
 };

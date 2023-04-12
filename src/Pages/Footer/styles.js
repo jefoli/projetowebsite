@@ -31,7 +31,7 @@ ${({ theme }) => css`
 `;
 
 export const Container = styled.div`
-${({ theme }) => css`
+  ${({ theme }) => css`
     display: flex;
     flex-direction: row;
 

@@ -14,23 +14,20 @@ export const LayoutAuthForm = ({
   to,
 }) => {
   return (
-    <Styled.Container2>
+    <Styled.Wrapper>
       <Styled.Container>
-        <div className="container-login">
-          <div className="wrap-login">
-            <form className="login-form">
-              <Styled.LoginFormTitle>{title}</Styled.LoginFormTitle>
-              <Logo />
-              {children}
-              <Styled.ContainerTextCenter>
-                <span>{titleTextButton}</span>
-                <Link to={to}>{textButton}</Link>
-              </Styled.ContainerTextCenter>
-            </form>
-          </div>
-        </div>
-        <ToastContainer />
+        <Styled.WrapperLogin>
+          <Styled.LoginFormTitle>{title}</Styled.LoginFormTitle>
+          <Logo />
+          {children}
+          <Styled.ContainerTextCenter>
+            <span>{titleTextButton}</span>
+            <Link to={to}>{textButton}</Link>
+          </Styled.ContainerTextCenter>
+        </Styled.WrapperLogin>
       </Styled.Container>
-    </Styled.Container2>
+
+      <ToastContainer />
+    </Styled.Wrapper>
   );
 };
