@@ -2,13 +2,15 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-height: 100hv;
-  border-top: 1px solid #a07918;
-  background: #080c26;
-  line-height: 50px;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100hv;
+    border-top: 1px solid #a07918;
+    background: #080c26;
+    line-height: ${theme.spacings.huge};
+  `}
 `;
 
 export const Wrapper = styled.div`
@@ -35,7 +37,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     background: #fffffff0;
-    max-width: 51%;
+    max-width: 50%;
     max-height: 100%;
 
     @media ${theme.media.lteMedium} {

@@ -38,15 +38,15 @@ export const Container = styled.div`
       flex-flow: column wrap;
       align-content: center;
       padding: 2rem 0;
-      margin: 10px 0;
+      margin: ${theme.spacings.xsmall} 0;
       background: ${theme.colors.backgroundGradientGray};
-      border-radius: 0.4rem;
-      font-size: 1.5rem;
-      height: 3rem;
+      border-radius: ${theme.spacings.xxsmall};
+      font-size: ${theme.fonts.sizes.small};
+      height: ${theme.spacings.xlarge};
       justify-content: center;
 
       > a {
-        color: white;
+        color: ${theme.colors.white};
         text-transform: uppercase;
         font-weight: 700;
       }

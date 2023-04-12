@@ -5,7 +5,7 @@ export const Container = styled.section`
     max-width: 100%;
     background: ${theme.colors.boxColor};
     border-radius: ${theme.spacings.xxsmall};
-    box-shadow: white 5px 5px 0px 2px;
+    box-shadow: white ${theme.fonts.sizes.xxsmall} ${theme.fonts.sizes.xxsmall} 0px calc(${theme.fonts.sizes.xxsmall} - 0.2rem);
 
     @media ${theme.media.lteMedium} {
       display: grid;
@@ -25,8 +25,7 @@ export const LinkStyled = styled.span`
   ${({ theme }) => css`
     display: flex;
     padding: ${theme.spacings.xxsmall};
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: calc(${theme.fonts.sizes.medium} - 0.4rem);
     color: ${theme.colors.linkColor};
     text-decoration: underline;
     align-items: center;
@@ -45,7 +44,7 @@ export const StyleIcons = styled.div`
     color: white;
     text-decoration: none;
     font-size: auto;
-    padding: 15px;
+    padding: ${theme.spacings.small};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
@@ -60,7 +59,7 @@ export const Wrapper = styled.div`
     max-width: 50%;
     font-size: ${theme.fonts.sizes.large};
     color: #a07918;
-    padding: 15px;
+    padding: ${theme.spacings.small};
     text-transform: uppercase;
 
     @media ${theme.media.lteMedium} {
@@ -75,7 +74,7 @@ export const BoxTextContent = styled.div`
   ${({ theme }) => css`
     max-width: 75%;
     font-size: ${theme.fonts.sizes.medium};
-    padding: 15px;
+    padding: ${theme.spacings.small};
     line-height: 50px;
 
     @media ${theme.media.lteMedium} {
@@ -88,12 +87,12 @@ export const BoxTextContent = styled.div`
 
 export const BoxStyled = styled.div`
   ${({ theme }) => css`
-    font-size: 1.8rem;
+    font-size: calc(${theme.fonts.sizes.medium} - 0.6rem);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: ${theme.spacings.xsmall};
-    line-height: 1.8;
+    line-height: ${theme.spacings.large};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

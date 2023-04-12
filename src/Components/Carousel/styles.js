@@ -23,7 +23,7 @@ export const DefaultContainer = styled.div`
     flex-direction: row-reverse;
     padding: 30px;
     border-right: 3px solid #a07918;
-    border-radius: 0 0 300px 0;
+    border-radius: 0 0 calc(${theme.fonts.sizes.xhuge} * 4) 0;
     background: ${theme.colors.white};
     min-width: 100%;
     min-height: 100%;
@@ -33,15 +33,15 @@ export const DefaultContainer = styled.div`
     @media ${theme.media.lteMedium} {
       display: flex;
       width: 100%;
-      border-radius: 0 0 130px 0;
-      padding: 10px;
+      border-radius: 0 0 ${theme.fonts.sizes.large} 0;
+      padding: ${theme.spacings.xxsmall};
       flex-direction: column;
 
 
       .slide {
         opacity: 0;
         transition-duration: 1s ease;
-        min-height: 245px;
+        min-height: calc(${theme.fonts.sizes.xhuge} * 4);
       }
 
       .slide.active {
@@ -91,8 +91,8 @@ export const Container = styled.div`
     & img {
       width: 100%;
       height: auto;
-      border-radius: 4px;
-      box-shadow: 0px 0px 0px 1px #c3c3c3;
+      border-radius: ${theme.fonts.sizes.xxsmall};
+      box-shadow: 0px 0px 0px calc(${theme.fonts.sizes.xxsmall} - 0.7rem) ${theme.colors.mediumGray};
 
       @media ${theme.media.lteMedium} {
         height: auto;
@@ -101,12 +101,11 @@ export const Container = styled.div`
   `}
 `;
 
-export const TextContent = styled.h2`
+export const TextContent = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.large};
-    padding: 15px;
-    font-weight: 300;
-    line-height: 50px;
+    padding: ${theme.spacings.small};
+    line-height: ${theme.spacings.xxlarge};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

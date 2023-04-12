@@ -4,21 +4,21 @@ export const Button = styled.div`
   ${({ theme, visible }) => css`
     z-index: 6;
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-    width: 3rem;
-    height: 3rem;
+    top: ${theme.spacings.xsmall};
+    right: ${theme.spacings.xsmall};
+    width: ${theme.spacings.large};
+    height: ${theme.spacings.large};
     color: ${theme.colors.white};
     border: none;
     display: none;
     pointer-events: ${visible ? 'none' : 'all'};
     align-items: center;
-    border-radius: 4px;
+    border-radius: ${theme.spacings.xxsmall};
     background: ${theme.colors.backgroundGradientGray};
 
     > svg {
-      width: 2rem;
-      height: 2rem;
+      width:${theme.fonts.sizes.medium};
+      height: ${theme.fonts.sizes.medium};
     }
 
     @media ${theme.media.lteMedium} {

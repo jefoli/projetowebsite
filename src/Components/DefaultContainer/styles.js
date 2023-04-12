@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     padding: ${theme.spacings.large};
     font-size: ${theme.fonts.sizes.small};
     color: ${theme.colors.white};
-    line-height: 60px;
+    line-height: ${theme.spacings.xhuge};
     max-width: 1310px;
 
     @media ${theme.media.lteMedium} {
