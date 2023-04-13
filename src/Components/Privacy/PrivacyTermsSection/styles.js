@@ -1,12 +1,17 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  color: black;
-  padding: 15px;
+  ${({ theme }) => css`
+    text-align: justify;
+    padding: ${theme.spacings.medium};
+    color: ${theme.colors.black};
+  `}
 `;
 
 export const Title = styled.h2`
-  text-align: center;
-  padding: 20px;
-  color: black;
+${({ theme }) => css`
+    text-align: center;
+    padding: ${theme.spacings.medium};
+    color: ${theme.colors.black};
+  `}
 `;

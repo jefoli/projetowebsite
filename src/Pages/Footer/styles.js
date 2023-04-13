@@ -9,17 +9,17 @@ export const Wrapper = styled.section`
 `;
 
 export const FlexContainer = styled.div`
-${({ theme }) => css`
+  ${({ theme }) => css`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.1rem solid #9d9c9740;
+    border-bottom: ${theme.fonts.sizes.xxxsmall} solid ${theme.colors.boxColor};
 
     > a {
       font-size: calc(${theme.fonts.sizes.xsmall} + 0.4rem);
-      padding: 20px 30px;
-      color: white;
-      font-weight: 500;
+      padding: ${theme.spacings.medium} ${theme.spacings.xxxhuge};
+      color: ${theme.colors.white};
+      font-weight: 700;
 
     }
 
@@ -44,7 +44,7 @@ export const Container = styled.div`
 
 export const FooterAuthor = styled.h2`
   ${({ theme }) => css`
-    font-weight: 400;
+    font-weight: 500;
     color: ${theme.colors.white};
     padding: ${theme.spacings.xsmall};
   `}

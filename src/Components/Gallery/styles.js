@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
-  background: white;
+  background: ${theme.colors.white};
   display: flex;
   width: 100%;
 
@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
     display: flex;
     text-align: center;
     max-width: 100%;
-    background: #080c26;
+    background: ${theme.colors.primaryColor};
   }
   `}
 `;
@@ -22,9 +22,9 @@ ${({ theme }) => css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 300px 0px 0px;
-  border-left: 3px solid #a07918;
-  background: #080c26;
+  border-radius: calc(${theme.fonts.sizes.xhuge} * 5) 0rem 0rem;
+  border-left: ${theme.spacings.small} solid ${theme.colors.colorTitle};
+  background: ${theme.colors.primaryColor};
   width: 100%;
   padding: ${theme.spacings.xlarge};
 
@@ -32,7 +32,7 @@ ${({ theme }) => css`
   @media ${theme.media.lteMedium} {
     display: flex;
     max-width: 100%;
-    background: #080c26;
+    background: ${theme.colors.primaryColor};
     border: none;
 
     img:hover {
@@ -44,12 +44,11 @@ ${({ theme }) => css`
 
 export const Title = styled.h1`
 ${({ theme }) => css`
-  font-size: ${theme.fonts.sizes.medium};
-  color: white;
-  padding: 30px 0px;
-  text-transform: uppercase;
-  font-weight: 700;
-
+    font-size: ${theme.fonts.sizes.medium};
+    color: ${theme.colors.white};
+    padding: ${theme.spacings.large} 0rem;
+    text-transform: uppercase;
+    font-weight: 700;
   `}
 `;
 
@@ -76,17 +75,14 @@ export const StyleCircle = styled.img`
     height: 100%;
     transition: all 200ms ease-in-out;
     overflow: hidden;
-    border-radius: 500px;
-    box-shadow: 0 0px 0px 2px #a07918;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    border-radius: ${theme.fonts.sizes.xhuge};
+    box-shadow: 0rem 0rem ${theme.fonts.sizes.xxsmall} ${theme.fonts.sizes.xxsmall} ${theme.colors.colorTitle};
+    object-fit: cover;
 
     &:hover {
       transform: scale(1.1);
+      box-shadow: 0rem 0rem ${theme.fonts.sizes.xxsmall} ${theme.fonts.sizes.xxsmall} ${theme.colors.mediumGray};
+
     }
   `}
 `;

@@ -19,6 +19,7 @@ export const theme = {
       secondary: "'Raleway', sans-serif",
     },
     sizes: {
+      xxxsmall: '0.2rem',
       xxsmall: '0.4rem',
       xsmall: '0.8rem',
       small: '1.6rem',
@@ -28,6 +29,8 @@ export const theme = {
       xxlarge: '4.8rem',
       huge: '5.6rem',
       xhuge: '6.4rem',
+      xxhuge: '7.2rem',
+      xxxhuge: '8.0rem',
     },
   },
   media: {
@@ -35,6 +38,7 @@ export const theme = {
     lteMedium: '(max-width: 768px)',
   },
   spacings: {
+    xxxsmall: '0.2rem',
     xxsmall: '0.4rem',
     xsmall: '0.8rem',
     small: '1.6rem',
@@ -44,5 +48,7 @@ export const theme = {
     xxlarge: '4.8rem',
     huge: '5.6rem',
     xhuge: '6.4rem',
+    xxhuge: '7.2rem',
+    xxxhuge: '8.0rem',
   },
 };

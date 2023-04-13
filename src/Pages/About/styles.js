@@ -37,9 +37,9 @@ export const AwardText = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 0 79px;
-    gap: 78px;
-    margin: 20px 0;
+    padding: 0 ${theme.spacings.xxxhuge};
+    gap: ${theme.spacings.xxxhuge};
+    margin: ${theme.spacings.small} 0;
 
     @media ${theme.media.lteMedium} {
       width: 100%;

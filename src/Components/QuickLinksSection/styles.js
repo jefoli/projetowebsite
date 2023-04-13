@@ -3,15 +3,15 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
 ${({ theme }) => css`
     display: flex;
-    border-bottom: 2px solid #a07918;
+    border-bottom: ${theme.spacings.xxxsmall} solid ${theme.colors.colorTitle};
     width: 100%;
     min-height: 80vh;
-    background: #080c26;
+    background: ${theme.colors.primaryColor};
     justify-content: flex-start;
     flex-direction: column;
     color: white;
     justify-content: space-evenly;
-    padding: 15px;
+    padding: ${theme.spacings.small};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
@@ -25,7 +25,7 @@ export const SectionWrapper = styled.div`
   ${({ theme }) => css`
     max-width: 100%;
     font-size: calc(${theme.fonts.sizes.medium} - 0.2rem);
-    padding: 15px;
+    padding: ${theme.spacings.xsmall};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;
@@ -39,7 +39,7 @@ ${({ theme }) => css`
   display: grid;
   max-width: 100%;
   max-height: 100%;
-  gap: 10px;
+  gap: ${theme.spacings.medium};
   grid-template-columns: repeat(4, 1fr);
 
   @media ${theme.media.lteMedium} {
@@ -56,8 +56,8 @@ export const TextContent = styled.h3`
   ${({ theme }) => css`
     max-width: 75%;
     font-size: ${theme.fonts.sizes.large};
-    padding: 15px;
-    line-height: 50px;
+    padding: ${theme.spacings.small};
+    line-height: ${theme.fonts.sizes.xxlarge};
 
     @media ${theme.media.lteMedium} {
       max-width: 100%;

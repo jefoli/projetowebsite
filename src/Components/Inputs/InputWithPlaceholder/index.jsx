@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import * as Styled from './styles';
+import P from 'prop-types';
 
 export const InputWithPlaceholder = ({
   value,
@@ -15,7 +15,14 @@ export const InputWithPlaceholder = ({
         value={value}
         onChange={onChange}
       />
-      <span className="focus-input" data-placeholder={placeholder}></span>
+      <Styled.FocusSpan data-placeholder={placeholder} />
     </Styled.WrapInput>
   );
+};
+
+InputWithPlaceholder.propTypes = {
+  value: P.string,
+  type: P.string,
+  onChange: P.func,
+  placeholder: P.string,
 };

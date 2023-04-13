@@ -4,7 +4,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+    gap: ${theme.spacings.large};
 
     @media ${theme.media.lteMedium} {
       display: grid;

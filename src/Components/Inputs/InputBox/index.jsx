@@ -9,6 +9,7 @@ export const InputBox = ({ type, name, placeholder, value, onChange }) => {
       onChange={onChange}
       placeholder={placeholder}
       value={value}
+      className="focus-input "
     />
   );
 };

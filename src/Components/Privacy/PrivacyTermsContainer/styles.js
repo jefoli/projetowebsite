@@ -1,12 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  border: 2px solid #967931;
-  background: white;
-  border-radius: 10px;
+  ${({ theme }) => css`
+    border: ${theme.fonts.sizes.xxxsmall} solid ${theme.colors.boxColor};
+    background: ${theme.colors.white};
+    border-radius: ${theme.fonts.sizes.small};
+  `}
 `;
 
 export const Title = styled.h1`
-  text-align: center;
-  padding: 30px;
+  ${({ theme }) => css`
+    text-align: center;
+    padding: ${theme.spacings.large};
+  `}
 `;

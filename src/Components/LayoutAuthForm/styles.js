@@ -20,23 +20,14 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperLogin = styled.div`
-  justify-content: center;
-  width: 390px;
-  background-color: #967931;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 77px 55px 33px 55px;
-  box-shadow: 0 5px 10px 0px rgba(0, 0, 0 0.2);
-
-`;
-
-export const WrapInput = styled.div`
   ${({ theme }) => css`
-    width: 100%;
-    position: relative;
-    border-bottom: calc(${theme.spacings.xxsmall} - 0.2rem) solid #adadad;
-    margin-bottom: ${theme.spacings.large};
-    }
+
+    justify-content: center;
+    width: 390px;
+    background-color: ${theme.colors.boxColor};
+    border-radius: ${theme.fonts.sizes.small};
+    overflow: hidden;
+    padding: ${theme.fonts.sizes.xxhuge} ${theme.fonts.sizes.huge};
   `}
 `;
 
@@ -92,12 +83,13 @@ export const ContainerTextCenter = styled.div`
     font-size: ${theme.fonts.sizes.small};
 
     > span {
-      color: ${theme.colors.mediumGray};
+      color: ${theme.colors.white};
       padding-right: ${theme.spacings.xsmall};
     }
 
     > a {
       color: ${theme.colors.primaryColor};
+      font-weight: 500;
     }
   `}
 `;

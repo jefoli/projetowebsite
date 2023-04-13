@@ -1,40 +1,33 @@
 import styled, { css } from 'styled-components';
 
-export const WrapInput = styled.div`
-  ${({ theme }) => css`
+export const FocusSpan = styled.span`
+${({ theme }) => css`
+    position: absolute;
+    display: block;
     width: 100%;
-    position: relative;
-    border-bottom: calc(${theme.spacings.xxsmall} - 0.2rem) solid #adadad;
-    margin-bottom: ${theme.spacings.large};
-    }
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: ${theme.colors.mediumGray};
+    font-weight: 400;
 
-    .focus-input {
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      color: ${theme.colors.mediumGray};
-    }
-
-    .focus-input::before {
+    ::before {
       content: '';
       display: block;
       position: absolute;
       left: 0;
       width: 0;
-      bottom: -2px;
-      height: 2px;
+      bottom: calc(-${theme.fonts.sizes.xxsmall} + ${theme.fonts.sizes.xxxsmall});
+      height: calc(${theme.fonts.sizes.xxsmall} - ${theme.fonts.sizes.xxxsmall});
       transition: all 0.4s;
-      background: ${theme.colors.backgroundGradientLeft};
+      background: ${theme.colors.backgroundGradientGray};
     }
 
-    .focus-input::after {
+    ::after {
       font-size: ${theme.fonts.sizes.small};
       color: ${theme.colors.primaryColor};
-      line-height: 1.2;
+      line-height: ${theme.fonts.sizes.large};
       content: attr(data-placeholder);
       display: block;
       width: 100%;
@@ -45,34 +38,41 @@ export const WrapInput = styled.div`
       transition: all 0.4s;
     }
 
-
     .input:focus {
       outline: 0;
     }
 
-    .input:focus + .focus-input::after {
+    .input:focus + &::after {
       top: -${theme.spacings.xsmall};
     }
 
-    .input:focus + .focus-input::before {
+    .input:focus + &::before {
       width: 100%;
     }
 
-    .has-val + .focus-input::after {
+    .has-val + &::after {
       top: -${theme.spacings.xsmall};
     }
 
-    .has-val + .focus-input::before {
+    .has-val + &::before {
       width: 100%;
     }
 
+  `}
+`;
 
+export const WrapInput = styled.div`
+  ${({ theme }) => css`
+    width: 100%;
+    position: relative;
+    border-bottom: calc(${theme.spacings.xxsmall} - 0.2rem) solid ${theme.colors.mediumGray};
+    margin-bottom: ${theme.spacings.large};
+    }
   `}
 `;
 
 export const FocusInput = styled.input`
   ${({ theme }) => css`
-    color: ${theme.colors.white};
     line-height: 1.2;
     border: none;
     display: block;

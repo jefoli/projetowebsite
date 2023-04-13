@@ -14,7 +14,7 @@ export const Container = styled.div`
     > h2 {
       font-weight: 700;
       text-transform: uppercase;
-      margin: 10px 0;
+      margin: ${theme.spacings.xsmall} 0;
     }
 
     @media ${theme.media.lteMedium} {

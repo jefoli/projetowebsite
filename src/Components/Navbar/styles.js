@@ -40,7 +40,7 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 100px;
+    padding: ${theme.spacings.small} ${theme.spacings.xxxhuge};
     height: ${theme.spacings.xxlarge};
 
     & img {

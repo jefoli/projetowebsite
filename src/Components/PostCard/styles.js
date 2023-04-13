@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.div`
   ${({ theme }) => css`
       background: ${theme.colors.white};
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 ${theme.spacings.small} rgba(0, 0, 0, 0.1);
       transition: transform 100ms ease-in-out;
       font-size: ${theme.fonts.sizes.small};
       color: ${theme.colors.black};
@@ -49,5 +49,5 @@ ${({ theme }) => css`
 `;
 
 export const PostImage = styled.img`
-max-width: 100%;
+  max-width: 100%;
 `;

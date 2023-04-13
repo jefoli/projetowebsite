@@ -3,7 +3,7 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 30px;
+    padding: ${theme.spacings.small} ${theme.spacings.huge};
 
     a:hover {
       color: ${theme.colors.mediumGray};
@@ -15,7 +15,7 @@ export const Container = styled.div`
       display: flex;
       color: ${theme.colors.white};
       font-size: ${theme.spacings.large};
-      padding-left: 5px;
+      padding-left: ${theme.spacings.xsmall};
     }
 
     @media ${theme.media.lteMedium} {

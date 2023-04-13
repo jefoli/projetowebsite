@@ -8,6 +8,6 @@ export const Container = styled.div`
     font-size: ${theme.fonts.sizes.medium};
     padding: ${theme.spacings.small};
     margin: ${theme.spacings.xhuge};
-    line-heigth: 5.4;
+    line-height: ${theme.fonts.sizes.xxxhuge};
   `}
 `;

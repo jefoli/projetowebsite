@@ -6,6 +6,6 @@ export const InputArea = styled.input`
     margin-bottom: ${theme.spacings.medium};
     width: 100%;
     border-radius: ${theme.fonts.sizes.xxsmall};
-    border: 1px solid ${theme.colors.secundaryColor};
+    border: calc(${theme.fonts.sizes.xxsmall} - 0.2rem) solid ${theme.colors.mediumGray};
   `}
 `;

@@ -1,7 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Img = styled.img`
-  max-width: 80px;
-  height: auto;
-  cursor: default;
-  `;
+  ${({ theme }) => css`
+    max-width: ${theme.spacings.xxhuge};
+    height: auto;
+    cursor: default;
+  `}
+`;
